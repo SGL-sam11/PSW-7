@@ -2,28 +2,25 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 
-const Register = () => 
+const Login = () => 
 {
     const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
 
     const handleEmailChange = (e) => setEmail(e.target.value);
     const handleUsernameChange = (e) => setUsername(e.target.value);
     const handlePasswordChange = (e) => setPassword(e.target.value);
-    const handleConfirmPasswordChange = (e) => setConfirmPassword(e.target.value);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setMessage('SELAMAT!!! REGISTRASI ANDA BERHASIL !!!, SILAHKAN LOGIN');
+        setMessage('SELAMAT!!! LOGIN ANDA BERHASIL !!!, SILAHKAN LOGIN');
         setEmail('');
         setUsername('');
         setPassword('');
-        setConfirmPassword('');
-        navigate('/login');
+        navigate('/home');
     };
 
     return (
@@ -31,7 +28,7 @@ const Register = () =>
         <Row className="justify-content-center w-100">
         <Col md={6} lg={4} className=" p-4 rounded shadow" style={{ backgroundColor: '#000080', borderColor: '#8560c0' }}>
         <div className='container mt-4'>
-            <h2 className='container text-white bg-primary rounded p-3 mt-1 text-center'>REGISTRASI !</h2>
+            <h2 className='container text-white bg-primary rounded p-3 mt-1 text-center'>LOGIN !</h2>
             <form onSubmit={handleSubmit} className='mt-3'>
                 <div className="mb-3">
                     <label htmlFor='email' className='form-label text-white'>Email :</label>
@@ -66,21 +63,10 @@ const Register = () =>
                         required
                     />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor='confirmPassword' className='form-label text-white'>Confirm Password :</label>
-                    <input
-                    type="password"
-                    id="confirmPassword"
-                    className='form-control'
-                    value={confirmPassword}
-                    onChange={handleConfirmPasswordChange}
-                    required
-                    />
-                </div>
-                <button type="submit" className='btn btn-primary mt-3 w-100 '> Register </button>
+                <button type="submit" className='btn btn-primary mt-3 w-100 '> Login </button>
             </form>
             <p className="text-center mt-3 text-white">
-             ALREADY HAVE AN ACCOUNT? <Link to="/login">LOGIN HERE</Link> </p>
+             DON'T HAVE AN ACCOUNT? <Link to="/register">REGISTER HERE</Link> </p>
             {message && <div className='alert alert-success mt-3 mb-0'>{message}</div>}
         </div>
         </Col>
@@ -90,4 +76,4 @@ const Register = () =>
     );
 }
 
-export default Register;
+export default Login;

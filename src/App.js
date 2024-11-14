@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
+import Home from './components/Home';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
@@ -15,8 +16,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/register" />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
         <Route path="/reaksi" element={<reaksi />} />
