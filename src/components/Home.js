@@ -19,7 +19,7 @@ const Home = () => {
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#122D4F', color: '#B18021' }}>
                 <div className="container">
                     <a className="navbar-brand" href="/Home">
-                        <img className='Rounded-pill' src="logo192.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} />
+                        <img className='Rounded-pill' src="chemistryhub.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} />
                     </a>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ms-auto">
@@ -61,9 +61,9 @@ const Home = () => {
                 <div className="container text-white">
                     <div className="row">
                         <div className="col-md-4">
-                            <h1 className="display-4">Welcome to Our Website</h1>
-                            <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, eget aliquam nisl nunc eget nisl.</p>
-                            <Link to="/Materi" className="btn btn-primary btn-lg"> AYO MULAI BELAJAR ! </Link>
+                            <h1 className="display-5">Kamu ada di <strong>CHEMISTRY HUB</strong></h1>
+                            <p className="lead">Selamat datang di situs web kami, <strong>CHEMISTRY HUB!</strong> Temukan materi pelajaran, eksperimen menarik, dan sumber daya lengkap untuk memahami kimia dengan mudah. Ayo mulai belajar dan eksplorasi dunia kimia bersama kami! 🌟🔬</p>
+                            <Link to="/Materi" className="btn btn-lg text-white" style={{ backgroundColor: '#6CA9AF'}}> <strong>AYO MULAI BELAJAR !</strong> </Link>
                         </div>
                     </div>
                 </div>
