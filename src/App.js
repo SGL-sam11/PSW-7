@@ -6,7 +6,7 @@ import Home from './components/Home';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
-// import kesetimabangan from './components/kesetimabangan';
+// import kesetimabangan from './components/kesetimopbangan';
 // import asambasa from './components/asambasa';
 // import hidrolosis from './components/hidrolosis';
 // import penyangga from './components/penyangga';
