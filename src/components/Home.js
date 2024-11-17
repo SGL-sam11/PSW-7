@@ -19,8 +19,9 @@ const Home = () => {
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#122D4F', color: '#B18021' }}>
                 <div className="container">
                     <a className="navbar-brand" href="/Home">
-                        <img className='Rounded-pill' src="chemistryhub.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} />
+                        <span><img className='Rounded-pill ms-3' src="chemistryhub.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} /></span>
                     </a>
+                    <a className="navbar-brand text-white" href="#"><strong>CHEMISTRY</strong>HUB</a>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
