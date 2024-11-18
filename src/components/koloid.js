@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './hlm.css';
 
-function koloid() {
+function Koloid() {
   return (
     <div className="koloid">
 
@@ -115,4 +115,4 @@ function koloid() {
   );
 }
 
-export default koloid;
+export default Koloid;

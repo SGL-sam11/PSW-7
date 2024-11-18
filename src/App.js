@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import Koloid from './components/Koloid';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
@@ -11,11 +12,11 @@ import Home from './components/Home';
 // import hidrolosis from './components/hidrolosis';
 // import penyangga from './components/penyangga';
 // import kelarutan from './components/kelarutan';
-// import koloid from './components/koloid';
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/Koloid" element={<Koloid />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
