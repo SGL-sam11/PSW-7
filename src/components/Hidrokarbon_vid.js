@@ -1,7 +1,7 @@
-// src/components/VideoPlayer.js
+
 import React from 'react';
 
-const VideoPlayer = ({ src, title }) => {
+const Hidrokarbon_vid = ({ src, title }) => {
     // Check if the source URL is a YouTube URL and convert it to an embeddable URL
     const getEmbedUrl = (url) => {
         if (url.includes('youtube.com') || url.includes('youtu.be')) {
@@ -27,4 +27,4 @@ const VideoPlayer = ({ src, title }) => {
     );
 };
 
-export default VideoPlayer;
+export default Hidrokarbon_vid;

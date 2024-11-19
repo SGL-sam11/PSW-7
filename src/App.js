@@ -6,6 +6,7 @@ import Home from './components/Home';
 // <<<<<<< HEAD
 // import Koloid from './components/Koloid';
 // =======
+import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 // >>>>>>> 163e9ce3fcd32d17c6cc63635a22563c6dd374bb
 import Penyangga from './components/Penyangga';
@@ -26,7 +27,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
         <Route path="/" element={<Navigate to="/register" />} />
-        <Route path="/Penyangga" element={<Penyangga />} />
+        <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
         <Route path="/reaksi" element={<reaksi />} />
