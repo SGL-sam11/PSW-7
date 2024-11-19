@@ -1,14 +1,15 @@
 import React from 'react';
 import './hlm.css';
+import Navbar from './Navbar';
 
 function Penyangga() {
   return (
     <div className="Penyangga">
+         <Navbar />
 
       <section id="intro" className="hero">
 
       </section>
-
       <section id="colloid-science" className="section">
         <h3>Apa Itu Larutan Penyangga?</h3>
         <p>
