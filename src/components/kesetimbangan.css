@@ -1,0 +1,174 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4b77b5; 
+    background: #ffffff; 
+    background-image: url('https://www.example.com/path/to/your-cute-background-image.png'), 
+                      radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, 100px 100px; 
+    animation: cloud-animation 10s infinite linear; 
+}
+
+@keyframes cloud-animation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #4b77b5; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    color: #83b4f9; 
+}
+
+h5 {
+    color: #c4e0f7; 
+}
+
+.title {
+    text-align: center;
+    background-color: #83b4f9; 
+    padding: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #4b77b5; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    letter-spacing: 2px; 
+}
+
+.centered-title {
+    text-align: center;
+    margin: 2em 0;
+    color: #4b77b5; 
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline #4b77b5; 
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+video:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.centered-image {
+    display: block;
+    margin: 1em auto;
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.centered-image:hover {
+    transform: scale(1.05); 
+}
+
+.jenis-kesetimbangan, .reaksi-kimia, .tetapan-kesetimbangan {
+    margin-bottom: 3em;
+    padding: 2em;
+    background-color: #def3fc; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jenis-kesetimbangan:hover, .reaksi-kimia:hover, .tetapan-kesetimbangan:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: square;
+    color: #4b77b5; 
+    font-size: 1.1em;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+em {
+    color: #e91e63; 
+    font-style: italic;
+    text-decoration: underline;
+}
+
+button, a {
+    background-color: #4b77b5; 
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, a:hover {
+    background-color: #3a65a0;
+    transform: scale(1.05); 
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4b77b5; 
+    padding: 15px 25px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.floating-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .centered-image {
+        width: 100%;
+    }
+
+    .floating-button {
+        right: 10px;
+        bottom: 10px;
+    }
+}
