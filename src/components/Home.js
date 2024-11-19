@@ -12,6 +12,7 @@ const Home = () => {
         height: '100vh',
         display: 'flex',
         alignItems: 'center'
+        
     };
 
     return (
@@ -36,7 +37,7 @@ const Home = () => {
                                 <li><a className="dropdown-item" href="#">Kesetimbangan Kimia</a></li>
                                 <li><a className="dropdown-item" href="#">Larutan Asam Basa</a></li>
                                 <li><a className="dropdown-item" href="#">Hidrolisis Garam</a></li>
-                                <li><a className="dropdown-item" href="#">Larutan Penyangga</a></li>
+                                <li><a className="dropdown-item" href="/Penyangga">Larutan Penyangga</a></li>
                                 <li><a className="dropdown-item" href="#">Kelarutan dan Hasil kali Kelarutan</a></li>
                                 <li><a className="dropdown-item" href="/koloid">Koloid</a></li>
                                </ul>
@@ -59,7 +60,7 @@ const Home = () => {
                 <div className="container text-white">
                     <div className="row">
                         <div className="col-md-4">
-                            <h1 className="display-5">Kamu ada di <strong>CHEMISTRY HUB</strong></h1>
+                            <h1 className="display-5">Kamu ada di <strong>CHEMISTRYHUB</strong></h1>
                             <p className="lead">Selamat datang di situs web kami, <strong>CHEMISTRY HUB!</strong> Temukan materi pelajaran, eksperimen menarik, dan sumber daya lengkap untuk memahami kimia dengan mudah. Ayo mulai belajar dan eksplorasi dunia kimia bersama kami! 🌟🔬</p>
                             <Link to="/Materi" className="btn btn-lg text-white" style={{ backgroundColor: '#6CA9AF'}}> <strong>AYO MULAI BELAJAR !</strong> </Link>
                         </div>

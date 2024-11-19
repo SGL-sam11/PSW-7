@@ -1,7 +1,7 @@
 import React from 'react';
 import './hlm.css';
 
-function App() {
+function Penyangga() {
   return (
     <div className="Penyangga">
 
