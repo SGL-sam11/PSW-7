@@ -1,7 +1,7 @@
 import React from "react";
 import Quiz from "react-quiz-component";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Courses.css";
+import "./Hidrokarbon.css";
 
 // Komponen CourseItem
 const CourseItem = ({ title, description, videoSrc }) => (
