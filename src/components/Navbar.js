@@ -17,10 +17,10 @@ const Navbar = () => {
                     <li className="nav-item dropdown">
                       <a className="nav-link dropdown-toggle text-white" href="/Materi" role="button" data-bs-toggle="dropdown">Materi</a>
                        <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Hidrokarbon dan Minyak Bumi</a></li>
+                        <li><a className="dropdown-item" href="/Hidrokarbon">Hidrokarbon dan Minyak Bumi</a></li>
                         <li><a className="dropdown-item" href="#">Hukum Termokimia</a></li>
                         <li><a className="dropdown-item" href="#">Laju Reaksi</a></li>
-                        <li><a className="dropdown-item" href="#">Kesetimbangan Kimia</a></li>
+                        <li><a className="dropdown-item" href="/kesetimbangan">Kesetimbangan Kimia</a></li>
                         <li><a className="dropdown-item" href="#">Larutan Asam Basa</a></li>
                         <li><a className="dropdown-item" href="#">Hidrolisis Garam</a></li>
                         <li><a className="dropdown-item" href="/Penyangga">Larutan Penyangga</a></li>

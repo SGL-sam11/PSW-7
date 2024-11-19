@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import Kesetimbangan from './components/Kesetimbangan_Kimia';
 // <<<<<<< HEAD
 // import Koloid from './components/Koloid';
 // =======
@@ -26,6 +27,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
+        <Route path="/kesetimbangan" element={<Kesetimbangan />} />
         <Route path="/" element={<Navigate to="/register" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
