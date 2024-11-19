@@ -37,30 +37,32 @@ const ImportantPoints = ({ points }) => (
 const Table = ({ tableData }) => (
   <div className="table-container mt-5">
     <h3 className="mb-3">Golongan Hidrokarbon</h3>
-    <table className="table table-striped table-bordered">
-      <thead>
-        <tr>
-          {tableData.header.map((header, index) => (
-            <th key={index}>{header}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {tableData.rows.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, cellIndex) => (
-              <td key={cellIndex}>{cell}</td>
+    <div className="table-responsive">
+      <table className="table table-striped table-bordered">
+        <thead>
+          <tr>
+            {tableData.header.map((header, index) => (
+              <th key={index}>{header}</th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {tableData.rows.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {row.map((cell, cellIndex) => (
+                <td key={cellIndex}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   </div>
 );
 
 // Komponen ImageCard
 const ImageCard = ({ imageSrc, title, description }) => (
-  <div className="card mb-">
+  <div className="card mb-3">
     <div className="row g-0">
       <div className="col-md-4">
         <img src={imageSrc} className="img-fluid rounded-start" alt={title} />
@@ -117,7 +119,7 @@ const Hidrokarbon = () => {
           "Senyawa yang hanya mengandung karbon",
           "Senyawa yang hanya mengandung hidrogen",
         ],
-        correctAnswer: "1",
+        correctAnswer: 1,
         messageForCorrectAnswer:
           "Benar! Hidrokarbon terdiri dari karbon dan hidrogen.",
         messageForIncorrectAnswer:
@@ -131,7 +133,7 @@ const Hidrokarbon = () => {
           "Hidrokarbon alifatik",
           "Hidrokarbon siklik",
         ],
-        correctAnswer: "2",
+        correctAnswer: 2,
         messageForCorrectAnswer:
           "Benar! Hidrokarbon alifatik memiliki rantai karbon terbuka.",
         messageForIncorrectAnswer:
