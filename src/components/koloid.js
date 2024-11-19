@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './hlm.css';
+import Navbar from './Navbar';
 
 function Koloid() {
   return (
     <div className="koloid">
+      <Navbar />
 
       <section id="intro" className="hero">
  </section>
