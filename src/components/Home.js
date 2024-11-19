@@ -36,7 +36,7 @@ const Home = () => {
                                 <li><a className="dropdown-item" href="#">Kesetimbangan Kimia</a></li>
                                 <li><a className="dropdown-item" href="#">Larutan Asam Basa</a></li>
                                 <li><a className="dropdown-item" href="#">Hidrolisis Garam</a></li>
-                                <li><a className="dropdown-item" href="#">Larutan Penyangga</a></li>
+                                <li><a className="dropdown-item" href="/Penyangga">Larutan Penyangga</a></li>
                                 <li><a className="dropdown-item" href="#">Kelarutan dan Hasil kali Kelarutan</a></li>
                                 <li><a className="dropdown-item" href="/koloid">Koloid</a></li>
                                </ul>

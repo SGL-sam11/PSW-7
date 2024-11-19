@@ -4,13 +4,13 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
 import Koloid from './components/koloid';
+import Penyangga from './components/Penyangga';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
 // import kesetimabangan from './components/kesetimopbangan';
 // import asambasa from './components/asambasa';
 // import hidrolosis from './components/hidrolosis';
-// import penyangga from './components/penyangga';
 // import kelarutan from './components/kelarutan';
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/penyangga" element={<Penyangga />} />
         <Route path="/" element={<Navigate to="/register" />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
