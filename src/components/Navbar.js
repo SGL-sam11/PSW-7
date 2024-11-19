@@ -20,7 +20,7 @@ const Navbar = () => {
                         <li><a className="dropdown-item" href="/Hidrokarbon">Hidrokarbon dan Minyak Bumi</a></li>
                         <li><a className="dropdown-item" href="#">Hukum Termokimia</a></li>
                         <li><a className="dropdown-item" href="#">Laju Reaksi</a></li>
-                        <li><a className="dropdown-item" href="#">Kesetimbangan Kimia</a></li>
+                        <li><a className="dropdown-item" href="/kesetimbangan">Kesetimbangan Kimia</a></li>
                         <li><a className="dropdown-item" href="#">Larutan Asam Basa</a></li>
                         <li><a className="dropdown-item" href="#">Hidrolisis Garam</a></li>
                         <li><a className="dropdown-item" href="/Penyangga">Larutan Penyangga</a></li>

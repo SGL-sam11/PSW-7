@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './Hidrokarbon_vid';
 import './kesetimbangan.css';  
 
 const KesetimbanganKimia = () => {
