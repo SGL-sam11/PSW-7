@@ -1,5 +1,5 @@
 import React from 'react';
-import './hlm.css';
+import './penyangga.css';
 import Navbar from './Navbar';
 
 function Penyangga() {

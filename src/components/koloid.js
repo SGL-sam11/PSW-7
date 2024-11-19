@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './hlm.css';
+import './koloid.css';
 import Navbar from './Navbar';
 
 function Koloid() {
