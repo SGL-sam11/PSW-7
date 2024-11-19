@@ -1,6 +1,7 @@
 import React from 'react';
 import VideoPlayer from './Hidrokarbon_vid';
 import './kesetimbangan.css';  
+import Navbar from './Navbar';
 
 const KesetimbanganKimia = () => {
     const courseList = [
@@ -14,6 +15,7 @@ const KesetimbanganKimia = () => {
 
     return (
         <div style={{ padding: '1em' }}>
+                <Navbar />
             <div className="title">
                 <h2>KESETIMBANGAN KIMIA</h2>
             </div>
