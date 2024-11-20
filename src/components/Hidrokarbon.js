@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 // Komponen CourseItem
 const CourseItem = ({ title, description, videoSrc }) => (
- <div className="course-item mb-4">
+  <div className="course-item mb-4">
     <h3>{title}</h3>
     <p>{description}</p>
     <div className="ratio ratio-16x9">
@@ -146,8 +146,13 @@ const Hidrokarbon = () => {
   return (
     <div className="container mt-5">
       <div className="text-center mb-5">
-      <Navbar />
+        <Navbar />
         <h2>Hidrokarbon dan Minyak Bumi</h2>
+        <img
+          src=""
+          alt="Cover Hidrokarbon dan Minyak Bumi"
+          className="img-fluid my-4"
+        />
       </div>
 
       {courseList.map((course, index) => (
