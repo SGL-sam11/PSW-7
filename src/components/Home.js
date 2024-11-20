@@ -2,19 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import './Home.css'
 
 const Home = () => {
-    const backgroundStyle = {
-        backgroundImage: "url('https://wallpaperaccess.com/full/3481768.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        display: 'flex',
-        alignItems: 'center'
-        
-    };
-
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#122D4F', color: '#B18021' }}>
@@ -46,7 +36,7 @@ const Home = () => {
                                 <Link className='nav-link text-white' to='/Aboutus'>About us</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Contact</a>
+                                <a className="nav-link text-white" href="#">Quiz</a>
                             </li>
                             <li className="nav-item">
                                 <Link className='nav-link text-white' to='/Login'>Login</Link>
@@ -56,13 +46,13 @@ const Home = () => {
                     </div>
                 </div>
             </nav>
-            <div style={backgroundStyle}>
+            <div className='backgroundStyle'>
                 <div className="container text-white">
                     <div className="row">
                         <div className="col-md-4">
                             <h1 className="display-5">Kamu ada di <strong>CHEMISTRYHUB</strong></h1>
                             <p className="lead">Selamat datang di situs web kami, <strong>CHEMISTRY HUB!</strong> Temukan materi pelajaran, eksperimen menarik, dan sumber daya lengkap untuk memahami kimia dengan mudah. Ayo mulai belajar dan eksplorasi dunia kimia bersama kami! 🌟🔬</p>
-                            <Link to="/Materi" className="btn btn-lg text-white" style={{ backgroundColor: '#6CA9AF'}}> <strong>AYO MULAI BELAJAR !</strong> </Link>
+                            <Link to="/Hidrokarbon" className="btn btn-lg text-white" style={{ backgroundColor: '#6CA9AF'}}> <strong>AYO MULAI BELAJAR !</strong> </Link>
                         </div>
                     </div>
                 </div>

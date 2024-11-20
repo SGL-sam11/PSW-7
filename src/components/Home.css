@@ -21,22 +21,21 @@
 }
 
 .display-5{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .lead{
-    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family :'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
     font-size: 28px;
 }
 
-.btn-lg { 
+/* .btn-lg { 
     background-color: #122D4F; 
     color: #122D4F; 
-    transition: transform 0.2s, 
-    background-color 0.2s;
+    transition: transform 0.3s, 
 }
 .btn-lg:hover { 
     background-color: #122D4F;
     transform: scale(1.1);
-}
+} */
