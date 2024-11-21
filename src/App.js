@@ -4,7 +4,7 @@ import Awalan from './components/Awalan';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
-import Kesetimbangan from './components/Kesetimbangan_Kimia';
+// import Kesetimbangan from './components/Kesetimbangan_Kimia';
 import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
@@ -13,7 +13,7 @@ import Penyangga from './components/Penyangga';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
-// import hidrolosis from './components/hidrolosis';
+// import hidrolosis from './components/hidrolosis'; 
 // import kelarutan from './components/kelarutan';
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
-        <Route path="/kesetimbangan" element={<Kesetimbangan />} />
+        {/* <Route path="/kesetimbangan" element={<Kesetimbangan />} /> */}
         <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         {/* <Route path="/Quiz" element={<Quiz />} /> */}
