@@ -1,0 +1,35 @@
+.register-container {
+    height: 100vh;
+}
+
+.register-left {
+    background-color: white; /* Menyesuaikan warna dengan tema */
+    color: white;
+    padding: 3rem;
+    flex: 0 0 60%; /* Panel kiri mengambil 30% dari lebar */
+}
+
+.register-right {
+    padding: 3rem;
+    background-color:darkturquoise;
+    flex: 1; /* Panel kanan mengambil sisa ruang */
+}
+
+.form-control {
+    border-radius: 0.375rem;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.375rem;
+    color: #007bff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none; /* Menghilangkan underline pada hover */
+}

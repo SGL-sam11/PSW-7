@@ -1,3 +1,4 @@
+
 .backgroundStyle {
     background-image: url('https://wallpaperaccess.com/full/3481768.jpg');
     background-size: cover;
@@ -20,7 +21,7 @@
 }
 
 .display-5{
-    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     font-weight: bold;
 }

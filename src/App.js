@@ -4,7 +4,6 @@ import Awalan from './components/Awalan';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
-// import Kesetimbangan from './components/Kesetimbangan_Kimia';
 import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';

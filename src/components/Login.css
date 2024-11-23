@@ -1,0 +1,61 @@
+.login-container {
+    height: 100vh;
+  }
+  
+  .login-left {
+    background-color: #28a745;
+    color: white;
+    padding: 3rem;
+    flex: 0 0 30%; /* Makes the left panel take 30% width */
+  }
+  
+  .login-right {
+    padding: 3rem;
+    flex: 1; /* The right panel will take up the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    max-width: 400px; /* Limit the form's width to make it shorter */
+    width: 100%;
+  }
+  
+  .form-control {
+    border-radius: 0.375rem;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 0.375rem;
+  }
+  
+  .text-center {
+    font-size: 1.25rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Specific styles for "CHEMISTRY HUB" link */
+  .brand-text {
+    color: white;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .brand-text:hover {
+    text-decoration: none; /* Prevent hover underline */
+  }
+  
+  /* Custom styles for "Forgot password" link */
+  .text-success {
+    text-decoration: none;
+  }
+  
+  .text-success:hover {
+    text-decoration: none; /* Remove underline from hover */
+  }
+  

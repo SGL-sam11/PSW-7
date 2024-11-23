@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#122D4F', color: '#B18021' }}>
-                <div className="container">
+                <div className="container-fluid">
                     <a className="navbar-brand" href="/Home">
                         <span><img className='Rounded-pill ms-3' src="chemistryhub.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} /></span>
                     </a>
