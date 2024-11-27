@@ -4,6 +4,7 @@ import Awalan from './components/Awalan';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import Materi from './components/Materi';
 import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
+        <Route path="/Materi" element={<Materi />} />
         {/* <Route path="/kesetimbangan" element={<Kesetimbangan />} /> */}
         <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
