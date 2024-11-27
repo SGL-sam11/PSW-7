@@ -1,183 +1,105 @@
 import React from "react";
-import Quiz from "react-quiz-component";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Hidrokarbon.css";
 import Navbar from "./Navbar";
 
-// Komponen CourseItem
-const CourseItem = ({ title, description, videoSrc }) => (
-  <div className="course-item mb-4">
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <div className="ratio ratio-16x9">
-      <iframe
-        src={videoSrc}
-        title={`Video: ${title}`}
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
-);
-
-// Komponen ImportantPoints
-const ImportantPoints = ({ points }) => (
-  <div className="important-points mt-5">
-    <h3 className="mb-3">Poin Penting</h3>
-    <ul className="list-group">
-      {points.map((point, index) => (
-        <li key={index} className="list-group-item">
-          {point}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
-
-// Komponen Table
-const Table = ({ tableData }) => (
-  <div className="table-container mt-5">
-    <h3 className="mb-3">Golongan Hidrokarbon</h3>
-    <div className="table-responsive">
-      <table className="table table-striped table-bordered">
-        <thead>
-          <tr>
-            {tableData.header.map((header, index) => (
-              <th key={index}>{header}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {tableData.rows.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td key={cellIndex}>{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </div>
-);
-
-// Komponen ImageCard
-const ImageCard = ({ imageSrc, title, description }) => (
-  <div className="card mb-3">
-    <div className="row g-0">
-      <div className="col-md-4">
-        <img src={imageSrc} className="img-fluid rounded-start" alt={title} />
-      </div>
-      <div className="col-md-8">
-        <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{description}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-// Komponen Utama Courses
 const Hidrokarbon = () => {
-  const courseList = [
-    {
-      title: "Pengertian Hidrokarbon",
-      description:
-        "Hidrokarbon adalah senyawa yang terdiri dari unsur karbon (C) dan hidrogen (H). Hidrokarbon dapat dikelompokkan menjadi alifatik (alkana, alkena, alkuna) dan alisiklik (sikloalkana dan aromatik). Hidrokarbon ini banyak digunakan dalam kehidupan sehari-hari, seperti bahan bakar minyak, pelumas, dan bahan kimia industri.",
-      videoSrc:
-        "https://www.youtube.com/embed/videoseries?list=PLYd-4PUzs1NFYN3CVx8N1igOR70ua7a2W",
-    },
-  ];
-
-  const additionalContent = {
-    importantPoints: [
-      "Hidrokarbon adalah senyawa organik sederhana yang hanya terdiri dari atom karbon dan hidrogen.",
-      "Minyak bumi adalah campuran kompleks hidrokarbon yang diperoleh dari dalam bumi.",
-      "Hidrokarbon alifatik memiliki rantai karbon terbuka, sedangkan alisiklik membentuk struktur cincin.",
-      "Penggunaan hidrokarbon meliputi bahan bakar, pelumas, dan bahan baku kimia.",
-    ],
-    table: {
-      header: ["Golongan Hidrokarbon", "Contoh Senyawa", "Kegunaan"],
-      rows: [
-        ["Alkana", "Metana (CH4), Propana (C3H8)", "Bahan bakar LPG"],
-        ["Alkena", "Etena (C2H4)", "Bahan dasar plastik"],
-        ["Alkuna", "Etena (C2H2)", "Bahan bakar las"],
-        ["Aromatik", "Benzena (C6H6)", "Bahan kimia industri"],
-      ],
-    },
-  };
-
-  const quiz = {
-    quizTitle: "Kuis Hidrokarbon",
-    quizSynopsis: "Tes pengetahuanmu tentang hidrokarbon dan minyak bumi.",
-    questions: [
-      {
-        question: "Apa yang dimaksud dengan hidrokarbon?",
-        questionType: "text",
-        answers: [
-          "Senyawa yang mengandung karbon dan hidrogen",
-          "Senyawa yang hanya mengandung karbon",
-          "Senyawa yang hanya mengandung hidrogen",
-        ],
-        correctAnswer: 1,
-        messageForCorrectAnswer:
-          "Benar! Hidrokarbon terdiri dari karbon dan hidrogen.",
-        messageForIncorrectAnswer:
-          "Salah! Jawaban yang benar adalah: Senyawa yang mengandung karbon dan hidrogen.",
-      },
-      {
-        question: "Hidrokarbon dengan rantai karbon terbuka disebut?",
-        questionType: "text",
-        answers: [
-          "Hidrokarbon aromatik",
-          "Hidrokarbon alifatik",
-          "Hidrokarbon siklik",
-        ],
-        correctAnswer: 2,
-        messageForCorrectAnswer:
-          "Benar! Hidrokarbon alifatik memiliki rantai karbon terbuka.",
-        messageForIncorrectAnswer:
-          "Salah! Jawaban yang benar adalah: Hidrokarbon alifatik.",
-      },
-    ],
-  };
-
   return (
-    <div className="container mt-5">
-      <div className="text-center mb-5">
-        <Navbar />
-        <h2>Hidrokarbon dan Minyak Bumi</h2>
-        <img
-          src=""
-          alt="Cover Hidrokarbon dan Minyak Bumi"
-          className="img-fluid my-4"
-        />
-      </div>
-
-      {courseList.map((course, index) => (
-        <div key={index}>
-          <CourseItem
-            title={course.title}
-            description={course.description}
-            videoSrc={course.videoSrc}
-          />
-          <ImageCard
-            imageSrc="https://petrotrainingasia.com/wp-content/uploads/2019/09/Menggali-Manfaat-Minyak-dan-Gas-Bumi-untuk-Energi-Kehidupan.jpg"
-            title="Hidrokarbon dalam Kehidupan Sehari-hari"
-            description="Hidrokarbon digunakan dalam berbagai aplikasi sehari-hari, seperti bahan bakar kendaraan, LPG untuk memasak, hingga bahan baku plastik."
-          />
+    <div className="container">
+      <div
+        className="hero-section"
+        style={{
+          background: "linear-gradient(to right, #ff7e5f, #feb47b)",
+          backgroundImage: "url('/chemistry.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          color: "white",
+        }}
+      >
+        <div className="hero-overlay">
+          <h1 className="title">Hidrokarbon dan Minyak Bumi</h1>
+          <p className="subtitle">
+            Pelajari sifat, jenis, dan kegunaan hidrokarbon serta peran penting
+            minyak bumi dalam kehidupan modern!
+          </p>
         </div>
-      ))}
-
-      <ImportantPoints points={additionalContent.importantPoints} />
-
-      <Table tableData={additionalContent.table} />
-
-      <div className="quiz-section mt-5">
-        <h3>Kuis</h3>
-        <Quiz quiz={quiz} />
       </div>
+
+      {/* Materi Section */}
+      <section className="section" id="materi" data-aos="fade-up">
+        <h2 className="section-title">Materi Hidrokarbon</h2>
+        <div className="card-container">
+          <div className="card">
+            <h3 className="card-title">Pengertian Hidrokarbon</h3>
+            <p className="card-text">
+              Hidrokarbon diklasifikasikan menjadi alifatik (alkana, alkena,
+              alkuna) dan aromatik (senyawa cincin benzena).
+            </p>
+            <a className="btn btn-secondary" href="/pengertian">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+          <div className="card">
+            <h3 className="card-title">Penggolongan Hidrokarbon</h3>
+            <p className="card-text">
+              Hidrokarbon dapat mengalami berbagai reaksi kimia seperti
+              pembakaran, substitusi, dan adisi.
+            </p>
+            <a className="btn btn-secondary" href="/penggolongan">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+          <div className="card">
+            <h3 className="card-title">Proses Pengolahan Minyak Bumi</h3>
+            <p className="card-text">
+              Minyak bumi sebagai sumber utama hidrokarbon diekstraksi dan
+              diolah menjadi berbagai produk.
+            </p>
+            <a className="btn btn-secondary" href="/pengolahan">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Interaksi Section */}
+      <section className="section" data-aos="fade-up">
+        <h2 className="section-title">Interaksi Interaktif</h2>
+        <div className="feature-container">
+          <div className="feature-card">
+            <i className="fas fa-flask" style={{ fontSize: "36px", color: "#4caf50" }}></i>
+            <h3>Simulasi Reaksi</h3>
+            <p>
+              Eksplorasi bagaimana reaksi kimia terjadi dengan simulasi
+              interaktif.
+            </p>
+            <a className="btn btn-primary" href="/simulasi">
+              Lihat Simulasi
+            </a>
+          </div>
+          <div className="feature-card">
+            <i className="fas fa-video" style={{ fontSize: "36px", color: "#2196f3" }}></i>
+            <h3>Video Pembelajaran</h3>
+            <p>
+              Tonton video edukasi tentang hidrokarbon dan minyak bumi yang
+              dikemas menarik.
+            </p>
+            <a className="btn btn-primary" href="/video">
+              Tonton Video
+            </a>
+          </div>
+          <div className="feature-card">
+            <i className="fas fa-question-circle" style={{ fontSize: "36px", color: "#ff5722" }}></i>
+            <h3>Contoh Soal</h3>
+            <p>
+              Uji pemahaman Anda dengan contoh soal yang menantang dan menarik.
+            </p>
+            <a className="btn btn-primary" href="/kuis">
+              Lihat Soal
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
