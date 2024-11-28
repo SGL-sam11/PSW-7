@@ -6,8 +6,9 @@ import Navbar from "./Navbar";
 const Hidrokarbon = () => {
   return (
     <div className="container">
+      <Navbar/>
       <div
-        className="hero-section"
+        className="hero-section"  
         style={{
           background: "linear-gradient(to right, #ff7e5f, #feb47b)",
           backgroundImage: "url('/chemistry.jpg')",
