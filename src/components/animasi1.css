@@ -1,0 +1,28 @@
+/* Keyframes untuk animasi fade-in-up */
+@keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+    opacity: 0; /* Mulai dari transparan */
+    animation-fill-mode: forwards; /* Tetap terlihat setelah animasi selesai */
+  }
+  
+  /* Efek zoom-in zoom-out saat hover */
+  .hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+  }
+  
+  .hover-zoom:hover {
+    transform: scale(1.05); /* Perbesar elemen saat hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  }
+  
