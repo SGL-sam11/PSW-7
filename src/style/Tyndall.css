@@ -1,0 +1,76 @@
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  /* Gaya untuk gelas */
+  .glass {
+    position: relative;
+    width: 90px;
+    height: 150px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg, #00aaff, #0077cc);
+    transition: height 2s ease;
+  }
+  /* Penyesuaian posisi gelas */
+  .target-glass {
+    margin-left: 20px; /* Pastikan air terhubung */
+}
+  /* Penyesuaian posisi gelas */
+  .source-glass {
+    margin-left: 10px; /* Pastikan air terhubung */
+  }
+  
+  /* Gaya untuk senter */
+.flashlight {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    width: 100px; /* Atur ukuran gambar */
+    transform: rotate(180deg); /* Rotasi gambar */
+    z-index: 10;
+  }
+  .sinari {
+        position: absolute;
+        top: 0; /* Mulai dari atas layar */
+        left: 50%; /* Posisi horizontal di tengah */
+        height: 60%; /* Tinggi sinar menjadi vertikal */
+        width: 10%; /* Lebar lebih kecil */
+        background: linear-gradient(180deg, #ffff46, #f1bd78);
+        transform:rotate(90deg) ;
+        animation: lightAnimationVertical 3s ease-in-out infinite; /* Animasi vertikal */
+        z-index: 1; /* Pastikan tetap di atas */
+      }
+      @keyframes lightAnimationVertical {
+        0% {
+          left: 40; /* Mulai dari atas */
+          height: 100%; /* Awalnya tidak terlihat */
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          height: 100%; /* Memanjang ke tengah */
+          left: 60; /* Bergerak ke bawah */
+        }
+        100% {
+          left: 80; /* Berakhir di bawah */
+          height: 100%; /* Penuh */
+          opacity: 0.8; /* Memudar sedikit */
+        }
+      }       

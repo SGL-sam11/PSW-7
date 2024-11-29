@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/koloid.css';
 import Navbar from './Navbar';
 import KoloidAccordion from "./KoloidAccordion";
+import PouringAnimation from "../accecories/PouringAnimation.js";
+import Tyndall from "../accecories/Tyndall.js";
 
 function Koloid() {
   return (
@@ -104,6 +106,7 @@ function Koloid() {
               <div className="mascot">
           <img src="https://media.tenor.com/IOvQXmpvQNoAAAAM/cute.gif" alt="Mascot" className="mascot-img" />
         </div>
+        <Tyndall />
       </section>
 
     </div>

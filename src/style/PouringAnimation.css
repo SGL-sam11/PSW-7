@@ -1,0 +1,86 @@
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  /* Gaya untuk gelas */
+  .glass {
+    position: relative;
+    width: 70px;
+    height: 150px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Air di dalam gelas */
+  .water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, #00aaff, #0077cc);
+    transition: height 2s ease;
+  }
+  
+  /* Posisi air yang lebih realistis */
+.pour {
+    position: absolute;
+    width: 30px;
+    height: 0;
+    background: #00aaff;
+    left: 350px; /* Posisi lebih dekat ke gelas pertama */
+    top: 10px; /* Awal posisi di atas gelas pertama */
+    transform-origin: top; /* Rotasi di titik atas */
+    animation: pour-animation 2s ease forwards;
+  }
+  
+  /* Animasi tuangan air */
+  @keyframes pour-animation {
+    0% {
+      height: 0px; /* Mulai dari gelas pertama */
+    }
+    25%{
+        height: 50px;
+    }
+    50% {
+      height: 100px; /* Air jatuh ke bawah */
+      transform: rotate(0deg); /* Lurus di tengah */
+    }
+    75%{
+        height: 170px;
+    }
+    100% {
+      height: 270px; /* Menuju gelas kedua */
+    }
+  }
+  
+  /* Penyesuaian posisi gelas */
+  .target-glass {
+    margin-left: 100px; /* Pastikan air terhubung */
+  }
+  
+  
+  /* Air di gelas target bertambah */
+  .target-water {
+    animation: fill-animation 50s ease forwards;
+  }
+  
+  /* Animasi pengisian air di target glass */
+  @keyframes fill-animation {
+    0% {
+      height: 0%;
+    }
+    100% {
+      height: 90%;
+    }
+  }
+  
