@@ -48,29 +48,70 @@
   }
   .sinari {
         position: absolute;
-        top: 0; /* Mulai dari atas layar */
-        left: 50%; /* Posisi horizontal di tengah */
-        height: 60%; /* Tinggi sinar menjadi vertikal */
-        width: 10%; /* Lebar lebih kecil */
+        top: 10%; /* Mulai dari atas layar */
+        left: 10%; /* Posisi horizontal di tengah */
+        height: 300%; /* Tinggi sinar menjadi vertikal */
+        width: 25%; /* Lebar lebih kecil */
         background: linear-gradient(180deg, #ffff46, #f1bd78);
         transform:rotate(90deg) ;
-        animation: lightAnimationVertical 3s ease-in-out infinite; /* Animasi vertikal */
-        z-index: 1; /* Pastikan tetap di atas */
+        animation: lightAnimation 15s linear infinite; /* Animasi vertikal */
+
       }
-      @keyframes lightAnimationVertical {
+      @keyframes lightAnimation {
         0% {
-          left: 40; /* Mulai dari atas */
-          height: 100%; /* Awalnya tidak terlihat */
+          left: 10%; 
+          height: 10%; /* Awalnya tidak terlihat */
           opacity: 0;
+          top:50%;
         }
-        50% {
+        25%{
+          left: 25%; 
+          height: 10%; /* Awalnya tidak terlihat */
+          opacity: 0.3;
+          top:50%;
+        }
+        50%{
+          left: 50%; 
+          height: 50%; /* Awalnya tidak terlihat */
           opacity: 1;
-          height: 100%; /* Memanjang ke tengah */
-          left: 60; /* Bergerak ke bawah */
+          top:30%;
         }
         100% {
-          left: 80; /* Berakhir di bawah */
+          left: 80%; /* Berakhir di bawah */
           height: 100%; /* Penuh */
-          opacity: 0.8; /* Memudar sedikit */
+          opacity:0.5; /* Memudar sedikit */
+          top:10%;
         }
-      }       
+      }  
+/* Container for the bubbles */
+.bubble {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Start in the center of the glass */
+  width: 15px; /* Size of the bubble */
+  height: 15px; /* Size of the bubble */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  opacity: 0; /* Start as invisible */
+  transform: translate(-50%, 100%); /* Position below the bottom of the glass */
+  animation: bubbleAnimation 20s ease-out infinite;
+}
+
+/* Bubble animation */
+@keyframes bubbleAnimation {
+  0% {
+      transform: translate(-50%, 100%);
+      opacity: 0; /* Hidden */
+  }
+  25% {
+    transform: translate(-50%, 80%);
+      opacity: 0; /* Become visible */
+  }
+  75%{
+    opacity: 0; /* Become visible */
+  }
+  100% {
+      transform: translate(-50%, -100%); /* Float to the top of the glass */
+      opacity: 1; /* Fade out */
+  }
+}

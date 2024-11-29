@@ -1,8 +1,8 @@
 import React from 'react';
 import '../style/koloid.css';
 import Navbar from './Navbar';
-import KoloidAccordion from "./KoloidAccordion";
-import PouringAnimation from "../accecories/PouringAnimation.js";
+import KoloidAccordion from "../accecories/KoloidAccordion";
+//import PouringAnimation from "../accecories/PouringAnimation.js";
 import Tyndall from "../accecories/Tyndall.js";
 
 function Koloid() {
@@ -17,7 +17,9 @@ function Koloid() {
       <section id="colloid-science" className="section">
       <KoloidAccordion />
       </section>
-
+<section>
+  <Tyndall />
+</section>
 
       <section id="types" className="section">
         <h3>Jenis-jenis Koloid</h3>
@@ -106,7 +108,6 @@ function Koloid() {
               <div className="mascot">
           <img src="https://media.tenor.com/IOvQXmpvQNoAAAAM/cute.gif" alt="Mascot" className="mascot-img" />
         </div>
-        <Tyndall />
       </section>
 
     </div>
