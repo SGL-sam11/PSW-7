@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, Switch, useParams } from 'react-router-dom';
-import './larutan.css'; // Mengimpor file CSS eksternal
+import '../style/larutan.css'; // Mengimpor file CSS eksternal
 
 // Komponen utama yang berisi daftar materi dan penjelasan materi
 const Larutan = () => {

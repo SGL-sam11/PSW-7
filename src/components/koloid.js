@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './koloid.css';
+import '../style/koloid.css';
 import Navbar from './Navbar';
+import KoloidAccordion from "./KoloidAccordion";
 
 function Koloid() {
   return (
@@ -12,15 +13,7 @@ function Koloid() {
 
 
       <section id="colloid-science" className="section">
-        <h3>Apa Itu Koloid?</h3>
-        <p>Koloid adalah campuran di mana satu zat tersebar secara mikroskopis dalam zat lain. Partikel-partikel ini lebih besar dari molekul tetapi cukup kecil untuk tetap tersebar tanpa mengendap. Koloid ada di sekitar kita dalam kehidupan sehari-hari, mulai dari produk makanan seperti mayones hingga fenomena alam seperti kabut!</p>
-
-        <h4>Karakteristik Utama Koloid</h4>
-        <ul>
-          <li><strong>Efek Tyndall:</strong> Penyebaran cahaya karena ukuran partikel dalam koloid.</li>
-          <li><strong>Gerakan Brown:</strong> Gerakan acak partikel koloid.</li>
-          <li><strong>Stabilitas:</strong> Koloid tetap stabil tanpa partikel yang mengendap.</li>
-        </ul>
+      <KoloidAccordion />
       </section>
 
 
