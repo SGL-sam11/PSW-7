@@ -203,3 +203,12 @@ header nav ul li a:hover {
   100% {
     transform: translateY(0); }
 }
+
+.judul{
+  text-align: center;
+  font-family: Impact;
+  color: #007BFF;
+}
+.judul h4{
+  color: #333;
+}

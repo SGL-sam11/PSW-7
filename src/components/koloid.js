@@ -4,21 +4,29 @@ import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
 //import PouringAnimation from "../accecories/PouringAnimation.js";
 import Tyndall from "../accecories/Tyndall.js";
+import Brown from '../accecories/brown.js';
 
 function Koloid() {
   return (
     <div className="koloid">
       <Navbar />
-
       <section id="intro" className="hero">
- </section>
-
+    </section>
 
       <section id="colloid-science" className="section">
       <KoloidAccordion />
       </section>
 <section>
+  <div className='judul'>
+    <h2>Efek Tyndall</h2>
+    <h4>Penyebaran cahaya karena ukuran partikel dalam koloid.</h4>
+  </div>
   <Tyndall />
+  <div className='judul'>
+    <h2>Gerakan Brown</h2>
+    <h4>Gerakan acak partikel koloid.</h4>
+  </div>
+  <Brown />
 </section>
 
       <section id="types" className="section">
@@ -93,15 +101,7 @@ function Koloid() {
         <p>Untuk membantu anda memahami materi bisa cek video berikut ini :</p>
 
         <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://youtu.be/LLewlDhE2VM?feature=shared" // Replace with your desired video URL
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LLewlDhE2VM?si=YwXa_O8OuaOZd99x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
 

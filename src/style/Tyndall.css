@@ -34,7 +34,7 @@
 }
   /* Penyesuaian posisi gelas */
   .source-glass {
-    margin-left: 10px; /* Pastikan air terhubung */
+    margin-left: 160px; /* Pastikan air terhubung */
   }
   
   /* Gaya untuk senter */
@@ -50,11 +50,11 @@
         position: absolute;
         top: 10%; /* Mulai dari atas layar */
         left: 10%; /* Posisi horizontal di tengah */
-        height: 300%; /* Tinggi sinar menjadi vertikal */
+        height: 100%; /* Tinggi sinar menjadi vertikal */
         width: 25%; /* Lebar lebih kecil */
         background: linear-gradient(180deg, #ffff46, #f1bd78);
         transform:rotate(90deg) ;
-        animation: lightAnimation 15s linear infinite; /* Animasi vertikal */
+        animation: lightAnimation 10s linear infinite; /* Animasi vertikal */
 
       }
       @keyframes lightAnimation {
@@ -94,7 +94,7 @@
   border-radius: 50%;
   opacity: 0; /* Start as invisible */
   transform: translate(-50%, 100%); /* Position below the bottom of the glass */
-  animation: bubbleAnimation 20s ease-out infinite;
+  animation: bubbleAnimation 10s ease-out infinite;
 }
 
 /* Bubble animation */
