@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./penyangga.css";
+// import "./penyangga.css";
 import Navbar from "./Navbar";
 
 function Penyangga() {

@@ -37,7 +37,7 @@ function Navbar() {
                                 <Link className="nav-link text-white" to="/Materi"> MATERI </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Quiz</a>
+                                <a className="nav-link text-white" href="/Quiz">Quiz</a>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link text-white" to="/Login">Login</Link>

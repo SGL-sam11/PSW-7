@@ -12,7 +12,7 @@ const Awalan = () => {
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/Registration"><strong>Register</strong></Link>
+                <Link className="nav-link text-white" to="/Register"><strong>Register</strong></Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/Login"><strong>Login</strong></Link>

@@ -130,7 +130,7 @@ const Home = () => {
 
                     <div className="row mb-5 align-items-center">
                         <div className="col-md-6 order-md-2">
-                            <img src="/images/kimia2.jpg" alt="Sejarah Kimia" className="img-fluid rounded shadow" />
+                            <img src="https://asset-a.grid.id/crop/182x0:1389x813/x/photo/2023/11/03/cfr0z3n_classical_painting_of_an-20231103015613.jpg" alt="Sejarah Kimia" className="img-fluid rounded shadow" />
                         </div>
                         <div className="col-md-6 order-md-1">
                             <h2 style={{ color: '#122D4F' }}>Sejarah Kimia</h2>

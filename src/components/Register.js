@@ -1,5 +1,6 @@
-import React, { useState } from 'react';  
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import './Register.css'
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -25,45 +26,18 @@ const Register = () => {
     };
 
     return (
-        <div
-            style={{
-                display: 'flex',
-                height: '100vh',
-                backgroundColor: '#00693E', // Dartmouth green background
-                color: '#FFFFFF', // White text
-            }}
-        >
+        <div className="register-container">
             {/* Left Panel - Registration Form */}
-            <div
-                style={{
-                    width: '70%',
-                    backgroundColor: '#004B2D', // Darker Dartmouth green for form
-                    padding: '2rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                }}
-            >
-                <h2
-                    style={{
-                        textAlign: 'center',
-                        marginBottom: '1rem',
-                        fontSize: '40px',
-                    }}
-                >
-                    REGISTRASI
+            <div className="register-left">
+                <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '40px' }}>
+                    REGISTER TO  <strong>CHEMISTRY</strong>HUB
                 </h2>
                 <form onSubmit={handleSubmit}>
                     <div style={{ marginBottom: '1rem' }}>
                         <input
                             type="email"
                             placeholder="Masukkan Email"
-                            style={{
-                                width: '50%',
-                                padding: '0.5rem',
-                                borderRadius: '5px',
-                                border: '1px solid #CCCCCC',
-                            }}
+                            className="form-control"
                             value={email}
                             onChange={handleEmailChange}
                             required
@@ -73,12 +47,7 @@ const Register = () => {
                         <input
                             type="text"
                             placeholder="Masukkan Username"
-                            style={{
-                                width: '50%',
-                                padding: '0.5rem',
-                                borderRadius: '5px',
-                                border: '1px solid #CCCCCC',
-                            }}
+                            className="form-control"
                             value={username}
                             onChange={handleUsernameChange}
                             required
@@ -88,12 +57,7 @@ const Register = () => {
                         <input
                             type="password"
                             placeholder="Masukkan Password"
-                            style={{
-                                width: '50%',
-                                padding: '0.5rem',
-                                borderRadius: '5px',
-                                border: '1px solid #CCCCCC',
-                            }}
+                            className="form-control"
                             value={password}
                             onChange={handlePasswordChange}
                             required
@@ -103,73 +67,27 @@ const Register = () => {
                         <input
                             type="password"
                             placeholder="Konfirmasi Password"
-                            style={{
-                                width: '50%',
-                                padding: '0.5rem',
-                                borderRadius: '5px',
-                                border: '1px solid #CCCCCC',
-                            }}
+                            className="form-control"
                             value={confirmPassword}
                             onChange={handleConfirmPasswordChange}
                             required
                         />
                     </div>
-                    <button
-                        type="submit"
-                        style={{
-                            width: '50%',
-                            padding: '0.7rem',
-                            border: 'none',
-                            borderRadius: '5px',
-                            backgroundColor: '#00693E', // Dartmouth green for button
-                            color: '#FFFFFF',
-                            fontWeight: 'bold',
-                            cursor: 'pointer',
-                        }}
-                    >
+                    <button type="submit" className="btn-light">
                         REGISTER
                     </button>
                 </form>
                 <p style={{ textAlign: 'center', marginTop: '1rem' }}>
                     ALREADY HAVE AN ACCOUNT?{' '}
-                    <Link
-                        to="/login"
-                        style={{
-                            color: '#FFD700', // Gold link
-                            textDecoration: 'none',
-                            fontWeight: 'bold',
-                        }}
-                    >
+                    <Link className='Login' to="/login">
                         LOGIN HERE
                     </Link>
                 </p>
-                {message && (
-                    <div
-                        style={{
-                            marginTop: '1rem',
-                            padding: '1rem',
-                            borderRadius: '5px',
-                            backgroundColor: '#004B2D', // Darker Dartmouth green
-                            color: '#FFFFFF',
-                            textAlign: 'center',
-                        }}
-                    >
-                        {message}
-                    </div>
-                )}
+                {message && <div className="message-box">{message}</div>}
             </div>
 
             {/* Right Panel - Information */}
-            <div
-                style={{
-                    width: '30%',
-                    padding: '2rem',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    backgroundColor: '#00693E',
-                }}
-            >
+            <div className="register-right">
                 <div>
                     <h1 style={{ fontSize: '50px', textAlign: 'center' }}>
                         Welcome to ChemistryHub!

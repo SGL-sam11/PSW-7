@@ -8,6 +8,7 @@ import Materi from './components/Materi';
 import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
+import Quiz from './components/Quiz';
 // import Quiz from './components/Quiz';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
@@ -22,11 +23,11 @@ function App() {
         <Route path='/Awalan' element={<Awalan />} />
         <Route path="/Koloid" element={<Koloid />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/Register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
         <Route path="/Materi" element={<Materi />} />
-        {/* <Route path="/kesetimbangan" element={<Kesetimbangan />} /> */}
+        <Route path="/Quiz" element= {<Quiz />} />
         <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         {/* <Route path="/Quiz" element={<Quiz />} /> */}
