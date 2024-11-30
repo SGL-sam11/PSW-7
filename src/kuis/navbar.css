@@ -1,0 +1,26 @@
+/* Animasi fade-in pada navbar saat halaman dimuat */
+.animated-navbar {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animasi hover pada link navbar */
+.navbar-nav .nav-item .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    transform: scale(1.1);  /* Membesarkan ukuran teks saat di-hover */
+    color: #F0F0F0;  /* Mengubah warna teks menjadi lebih terang saat di-hover */
+}
+
+/* Animasi fade-in untuk navbar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

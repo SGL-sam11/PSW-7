@@ -10,68 +10,6 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            {/* Navbar
-            <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#122D4F', color: '#B18021' }}>
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/Home">
-                        <img 
-                            className="rounded-pill ms-3" 
-                            src="chemistryhub.png" 
-                            alt="Logo ChemistryHub" 
-                            style={{ width: '80px', borderRadius: '60%' }} 
-                        />
-                    </Link>
-                    <Link className="navbar-brand text-white" to="/Home"><strong>CHEMISTRY</strong>HUB</Link>
-                    <button 
-                        className="navbar-toggler" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarNav" 
-                        aria-controls="navbarNav" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link text-white" to="/Home">Home</Link>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a 
-                                    className="nav-link dropdown-toggle text-white" 
-                                    href="#" 
-                                    role="button" 
-                                    data-bs-toggle="dropdown"
-                                >
-                                    Materi
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="/Hidrokarbon">Hidrokarbon dan Minyak Bumi</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Hukum Termokimia</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Laju Reaksi</Link></li>
-                                    <li><Link className="dropdown-item" to="/Kesetimbangan">Kesetimbangan Kimia</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Larutan Asam Basa</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Hidrolisis Garam</Link></li>
-                                    <li><Link className="dropdown-item" to="/Penyangga">Larutan Penyangga</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Kelarutan dan Hasil kali Kelarutan</Link></li>
-                                    <li><Link className="dropdown-item" to="/Koloid">Koloid</Link></li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-white" to="/Aboutus">About us</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-white" to="#">Quiz</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-white" to="/Login">Login</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav> */}
 
             {/* Main Content */}
             <div style={{ backgroundColor: '#f5f5f5', minHeight: '100vh', padding: '20px' }}>
@@ -117,7 +55,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row mb-5 align-items-center">
                         <div className="col-md-6">
-                            <img src="https://tse1.mm.bing.net/th?id=OIP.5-IZFPG-9tOszzkcY0sFuQHaEr&pid=Api&P=0&h=220" alt="Apa itu Kimia" className="img-fluid rounded shadow" />
+                            <img src="manfaat kimia 200x200.png" alt="Apa itu Kimia" className="img-fluid rounded shadow" />
                         </div>
                         <div className="col-md-6">
                             <h2 style={{ color: '#122D4F' }}>Apa itu Kimia?</h2>
@@ -130,7 +68,7 @@ const Home = () => {
 
                     <div className="row mb-5 align-items-center">
                         <div className="col-md-6 order-md-2">
-                            <img src="/images/kimia2.jpg" alt="Sejarah Kimia" className="img-fluid rounded shadow" />
+                            <img src="sejarah kimia 150x150.png" alt="Sejarah Kimia" className="img-fluid rounded shadow" />
                         </div>
                         <div className="col-md-6 order-md-1">
                             <h2 style={{ color: '#122D4F' }}>Sejarah Kimia</h2>
@@ -143,7 +81,7 @@ const Home = () => {
 
                     <div className="row mb-5 align-items-center">
                         <div className="col-md-6">
-                            <img src="/images/kimia3.jpg" alt="Dasar-dasar Kimia" className="img-fluid rounded shadow" />
+                            <img src="dasar-dasar kimia dengan unsur tabel periodik, molekul, atom, dan reaksi kimia, ukuran 150x150.png" alt="Dasar-dasar Kimia" className="img-fluid rounded shadow" />
                         </div>
                         <div className="col-md-6">
                             <h2 style={{ color: '#122D4F' }}>Dasar-Dasar Kimia</h2>
@@ -153,13 +91,13 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <div className="row mb-5 align-items-center">
-                        <div className="col-md-6">
-                            <img src="https://tse1.mm.bing.net/th?id=OIP.5-IZFPG-9tOszzkcY0sFuQHaEr&pid=Api&P=0&h=220" alt="Apa itu Kimia" className="img-fluid rounded shadow" />
+                    <div className="row mb-5 align-items-center">
+                        <div className="col-md-6 order-md-2">
+                            <img src="manfaat kimia dalam kehidupan sehari-hari.png" alt="Sejarah Kimia" className="img-fluid rounded shadow" />
                         </div>
-                        <div className="col-md-6">
-    <h2 style={{ color: '#122D4F' }}>Apa Manfaat Kimia?</h2>
-    <p>Kimia memberikan banyak manfaat dalam berbagai aspek kehidupan kita, di antaranya:</p>
+                        <div className="col-md-6 mt-5 order-md-1">
+                            <h2 style={{ color: '#122D4F' }}>Manfaat Kimia</h2>
+                            <p>Kimia memberikan banyak manfaat dalam berbagai aspek kehidupan kita, di antaranya:</p>
     <ul>
         <li>
             <strong>Industri Makanan:</strong>
@@ -218,14 +156,11 @@ const Home = () => {
             </ul>
         </li>
     </ul>
-</div>
-
+                        </div>
                     </div>
                     </div>
                 </div>
             </div>
-
-            {/* Footer */}
             <Footer />
         </div>
     );
