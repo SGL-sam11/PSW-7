@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,22 +53,22 @@ header nav ul li a:hover {
   background: url('https://minio.pijarbelajar.id/article/cb4e8762-f5ff-48db-a735-d0da3d36f24f_1683600144462.jpg') 
               no-repeat center center;
   background-size: cover; /* Ensure image covers the entire area */
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh; 
-  color: white;
-}
+  color: white; */
+/* } */
 
 
-.section {
+/* .section {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
-.section h3 {
+/* .section h3 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -211,4 +211,4 @@ header nav ul li a:hover {
 }
 .judul h4{
   color: #333;
-}
+} */ 

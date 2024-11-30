@@ -1,62 +1,61 @@
 import React from 'react';
-import './animasi1.css'; 
+import './animasi1.css'; // Tambahkan file CSS untuk animasi custom
 import  Navbar from './Navbar';
-// import Sidebar from './Sidebar';
 
 function Materi() {
   const materiList = [
     {
       title: 'Hidrokarbon dan Minyak Bumi',
       description: 'Pelajari struktur dan sifat-sifat hidrokarbon serta perannya dalam minyak bumi.',
-      image: 'https://via.placeholder.com/150',
+      image: 'hidrokarbon dan minyakbumi.png',
       link: '/Hidrokarbon',
     },
     {
       title: 'Hukum Termokimia',
       description: 'Memahami hukum termokimia dan penerapannya dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'termokimia 150X150 bagus unik estetik.png',
       link: '#',
     },
     {
       title: 'Laju Reaksi',
       description: 'Analisis faktor-faktor yang memengaruhi laju reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'laju reaksi 150x150.png',
       link: '#',
     },
     {
       title: 'Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kesetimbangan kimia 150x150.png',
       link: '/kesetimbangan',
     },
     {
       title: 'Larutan Asam Basa',
       description: 'Eksplorasi sifat-sifat larutan asam dan basa.',
-      image: 'https://via.placeholder.com/150',
+      image: 'larutan asam basa 150x150.png',
       link: '#',
     },
     {
       title: 'Hidrolisis Garam',
       description: 'Memahami konsep hidrolisis garam dalam kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'hidrolisis garam.png',
       link: '#',
     },
     {
       title: 'Larutan Penyangga',
       description: 'Belajar tentang larutan penyangga dan aplikasinya.',
-      image: 'https://via.placeholder.com/150',
+      image: 'larutan penyangga 150x150.png',
       link: '/Penyangga',
     },
     {
       title: 'Kelarutan dan Hasil Kali Kelarutan',
       description: 'Studi tentang kelarutan dan hasil kali kelarutan.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kelarutan dan hasil kali kelarutan.png',
       link: '#',
     },
     {
       title: 'Koloid',
       description: 'Mempelajari sifat dan aplikasi koloid dalam kehidupan.',
-      image: 'https://via.placeholder.com/150',
+      image: 'koloid 150x150 bagus unik estetik.png',
       link: '/koloid',
     },
     {

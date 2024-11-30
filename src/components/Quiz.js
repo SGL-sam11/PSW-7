@@ -1,65 +1,67 @@
 import React from 'react';
-import './animasi1.css'; 
+import './animasi1.css'; // Tambahkan file CSS untuk animasi custom
 import  Navbar from './Navbar';
+import Footer from './Footer';
+
 
 function Quiz() {
   const materiList = [
     {
-      title: 'Hidrokarbon dan Minyak Bumi',
-      description: 'Pelajari struktur dan sifat-sifat hidrokarbon serta perannya dalam minyak bumi.',
-      image: 'https://via.placeholder.com/150',
-      link: '/Hidrokarbon',
+      title: 'KUIS Hidrokarbon dan Minyak Bumi',
+      description: 'Tes kemampuanmu mengenai materi Hidrokarbon dan minyak bumi disini!',
+      image: 'kuispg.png',
+      link: '/Kuishidrokarbon',
     },
     {
-      title: 'Hukum Termokimia',
+      title: 'KUIS Hukum Termokimia',
       description: 'Memahami hukum termokimia dan penerapannya dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '#',
     },
     {
-      title: 'Laju Reaksi',
+      title: 'KUIS Laju Reaksi',
       description: 'Analisis faktor-faktor yang memengaruhi laju reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '#',
     },
     {
-      title: 'Kesetimbangan Kimia',
+      title: 'KUIS Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '/kesetimbangan',
     },
     {
-      title: 'Larutan Asam Basa',
+      title: 'KUIS Larutan Asam Basa',
       description: 'Eksplorasi sifat-sifat larutan asam dan basa.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '#',
     },
     {
-      title: 'Hidrolisis Garam',
+      title: 'KUIS Hidrolisis Garam',
       description: 'Memahami konsep hidrolisis garam dalam kimia.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '#',
     },
     {
-      title: 'Larutan Penyangga',
+      title: 'KUIS Larutan Penyangga',
       description: 'Belajar tentang larutan penyangga dan aplikasinya.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '/Penyangga',
     },
     {
-      title: 'Kelarutan dan Hasil Kali Kelarutan',
+      title: 'KUIS Kelarutan dan Hasil Kali Kelarutan',
       description: 'Studi tentang kelarutan dan hasil kali kelarutan.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '#',
     },
     {
-      title: 'Koloid',
+      title: 'KUIS Koloid',
       description: 'Mempelajari sifat dan aplikasi koloid dalam kehidupan.',
-      image: 'https://via.placeholder.com/150',
+      image: 'kuispg.png',
       link: '/koloid',
     },
     {
-      title: 'Termodinamika Kimia',
+      title: 'KUIS Termodinamika Kimia',
       description: 'Konsep dasar termodinamika dalam reaksi kimia.',
       image: 'https://via.placeholder.com/150',
       link: '#',
@@ -84,8 +86,8 @@ function Quiz() {
     <div className="container mt-5">
       <div className="row mb-4">
         <div className="col-12 text-center">
-          <h2>Materi Pembelajaran</h2>
-          <p>Pilih topik berikut untuk memulai pembelajaran.</p>
+          <h2>KUIS PERMATERI !!!</h2>
+          <p>Mari tes kemampuan mu , apakah kamu benar-benar belajar atau tidak, belajar tanpa diuji adalah kesia-siaan.</p>
         </div>
       </div>
       <div className="row g-4">
@@ -110,6 +112,7 @@ function Quiz() {
         ))}
       </div>
     </div>
+    <Footer />
   </div>
   );
 }

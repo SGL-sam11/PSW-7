@@ -1,0 +1,349 @@
+/* General Styles */
+.about-us-page {
+  font-family: "Arial", sans-serif;
+  background-color: #192841; /* Blue Zodiac */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #3b5998, #192841); /* Queen Blue to Blue Zodiac */
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn-primary {
+  background-color: #ffffff;
+  color: #192841;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Core Values */
+.core-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.core-values li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #192841;
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Comment Section */
+.comments-section {
+    padding: 4rem 2rem;
+    background-color: #27395c;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .comment-form {
+    margin: 2rem 0;
+  }
+  
+  .comment-input {
+    width: 80%;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+  }
+  
+  .comment-input:focus {
+    box-shadow: 0px 0px 5px rgba(130, 170, 255, 0.8);
+  }
+  
+  .btn-submit {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #82aaff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #5c86d6;
+  }
+  
+  .comments-display {
+    margin-top: 3rem;
+  }
+  
+  .comments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    background-color: #1d2b4f;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #fff;
+  }/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+  }
+  
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3b5998, #192841);
+    animation: gradientMove 6s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    animation: fadeScale 1s ease forwards;
+  }
+  
+  @keyframes fadeScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Comment Section */
+  .comment-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #5c86d6, #27395c);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .comment-item span.comment-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .comment-item:hover {
+    transform: translateX(10px);
+    background: linear-gradient(135deg, #82aaff, #5c86d6);
+  }
+      /* Comment Section */
+.comments-section {
+    padding: 4rem 2rem;
+    background-color: #27395c;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .comment-form {
+    margin: 2rem 0;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .comment-input {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #82aaff;
+    background-color: #1d2b4f;
+    font-size: 1rem;
+    color: white;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .comment-input:focus {
+    border-color: #5c86d6;
+    box-shadow: 0px 0px 5px rgba(130, 170, 255, 0.8);
+  }
+  
+  .floating-label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 1rem;
+    color: #82aaff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .comment-input:focus + .floating-label,
+  .comment-input:not(:placeholder-shown) + .floating-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #5c86d6;
+  }
+  
+  .btn-submit {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #82aaff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #5c86d6;
+  }
+  
+  /* Comments Display */
+  .comments-display {
+    margin-top: 3rem;
+  }
+  
+  .comments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #5c86d6, #27395c);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .comment-avatar {
+    margin-right: 15px;
+  }
+  
+  .comment-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+  
+  .comment-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

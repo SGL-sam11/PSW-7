@@ -6,9 +6,12 @@ import Register from './components/Register';
 import Home from './components/Home';
 import Materi from './components/Materi';
 import Hidrokarbon from './components/Hidrokarbon';
-import Koloid from './components/koloid';
+// import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
 import Quiz from './components/Quiz';
+import Kesetimbangan from './components/Kesetimbangan';
+import Kuishidrokarbon from './kuis/Kuishidrokarbon'
+import AboutUs from './components/Aboutus';
 // import Quiz from './components/Quiz';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
@@ -21,7 +24,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/Awalan' element={<Awalan />} />
-        <Route path="/Koloid" element={<Koloid />} />
+        <Route path='AboutUs' element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/home" element={<Home />} />
@@ -30,6 +33,8 @@ function App() {
         <Route path="/Quiz" element= {<Quiz />} />
         <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
+        <Route path="/Kesetimbangan" element={<Kesetimbangan />} />
+        <Route path="/Kuishidrokarbon" element={<Kuishidrokarbon />} />
         {/* <Route path="/Quiz" element={<Quiz />} /> */}
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
