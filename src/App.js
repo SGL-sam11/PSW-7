@@ -14,13 +14,14 @@ import Penyangga from './components/Penyangga';
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
 // import hidrolosis from './components/hidrolosis'; 
-// import kelarutan from './components/kelarutan';
+ import Kelarutan from './components/kelarutan';
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/Awalan' element={<Awalan />} />
         <Route path="/Koloid" element={<Koloid />} />
+        <Route path="/Kelarutan" element={<Kelarutan />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />

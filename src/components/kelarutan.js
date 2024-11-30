@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./penyangga.css";
+import "./kelarutan.css";
 import Navbar from "./Navbar";
 
-function Penyangga() {
+function Kelarutan() {
   const [selectedTab, setSelectedTab] = useState("materi");
 
   return (
@@ -13,12 +13,12 @@ function Penyangga() {
       {/* Header */}
       <header className="updated-header">
         <div className="header-content">
-          <h1>Larutan Penyangga</h1>
+          <h1>Kelarutan dan hasil kali kelarutan</h1>
           <p>Explore the wonders of chemistry and its real-world applications.</p>
         </div>
         <div className="header-image">
           <img
-            src="https://i.pinimg.com/736x/e5/8d/8a/e58d8a2e4fffda25e953e48cf6cb0a7d.jpg"
+            src="https://i.pinimg.com/736x/99/32/1f/99321f1601c934d5ff28667033eeea78.jpg"
             alt="Chemistry Illustration"
           />
         </div>
@@ -27,7 +27,7 @@ function Penyangga() {
       {/* Section Informasi */}
       <section className="info-section">
         <img
-          src="https://i.pinimg.com/736x/75/38/46/753846a58d15368b8e43839d6010c98e.jpg"
+          src="https://i.pinimg.com/736x/24/4c/0a/244c0a1ed0bea18c8122950358457db1.jpg"
           alt="Chemistry Illustration"
           className="info-image"
         />
@@ -44,7 +44,7 @@ function Penyangga() {
         {/* Image di tengah atas */}
         <div className="image-center">
           <img
-            src="https://i.pinimg.com/736x/7f/d5/02/7fd502213a93720ce7f5f251e02ae8c6.jpg"
+            src="https://i.pinimg.com/736x/ac/35/3f/ac353f1d35cfa951bc5d17d35cdc99b5.jpg"
             alt="Buffer Solution Illustration"
             className="buffer-image"
           />
@@ -150,10 +150,9 @@ function Penyangga() {
       <section className="video-section">
         <h2>Video Pembelajaran</h2>
         <div className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-H4k-SFYqxo?si=iPzkngrpt-wstvyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+\<iframe width="560" height="315" src="https://www.youtube.com/embed/VISgNcdmOdU?si=J_dJre_UfBhJb7mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
       </section>
     </div>
   );
 }
-export default Penyangga;
+export default Kelarutan;
