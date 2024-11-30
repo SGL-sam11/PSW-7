@@ -56,7 +56,7 @@ function Materi() {
       title: 'Koloid',
       description: 'Mempelajari sifat dan aplikasi koloid dalam kehidupan.',
       image: 'koloid 150x150 bagus unik estetik.png',
-      link: '/koloid',
+      link: '/Koloid',
     },
     {
       title: 'Termodinamika Kimia',

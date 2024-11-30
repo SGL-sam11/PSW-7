@@ -8,7 +8,8 @@ import Materi from './components/Materi';
 import Hidrokarbon from './components/Hidrokarbon';
 import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
-// import Quiz from './components/Quiz';
+import Quiz from './components/Quiz';
+import Kuishidrokarbon from './kuis/Kuishidrokarbon';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
@@ -30,7 +31,8 @@ function App() {
         {/* <Route path="/kesetimbangan" element={<Kesetimbangan />} /> */}
         <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
-        {/* <Route path="/Quiz" element={<Quiz />} /> */}
+        <Route path="/Quiz" element={<Quiz />} />
+        <Route path="/Kuishidrokarbon" element={<Kuishidrokarbon />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
         <Route path="/reaksi" element={<reaksi />} />
