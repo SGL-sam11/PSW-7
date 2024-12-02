@@ -10,6 +10,7 @@ import Koloid from './components/koloid';
 import Penyangga from './components/Penyangga';
 import Quiz from './components/Quiz';
 import Kuishidrokarbon from './kuis/Kuishidrokarbon';
+import AboutUs from './components/Aboutus';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import termokimia from './components/termokimia';
 // import reaksi from './components/reaksi';
@@ -33,6 +34,7 @@ function App() {
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Kuishidrokarbon" element={<Kuishidrokarbon />} />
+        <Route path="/Aboutus" element={<AboutUs />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/termokimia" element={<termokimia />} />
         <Route path="/reaksi" element={<reaksi />} />
