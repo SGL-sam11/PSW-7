@@ -1,63 +1,67 @@
 import React from 'react';
-import { Link, Route, Switch, useParams } from 'react-router-dom';
-import '../style/larutan.css'; // Mengimpor file CSS eksternal
+import { useNavigate } from 'react-router-dom';
+import './Larutan.css';
 
-// Komponen utama yang berisi daftar materi dan penjelasan materi
 const Larutan = () => {
-  const materiList = [
-    { id: 1, title: 'Pengertian Asam dan Basa', description: 'Asam dan basa adalah dua konsep dasar dalam kimia yang berlawanan.' },
-    { id: 2, title: 'Teori Asam Basa', description: 'Teori asam-basa mencakup berbagai konsep seperti teori Arrhenius, Brønsted-Lowry, dan Lewis.' },
-    { id: 3, title: 'Konsep Keasaman dan Kebasaan', description: 'Keasaman dan kebasaan dapat diukur dengan pH atau indikator asam-basa.' },
-    { id: 4, title: 'Asam dan Basa Kuat vs Lemah', description: 'Asam kuat dan basa kuat terionisasi sepenuhnya di dalam air.' },
-    { id: 5, title: 'Reaksi Asam-Basa', description: 'Reaksi asam-basa melibatkan pertukaran proton antara asam dan basa.' },
-    { id: 6, title: 'Indikator Asam-Basa', description: 'Indikator asam-basa digunakan untuk menentukan pH suatu larutan.' },
-    { id: 7, title: 'Asam dan Basa dalam Kehidupan Sehari-hari', description: 'Asam dan basa banyak digunakan dalam kehidupan sehari-hari, seperti dalam pembersih rumah tangga.' },
-    { id: 8, title: 'Contoh Soal', description: 'Contoh soal tentang asam dan basa untuk latihan pemahaman konsep.' },
-  ];
+  const navigate = useNavigate();
+
+  // Fungsi untuk menangani klik pada gelembung dan pindah ke halaman baru
+  const handleBubbleClick = (halaman) => {
+    navigate(`/${halaman}`);
+  };
 
   return (
     <div className="larutan-container">
-      {/* Judul besar */}
-      <h1 className="larutan-main-heading">Larutan Asam-Basa</h1>
-      
-      {/* Judul materi utama */}
-      <h2 className="larutan-heading">Pilih Materi Asam Basa</h2>
-      
-      <div className="card-container">
-        {materiList.map((materi) => (
-          <div key={materi.id} className="card">
-            <Link to={`/materi/${materi.id}`} className="card-link">
-              <h3>{materi.title}</h3>
-            </Link>
+      <div className="title">Kesetimbangan Kimia</div>
+      <div className="bubbles-container">
+        <div className="row">
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("pengertian-prinsip-kesetimbangan")}
+          >
+            <div className="bubble-text">Pengertian dan Prinsip Kesetimbangan Kimia</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
           </div>
-        ))}
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("hukum-aksi-massa")}
+          >
+            <div className="bubble-text">Hukum Aksi Massa dan Konstanta Kesetimbangan (K)</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
+          </div>
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("contoh-soal")}
+          >
+            <div className="bubble-text">Contoh Soal Kesetimbangan Kimia</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
+          </div>
+        </div>
+
+        <div className="row">
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("prinsip-le-chatelier")}
+          >
+            <div className="bubble-text">Prinsip Le Chatelier dan Faktor yang Mempengaruhi Kesetimbangan</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
+          </div>
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("perhitungan-konstanta")}
+          >
+            <div className="bubble-text">Perhitungan Konstanta Kesetimbangan dalam Reaksi Kimia</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
+          </div>
+          <div
+            className="bubble"
+            onClick={() => handleBubbleClick("kesetimbangan-asam-basa")}
+          >
+            <div className="bubble-text">Kesetimbangan Asam-Basa dan Aplikasinya</div>
+            <button className="learn-more">Pelajari Lebih Lanjut</button>
+          </div>
+        </div>
       </div>
-
-      {/* Tampilan Penjelasan Materi */}
-      <Switch>
-        <Route 
-          path="/materi/:id" 
-          render={(props) => <MateriDetail {...props} materiList={materiList} />} 
-        />
-      </Switch>
-    </div>
-  );
-};
-
-// Komponen untuk menampilkan detail materi berdasarkan ID
-const MateriDetail = ({ materiList }) => {
-  const { id } = useParams();
-  const materi = materiList.find((m) => m.id === parseInt(id));
-
-  if (!materi) return <p>Materi tidak ditemukan!</p>;
-
-  return (
-    <div className="detail-container">
-      <h3>{materi.title}</h3>
-      <p>{materi.description}</p>
-      <Link to="/" className="back-link">
-        Kembali ke Daftar Materi
-      </Link>
     </div>
   );
 };
