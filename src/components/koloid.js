@@ -1,12 +1,10 @@
 // Import 
 import React, { useEffect,useState } from 'react';
-import './Koloid.css'; // Ensure no conflicting global styles
+import './koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
 import senterImage from "../aset/senter.png";
 import bubble from "../aset/bubble.png"
-
-
 
 //function
 function Koloid() {
