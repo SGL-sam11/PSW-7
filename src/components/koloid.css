@@ -7,6 +7,10 @@
   body, html {
     margin: 0;
     padding: 0;
+    background: #f3f4f6;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
   }  
 
 .updated-header {
@@ -193,7 +197,7 @@
 
 .judul{
   text-align: center;
-  font-family: Impact;
+  font-family: Roboto;
   color: #007BFF;
 }
 .judul h4{
