@@ -4,7 +4,7 @@
     font-family: Arial, sans-serif;
     max-width: 1200px;
     margin: 2rem auto;
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
@@ -32,7 +32,7 @@
     cursor: pointer;
     text-align: left;
     transition: background-color 0.3s;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 4px; /* Rounded tipis */
 }
 
 .question-card:hover {
@@ -78,13 +78,14 @@
 .option {
     padding: 1rem;
     border: none;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 4px; /* Rounded tipis */
     background-color: #ecf0f1;
     cursor: pointer;
     text-align: left;
     transition: background-color 0.3s ease;
-    width: 75%;
-    margin: 0 auto;
+    width: 60%; /* Lebar dikurangi */
+    margin: 0;
+    margin-left: 20px; /* Diletakkan di kiri */
 }
 
 .option:hover {
@@ -101,16 +102,17 @@
     color: white;
 }
 
+/* Navigation */
 .quiz-navigation {
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Mengatur posisi Previous & Next */
     margin-top: 2rem;
 }
 
 .btn-nav {
     padding: 0.8rem 1.5rem;
     border: none;
-    margin: 0 1rem;
-    border-radius: 12px;
+    border-radius: 4px; /* Rounded tipis */
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -130,59 +132,55 @@
     background-color: #2980b9;
 }
 
-.quiz-result {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.result-actions {
-    margin-top: 1rem;
-}
-
-.btn-restart, .btn-close {
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    cursor: pointer;
-    margin: 0.5rem;
-    font-size: 1rem;
-}
-
-.btn-restart {
-    background-color: #f39c12;
-    color: white;
-}
-
+/* Button Exit */
 .btn-close {
+    padding: 1rem 2rem;
     background-color: #e74c3c;
     color: white;
-}
-
-.btn-restart:hover {
-    background-color: #e67e22;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px; /* Rounded tipis */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-close:hover {
     background-color: #c0392b;
 }
 
-.discussion-card {
-    background-color: #ecf0f1;
-    padding: 1rem;
-    border-radius: 12px;
-    margin-top: 1rem;
+.quiz-result {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.answer-correct {
-    color: #27ae60;
+.result-actions {
+    display: flex;
+    justify-content: center; /* Atur posisi tombol */
+    gap: 1rem;
 }
-
-.answer-incorrect {
-    color: #e74c3c;
+.btn-result {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px; /* Rounded tipis */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.discussion-card h3 {
-    margin-bottom: 0.5rem;
+.btn-restart{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #c0392b;
+    border-radius: 4px; /* Rounded tipis */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.discussion-card p {
-    margin: 0.5rem 0;
+.btn-exit{
+    padding: 0.8rem 1.5rem;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 4px; /* Rounded tipis */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
