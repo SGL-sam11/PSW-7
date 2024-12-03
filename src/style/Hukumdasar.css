@@ -57,15 +57,15 @@
   height: auto;
   border-radius: 10px;
   margin-top: 20px;
-  width: 38%;           /*  menyesuaikan  lebar gambar*/
-  height: 50%;          /*  proporsi gambar  */
-  max-width: 250px;      /* lebar gambar*/
-  display: block;        
+  width: 38%;           /* Membuat gambar menyesuaikan dengan lebar kontainer*/
+  height: 50%;          /* Menjaga proporsi gambar tetap sesuai */
+  max-width: 250px;      /* Maksimal lebar gambar agar tidak terlalu besar */
+  display: block;        /* Menghilangkan ruang kosong di bawah gambar */
   margin: 20px auto;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); 
 }
 
-
+/* Styling untuk deskripsi gambar agar terlihat jelas */
 .img-description {
   text-align: center;
   font-style: italic;
@@ -74,26 +74,26 @@
   font-size: 14px;
 }
 
-
+/* Container utama yang menampung konten */
 .hukum-dasar-container {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
+/* Tampilan konten */
 .content {
   line-height: 1.6;
 }
 
-
+/* Pengaturan heading */
 h2 {
   font-size: 24px;
   margin-top: 30px;
   color: #333;
 }
 
-
+/* Styling untuk teks kode */
 .code-block {
   background-color: #f4f4f4;
   padding: 10px;
@@ -103,7 +103,7 @@ h2 {
   overflow-x: auto;
 }
 
-
+/* Styling untuk daftar dengan ikon */
 .list-icons {
   list-style: none;
   padding: 0;
@@ -118,7 +118,7 @@ h2 {
   margin-right: 10px;
 }
 
-
+/* Styling Accordion Button */
 .accordion-button {
   background-color: #007bff; 
   color: white; 

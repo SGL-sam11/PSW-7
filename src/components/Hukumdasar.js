@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './Hukumdasar.css';
+import '../style/Hukumdasar.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Navbar from './Navbar';
 
 function HukumDasar() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function HukumDasar() {
 
   return (
     <div className="hukum-dasar-container">
+      <Navbar />
       <header className="header text-center mb-4" data-aos="fade-up">
         <h1 className="main-title display-3">Hukum-Hukum Dasar Termokimia</h1>
         <p className="sub-title lead">Pahami konsep dasar termokimia yang menjadi fondasi ilmu ini!</p>
