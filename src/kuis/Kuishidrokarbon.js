@@ -81,13 +81,17 @@ const Kuishidrokarbon = () => {
         setQuizCompleted(false);
     };
 
+    const handleExitQuiz = () => {
+        navigate("/Quiz");  // Arahkan ke halaman kuis atau halaman utama
+    };
+
     const handleQuestionSelect = (index) => {
         setCurrentQuestion(index);
     };
 
     return (
     <div>
-        <Navbar/>
+        <Navbar />
         <div className="quiz-container">
             <aside className="quiz-sidebar">
                 <h3>Daftar Soal</h3>
@@ -189,12 +193,15 @@ const Kuishidrokarbon = () => {
                         <h2>Hasil Akhir</h2>
                         <p>Skor Anda: {score} / {questions.length}</p>
                         <p>{score >= 3 ? "Kerja bagus, pertahankan!" : "Jangan bersedih, belajarlah lagi."}</p>
-                        <button onClick={handleRestartQuiz} className="btn-restart">Kerjakan Ulang</button>
+                        <div className="result-actions">
+                            <button onClick={handleRestartQuiz} className="btn-restart">Kerjakan Ulang</button>
+                            <button onClick={handleExitQuiz} className="btn-exit">Keluar</button>
+                        </div>
                     </div>
                 )}
             </main>
         </div>
-        <Footer/>
+        <Footer />
     </div>
     );
 };

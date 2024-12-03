@@ -32,17 +32,8 @@ function Footer() {
               <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
               <p><a className="text-white"><strong>MATERI</strong></a></p>
               <p><a className="text-white"><strong>KUIS</strong></a></p>
-              <p><a className="text-white"><strong>VIDEO BELAJAR</strong></a></p>
-              <p><a className="text-white"><strong>TRYOUT</strong></a></p>
             </div>
 
-            {/* Useful Links */}
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold">Useful links</h6>
-              <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
-              <p><a href="#!" className="text-white"><strong>Akun Anda</strong></a></p>
-              <p><a href="#!" className="text-white"><strong>Bantuan</strong></a></p>
-            </div>
           </div>
         </div>
       </section>
