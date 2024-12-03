@@ -1,0 +1,194 @@
+/* Resetting basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main container */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Content Styling */
+h2 {
+  font-size: 28px;
+  color: #007acc;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #5f6368;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Box styles */
+.box {
+  background-color: #e3f2fd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.code-block {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Icon List */
+.list-icons {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.list-icons li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* Button */
+.cta-button {
+  background-color: #007acc;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005f87;
+}
+
+/* Animation for fading in text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Gambar responsif */
+.responsive-img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: block;
+  margin: 20px 0;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Membuat elemen dapat pindah ke baris baru jika ruang tidak cukup */
+  gap: 20px; /* Memberikan jarak antar gambar */
+  justify-content: center; /* Menjaga gambar tetap di tengah */
+  align-items: center; /* Memusatkan gambar secara vertikal */
+}
+
+.image-container img {
+  width: 48%; /* Memastikan dua gambar muat dalam satu baris */
+  max-width: 400px; /* Batasan lebar maksimum */
+  height: 300px; /* Tinggi yang seragam */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .image-container img {
+    width: 100%; /* Gambar memenuhi lebar container */
+  }
+
+  .image-container {
+    flex-direction: column; /* Mengatur gambar bertumpuk di layar kecil */
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
