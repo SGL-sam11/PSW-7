@@ -1,4 +1,4 @@
-// Import the Tyndall component
+// Import 
 import React, { useEffect,useState } from 'react';
 import './koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
@@ -6,6 +6,9 @@ import KoloidAccordion from "../accecories/KoloidAccordion";
 import senterImage from "../aset/senter.png";
 import bubble from "../aset/bubble.png"
 
+
+
+//function
 function Koloid() {
   useEffect(() => {
     const originalBackgroundColor = document.body.style.backgroundColor;
@@ -68,6 +71,8 @@ const Brown = () => {
 };
 //akhir brown
 
+
+//main code
 return (
     <div id="koloid-wrapper">
       <Navbar />
@@ -86,14 +91,14 @@ return (
 
       {/* Accordion Section */}
       <section id="koloid-science" className="section">
-        <KoloidAccordion />
+<KoloidAccordion />
       </section>
 
       {/* Tyndall and Brown Effects */}
       <section id="koloid-effects" className="section">
         <div className='judul'>
           <h2>Efek Tyndall</h2>
-          <h4>Penyebaran cahaya karena ukuran partikel dalam koloid.</h4>
+          <h4>Efek Tyndall adalah sifat koloid yang menjelaskan bagaimana cahaya dihamburkan oleh partikel-partikel koloid. Efek ini terjadi karena ukuran partikel koloid yang lebih besar daripada partikel larutan, sehingga berkas cahaya dapat dihamburkan</h4>
           <Tyndall />
         </div>
         <div className='judul'>
