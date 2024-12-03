@@ -29,8 +29,8 @@ const Register = () => {
         <div className="register-container">
             {/* Left Panel - Registration Form */}
             <div className="register-left">
-                <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '40px' }}>
-                    REGISTER TO  <strong>CHEMISTRY</strong>HUB
+                <h2 className="text-white"style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '40px' }}>
+                    REGISTER TO <strong>CHEMISTRY</strong>HUB
                 </h2>
                 <form onSubmit={handleSubmit}>
                     <div style={{ marginBottom: '1rem' }}>
@@ -89,18 +89,14 @@ const Register = () => {
             {/* Right Panel - Information */}
             <div className="register-right">
                 <div>
-                    <h1 style={{ fontSize: '50px', textAlign: 'center' }}>
-                        Welcome to ChemistryHub!
+                <h1 style={{ fontSize: '50px', textAlign: 'center' }}>
+                        Welcome to <strong>CHEMISTRY</strong>HUB!
                     </h1>
                     <p style={{ textAlign: 'center' }}>
-                        Learning Site® is your home for Explorer® classes,
-                        containing digital learning tools like FlexText® online
-                        textbooks, authentic resources, student portfolios, and
-                        more.
+                    tempat terbaik untuk memulai perjalanan belajar kimia dengan cara yang menyenangkan dan interaktif! Dilengkapi dengan berbagai alat pembelajaran digital, seperti buku teks online FlexText®, sumber daya autentik, portofolio siswa, dan banyak lagi, situs ini dirancang untuk membantu siswa memahami konsep-konsep kimia secara menyeluruh dan menarik.
                     </p>
                     <p style={{ textAlign: 'center' }}>
-                        Join our community and start your journey to learn
-                        chemistry in a fun and interactive way!
+                    Bergabunglah dengan komunitas kami dan rasakan pengalaman belajar yang berbeda!
                     </p>
                 </div>
             </div>

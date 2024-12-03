@@ -15,12 +15,6 @@
   animation: slideInLeft 1s ease-in-out; /* Animasi masuk dari kiri */
 }
 
-.brand-text {
-  color:azure; /* Gold untuk branding text */
-  font-size: 55px;
-
-}
-
 /* Right Panel */
 .login-right {
   background-color: #122D4F; /* Blue Zodiac */

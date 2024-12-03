@@ -26,17 +26,18 @@ const Login = () => {
             {/* Left Panel */}
             <div className="login-left text-white p-5 d-flex flex-column justify-content-center" style={{ width: '40%', backgroundColor: ' #40668C' }}>
                 <div>
-                    <a className='mb-1 brand-text' style={{ fontSize: '55px' }}><strong>CHEMISTRY</strong>HUB</a>
-                    <h1 style={{ fontSize: '50px' }}>Welcome!</h1>
-                    <p>Learning Site® is your home for Explorer® classes, containing digital learning tools like FlexText® online textbooks, authentic resources, student portfolios, and more.</p>
-                    <p>Bring students together in an online learning community and discover all the features to enrich your language courses.</p>
+                <h1 style={{ fontSize: '50px', textAlign: 'center' }}>
+                        Welcome to <strong>CHEMISTRY</strong>HUB!
+                    </h1>
+                    <p>tempat terbaik untuk memulai perjalanan belajar kimia dengan cara yang menyenangkan dan interaktif! Dilengkapi dengan berbagai alat pembelajaran digital, seperti buku teks online FlexText®, sumber daya autentik, portofolio siswa, dan banyak lagi, situs ini dirancang untuk membantu siswa memahami konsep-konsep kimia secara menyeluruh dan menarik.</p>
+                    <p>Bergabunglah dengan komunitas kami dan rasakan pengalaman belajar yang berbeda!</p>
                 </div>
             </div>
 
             {/* Right Panel */}
             <div className="login-right p-5 d-flex justify-content-center align-items-center" style={{ width: '60%' }}>
                 <form className="login-form w-100" onSubmit={handleSubmit}>
-                    <h2 className="text-center text-white mb-4" style={{fontSize:'40px'}}>Log in to Learning Site®</h2>
+                    <h2 className="text-center text-white mb-4" style={{fontSize:'40px'}}>Log in to <strong>CHEMISTRY</strong>HUB</h2>
                     <div className="form-group mb-3">
                         <label htmlFor='username' className='form-label text-white'></label>
                         <input
