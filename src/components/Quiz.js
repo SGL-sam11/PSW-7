@@ -16,7 +16,7 @@ function Quiz() {
       title: 'KUIS Hukum Termokimia',
       description: 'Memahami hukum termokimia dan penerapannya dalam reaksi kimia.',
       image: 'kuispg.png',
-      link: '#',
+      link: 'KuisHukumTermokimia',
     },
     {
       title: 'KUIS Laju Reaksi',

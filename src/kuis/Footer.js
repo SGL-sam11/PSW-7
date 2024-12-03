@@ -34,7 +34,7 @@ const Footer = () => {
             </h5>
             <hr/>
             <ul className="list-unstyled mb-0">
-              {["FAQ", "Classes", "Pricing", "Safety"].map((link, index) => (
+              {["Materi", "Quiz", "Bantuan"].map((link, index) => (
                 <li className="mb-1" key={index}>
                   <a
                     href="#!"
@@ -80,7 +80,6 @@ const Footer = () => {
       >
         © 2024 Copyright:
         <a
-          href="https://example.com/"
           className="text-decoration-none"
           style={{
             color: "#fff",
@@ -90,7 +89,7 @@ const Footer = () => {
           onMouseEnter={(e) => (e.target.style.color = "#43658b")}
           onMouseLeave={(e) => (e.target.style.color = "#fff")}
         >
-          ChemisrtyHub.com
+          ChemistryyHub.com
         </a>
       </div>
     </footer>
