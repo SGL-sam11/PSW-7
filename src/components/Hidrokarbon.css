@@ -22,7 +22,7 @@ body {
 
 /* Header */
 .unique-header {
-  background-color: #ff6f61;
+  background-color: #4A90E2; /* Light blue */
   padding: 40px;
   text-align: center;
   border-radius: 10px;
@@ -39,7 +39,7 @@ body {
 }
 
 .unique-sub-title {
-  color: #ffe4e1;
+  color: #B0C4DE; /* Light steel blue */
   font-size: 20px;
   font-weight: 300;
 }
@@ -52,7 +52,7 @@ body {
 /* Section Titles */
 h2 {
   font-size: 28px;
-  color: #ff6347;
+  color: #1E3A5F; /* Dark blue */
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color: #ff4500;
+  color: #1E3A5F; /* Dark blue */
   margin-bottom: 15px;
   text-align: left;
 }
@@ -106,14 +106,14 @@ li {
 .unique-icon {
   font-size: 24px;
   margin-right: 10px;
-  color: #ff4500;
+  color: #1E3A5F; /* Dark blue */
 }
 
 /* Buttons */
 .unique-cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #ff6f61;
+  background-color: #4A90E2; /* Light blue */
   color: white;
   font-size: 18px;
   border: none;
@@ -126,7 +126,7 @@ li {
 }
 
 .unique-cta-button:hover {
-  background-color: #ff4500;
+  background-color: #1E3A5F; /* Dark blue */
   transform: scale(1.05);
 }
 

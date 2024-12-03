@@ -47,11 +47,6 @@ function HidrokarbonDanMinyakBumi() {
           <p><strong>Perubahan Menjadi Minyak Bumi:</strong> Selama jutaan tahun, materi organik mengalami perubahan kimiawi menjadi hidrokarbon yang membentuk minyak bumi.</p>
         </div>
 
-        <h2 data-aos="fade-up">Fraksinasi Minyak Bumi</h2>
-        <p className="unique-fade-in" data-aos="fade-up">
-          Minyak bumi merupakan campuran kompleks yang perlu dipisahkan menjadi komponen-komponen yang lebih murni. Proses pemisahan ini disebut fraksinasi.
-        </p>
-
         <div className="unique-box" data-aos="zoom-in">
           <h3>Fraksi-Fraksi Minyak Bumi</h3>
           <ul>
@@ -65,6 +60,7 @@ function HidrokarbonDanMinyakBumi() {
           </ul>
         </div>
 
+        <div className="unique-box" data-aos="zoom-in">
         <h2 data-aos="fade-up">Pemanfaatan Hidrokarbon dan Minyak Bumi</h2>
         <ul className="unique-list-icons" data-aos="fade-up">
           <li><span className="unique-icon">⛽</span> Bahan bakar: Bensin, solar, gas, dan kerosene digunakan sebagai bahan bakar untuk transportasi dan pembangkit listrik.</li>
@@ -72,7 +68,9 @@ function HidrokarbonDanMinyakBumi() {
           <li><span className="unique-icon">🔧</span> Pelumas: Minyak pelumas digunakan untuk mengurangi gesekan pada mesin.</li>
           <li><span className="unique-icon">🛣️</span> Aspal: Aspal digunakan untuk membuat jalan dan atap.</li>
         </ul>
+        </div>
 
+        <div className="unique-box" data-aos="zoom-in">
         <h2 data-aos="fade-up">Dampak Negatif Penggunaan Minyak Bumi</h2>
         <p className="unique-fade-in" data-aos="fade-up">
           Meskipun memiliki banyak manfaat, penggunaan minyak bumi juga menimbulkan dampak negatif bagi lingkungan, antara lain:
@@ -82,11 +80,7 @@ function HidrokarbonDanMinyakBumi() {
           <li><span className="unique-icon">🌡️</span> Pemanasan global: Pembakaran minyak bumi menghasilkan gas rumah kaca yang menyebabkan pemanasan global.</li>
           <li><span className="unique-icon">💨</span> Hujan asam: Pembakaran minyak bumi menghasilkan senyawa belerang dan nitrogen oksida yang menyebabkan hujan asam.</li>
         </ul>
-
-        <h2 data-aos="fade-up">Kesimpulan</h2>
-        <p className="unique-fade-in" data-aos="fade-up">
-          Hidrokarbon dan minyak bumi merupakan bagian penting dari kehidupan kita. Namun, kita perlu bijak dalam memanfaatkannya agar tidak merusak lingkungan. Pengembangan sumber energi alternatif yang lebih ramah lingkungan menjadi sangat penting untuk masa depan.
-        </p>
+        </div>
 
         <Link to="/AlternatifEnergi">
           <button className="unique-cta-button" data-aos="fade-up">Lihat Alternatif Energi</button>
