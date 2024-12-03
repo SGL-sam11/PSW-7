@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Navbar from './Navbar';
 import './Termokimia.css';
 
 function Termokimia() {
@@ -14,6 +15,7 @@ function Termokimia() {
 
   return (
     <div className="app-container">
+      <Navbar />
       <header className="header" data-aos="fade-up">
         <h1 className="main-title">Termokimia: Mengukur Panas dalam Reaksi Kimia</h1>
         <p className="sub-title">Belajar tentang perubahan energi dalam reaksi kimia secara sederhana dan menarik!</p>

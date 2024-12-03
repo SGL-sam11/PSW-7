@@ -6,8 +6,6 @@ import KoloidAccordion from "../accecories/KoloidAccordion";
 import senterImage from "../aset/senter.png";
 import bubble from "../aset/bubble.png"
 
-
-
 //function
 function Koloid() {
   useEffect(() => {
