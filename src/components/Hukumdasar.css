@@ -1,0 +1,157 @@
+.hukum-dasar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .main-title {
+    font-size: 36px;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .sub-title {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #007acc;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    color: #5f6368;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 38%;           /*  menyesuaikan  lebar gambar*/
+  height: 50%;          /*  proporsi gambar  */
+  max-width: 250px;      /* lebar gambar*/
+  display: block;        
+  margin: 20px auto;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.img-description {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.hukum-dasar-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.content {
+  line-height: 1.6;
+}
+
+
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #333;
+}
+
+
+.code-block {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+
+.list-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.list-icons li {
+  margin-bottom: 15px;
+}
+
+.list-icons .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.accordion-button {
+  background-color: #007bff; 
+  color: white; 
+  border: 1px solid #0056b3; 
+}
+
+.accordion-button:hover {
+  background-color: #0056b3; 
+  color: white; 
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0056b3; 
+  color: white; 
+}
+
+
+.accordion-collapse {
+  background-color: #f8f9fa; 
+}
+
+.accordion-body {
+  color: #333; 
+  font-size: 1rem; 
+}
+
+
+.accordion-item {
+  border: 1px solid #ccc; 
+  margin-bottom: 10px; 
+}
+
+.code-block {
+  background-color: #e9ecef; 
+  border-left: 4px solid #007bff; 
+}
