@@ -22,13 +22,13 @@ function Quiz() {
       title: 'KUIS Laju Reaksi',
       description: 'Analisis faktor-faktor yang memengaruhi laju reaksi kimia.',
       image: 'kuispg.png',
-      link: '#',
+      link: '/KuisLajuReaksi',
     },
     {
       title: 'KUIS Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
       image: 'kuispg.png',
-      link: '/kesetimbangan',
+      link: '/KuisKesetimbanganKimia',
     },
     {
       title: 'KUIS Larutan Asam Basa',
