@@ -6,12 +6,10 @@ const Footer = () => {
       className="text-center text-md-left mt-5 w-100"
       style={{ backgroundColor: "#0c1446", color: "#fff" }}
     >
-      <section className="d-flex justify-content-between p-4" style={{ backgroundColor: '#436B95' }}>
-        <div className="me-5">
-        </div>
-        <div>
-         
-        </div>
+       <section className="d-flex justify-content-between p-4" style={{ backgroundColor: '#d9f1ff' }}>
+            <div className="me-5">
+              <span className="text-black">Get connected with us on social networks:</span>
+            </div>
       </section>
       
       {/* Main Content */}
@@ -20,7 +18,7 @@ const Footer = () => {
           {/* Section 1: Footer Content */}
           <div className="col-lg-6 col-md-12 mb-4">
             <h5 className="mb-3 text-white" style={{ fontWeight: "bold", color: "#43658b" }}>
-              Footer Content
+              CHEMISTRYHUB
             </h5>
             <hr/>
             <p>
@@ -32,7 +30,7 @@ const Footer = () => {
           {/* Section 2: Links */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="mb-3 text-white" style={{ fontWeight: "bold", color: "#43658b" }}>
-              Links
+              LINKS
             </h5>
             <hr/>
             <ul className="list-unstyled mb-0">
@@ -57,7 +55,7 @@ const Footer = () => {
           {/* Section 3: Opening Hours */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="mb-3 text-white" style={{ fontWeight: "bold", color: "#43658b" }}>
-              Opening Hours
+              OPENING HOURS
             </h5>
             <hr/>
             <table className="table table-borderless text-white">
