@@ -14,6 +14,8 @@ import AboutUs from './components/Aboutus';
 import Termokimia from './components/Termokimia';
 import HukumDasar from './components/Hukumdasar';
 import Kelarutan from './components/kelarutan';
+// import Kesetimbangan from './components/Kesetimbangan';
+// import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
 
 // import Hidrokarbon from './components/Hidrokarbon';
 // import reaksi from './components/reaksi';
@@ -39,6 +41,8 @@ function App() {
         <Route path="/Aboutus" element={<AboutUs />} />
         <Route path="/Termokimia" element={<Termokimia />} />
         <Route path="/Hukumdasar" element={<HukumDasar />} />
+        {/* <Route path="/Kesetimbangan" element={<Kesetimbangan />} /> */}
+        {/* <Route path="/KesetimbanganAsamBasa" element={<KesetimbanganAsamBasa />} /> */}
 
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/reaksi" element={<reaksi />} />

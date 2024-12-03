@@ -60,24 +60,6 @@ function Quiz() {
       image: 'kuispg.png',
       link: '/koloid',
     },
-    {
-      title: 'KUIS Termodinamika Kimia',
-      description: 'Konsep dasar termodinamika dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
-    },
-    {
-      title: 'Redoks dan Elektrokimia',
-      description: 'Mendalami reaksi redoks dan prinsip elektrokimia.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
-    },
-    {
-      title: 'Kimia Organik',
-      description: 'Dasar-dasar kimia organik dan aplikasinya.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
-    },
   ];
 
   return ( 

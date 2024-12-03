@@ -1,6 +1,7 @@
 import React from 'react';
 import './animasi1.css'; // Tambahkan file CSS untuk animasi custom
 import  Navbar from './Navbar';
+import Footer from './Footer';
 
 function Materi() {
   const materiList = [
@@ -26,7 +27,7 @@ function Materi() {
       title: 'Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
       image: 'kesetimbangan kimia 150x150.png',
-      link: '/kesetimbangan',
+      link: '#',
     },
     {
       title: 'Larutan Asam Basa',
@@ -50,31 +51,13 @@ function Materi() {
       title: 'Kelarutan dan Hasil Kali Kelarutan',
       description: 'Studi tentang kelarutan dan hasil kali kelarutan.',
       image: 'kelarutan dan hasil kali kelarutan.png',
-      link: '#',
+      link: '/Kelarutan',
     },
     {
       title: 'Koloid',
       description: 'Mempelajari sifat dan aplikasi koloid dalam kehidupan.',
       image: 'koloid 150x150 bagus unik estetik.png',
       link: '/Koloid',
-    },
-    {
-      title: 'Termodinamika Kimia',
-      description: 'Konsep dasar termodinamika dalam reaksi kimia.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
-    },
-    {
-      title: 'Redoks dan Elektrokimia',
-      description: 'Mendalami reaksi redoks dan prinsip elektrokimia.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
-    },
-    {
-      title: 'Kimia Organik',
-      description: 'Dasar-dasar kimia organik dan aplikasinya.',
-      image: 'https://via.placeholder.com/150',
-      link: '#',
     },
   ];
 
@@ -110,6 +93,7 @@ function Materi() {
         ))}
       </div>
     </div>
+    < Footer />
   </div>
   );
 }

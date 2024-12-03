@@ -117,10 +117,6 @@ const AboutUs = () => {
                 {comments.map((comment, index) => (
                   <li key={index} className="comment-item fade-in">
                     <div className="comment-avatar">
-                      <img
-                        src={`https://i.pravatar.cc/40?img=${(index % 70) + 1}`}
-                        alt="User avatar"
-                      />
                     </div>
                     <div className="comment-content">
                       <p>{comment}</p>

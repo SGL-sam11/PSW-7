@@ -16,9 +16,9 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link text-white" to="/Home"><strong>HOME</strong></Link>
                             </li>
-                            <li className="nav-item dropdown">
+                            {/* {/* <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle text-white" href="/Materi" role="button" data-bs-toggle="dropdown">Materi</a>
-                                <ul className="dropdown-menu">
+                                {/* <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="/Hidrokarbon">Hidrokarbon dan Minyak Bumi</a></li>
                                     <li><a className="dropdown-item" href="#">Hukum Termokimia</a></li>
                                     <li><a className="dropdown-item" href="#">Laju Reaksi</a></li>
@@ -26,10 +26,10 @@ function Navbar() {
                                     <li><a className="dropdown-item" href="#">Larutan Asam Basa</a></li>
                                     <li><a className="dropdown-item" href="#">Hidrolisis Garam</a></li>
                                     <li><a className="dropdown-item" href="/Penyangga">Larutan Penyangga</a></li>
-                                    <li><a className="dropdown-item" href="#">Kelarutan dan Hasil kali Kelarutan</a></li>
+                                    <li><a className="dropdown-item" href="Kelarutan">Kelarutan dan Hasil kali Kelarutan</a></li>
                                     <li><a className="dropdown-item" href="/koloid">Koloid</a></li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link className="nav-link text-white" to="/Aboutus"><strong>ABOUTUS</strong></Link>
                             </li>
@@ -39,9 +39,9 @@ function Navbar() {
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="/Quiz"><strong>QUIZ</strong></a>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link text-white" to="/Login"><strong>LOGIN</strong></Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
