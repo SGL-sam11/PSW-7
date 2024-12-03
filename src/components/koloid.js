@@ -1,6 +1,6 @@
 // Import 
 import React, { useEffect,useState } from 'react';
-import './koloid.css'; // Ensure no conflicting global styles
+import './Koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
 import senterImage from "../aset/senter.png";
