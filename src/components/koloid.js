@@ -1,30 +1,34 @@
 import React, { useEffect } from 'react';
-//import './koloid.css'; // Ensure no conflicting global styles
+import './Koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
 // import PouringAnimation from "../accecories/PouringAnimation.js";
-//import Tyndall from "../accecories/Tyndall.js";
-//import Brown from '../accecories/brown.js';
+import Tyndall from "../accecories/Tyndall.js";
+import Brown from '../accecories/brown.js';
 
 function Koloid() {
-  // Ensure no global DOM styles or listeners are left behind
-  useEffect(() => {
-    // Any global effect cleanup (if necessary)
-    const originalBackgroundColor = document.body.style.backgroundColor;
-
+   useEffect(() => {
+     const originalBackgroundColor = document.body.style.backgroundColor;
     return () => {
-      // Reset global styles or states when this component unmounts
       document.body.style.backgroundColor = originalBackgroundColor;
     };
   }, []);
 
   return (
-    <div id="koloid-wrapper">
-      <Navbar />
-      
-      {/* Hero Section */}
-      <section id="koloid-intro" className="hero">
-      </section>
+    <div id="koloid-wrapper"> 
+      <Navbar />     
+      <header className="updated-header">
+        <div className="header-content">
+          <h1>Larutan Penyangga</h1>
+          <p>Explore the wonders of chemistry and its real-world applications.</p>
+        </div>
+        <div className="header-image">
+          <img
+            src="https://i.pinimg.com/736x/e5/8d/8a/e58d8a2e4fffda25e953e48cf6cb0a7d.jpg"
+            alt="Chemistry Illustration"
+          />
+        </div>
+      </header>
 
       {/* Accordion Section */}
       <section id="koloid-science" className="section">
@@ -37,12 +41,12 @@ function Koloid() {
           <h2>Efek Tyndall</h2>
           <h4>Penyebaran cahaya karena ukuran partikel dalam koloid.</h4>
         </div>
-        {/* <Tyndall /> */}
+        <Tyndall /> 
         <div className='judul'>
           <h2>Gerakan Brown</h2>
           <h4>Gerakan acak partikel koloid.</h4>
         </div>
-        {/* <Brown /> */}
+        <Brown />
       </section>
 
       {/* Types of Colloids */}

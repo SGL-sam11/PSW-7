@@ -7,10 +7,8 @@ function Penyangga() {
 
   return (
     <div className="penyangga">
-      {/* Navbar */}
       <Navbar />
 
-      {/* Header */}
       <header className="updated-header">
         <div className="header-content">
           <h1>Larutan Penyangga</h1>
