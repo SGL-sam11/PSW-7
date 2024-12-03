@@ -1,4 +1,3 @@
-// Import 
 import React, { useEffect,useState } from 'react';
 import './koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';

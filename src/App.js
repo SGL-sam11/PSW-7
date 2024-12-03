@@ -13,16 +13,18 @@ import Kuishidrokarbon from './kuis/Kuishidrokarbon';
 import AboutUs from './components/Aboutus';
 import Termokimia from './components/Termokimia';
 import HukumDasar from './components/Hukumdasar';
+import Kelarutan from './components/kelarutan';
 
 // import Hidrokarbon from './components/Hidrokarbon';
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
 // import hidrolosis from './components/hidrolosis'; 
- import Kelarutan from './components/kelarutan';
+
 function App() {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path='/Awalan' element={<Awalan />} />
         <Route path="/Koloid" element={<Koloid />} />
         <Route path="/Kelarutan" element={<Kelarutan />} />
@@ -31,8 +33,6 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/penyangga" element={<Penyangga />} />
         <Route path="/Materi" element={<Materi />} />
-        {/* <Route path="/kesetimbangan" element={<Kesetimbangan />} /> */}
-        <Route path="/" element={<Navigate to="/Awalan" />} />
         <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Kuishidrokarbon" element={<Kuishidrokarbon />} />
@@ -44,9 +44,7 @@ function App() {
         <Route path="/reaksi" element={<reaksi />} />
         <Route path="/asambasa" element={<asambasa />} />
         <Route path="/hidrolosis" element={<hidrolosis />} />
-       
-        <Route path="/kelarutan" element={<kelarutan />} />
-        <Route path="/koloid" element={<koloid />} /> */}
+        <Route path="/kelarutan" element={<kelarutan />} />*/}
       </Routes>
     </Router>
   );
