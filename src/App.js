@@ -17,6 +17,11 @@ import Kelarutan from './components/kelarutan';
 import KuisHukumTermokimia from './kuis/KuisHukumTermokimia';
 import KuisLajuReaksi from './kuis/KuisLajuReaksi';
 import KuisKesetimbanganKimia from './kuis/KuisKesetimbanganKimia';
+import KuisLarutanAsambasa from './kuis/KuisLarutanAsambasa';
+import KuisHidrolisisGaram from './kuis/KuisHidrolisisGaram';
+import KuisLarutanPenyangga from './kuis/KuisLarutanPenyangga';
+import KuisKelarutanHasilKelarutan from './kuis/KuisKelarutanHasilKelarutan'
+import KuisKoloid from './kuis/KuisKoloid'
 // import Kesetimbangan from './components/Kesetimbangan';
 // import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
 // import Hidrokarbon from './components/Hidrokarbon';
@@ -43,6 +48,11 @@ function App() {
         <Route path="/KuisHukumTermokimia" element={<KuisHukumTermokimia />} />
         <Route path="/KuisLajuReaksi" element={<KuisLajuReaksi />} />
         <Route path="/KuisKesetimbanganKimia" element={<KuisKesetimbanganKimia />} />
+        <Route path="/KuisLarutanAsambasa" element={<KuisLarutanAsambasa />} />
+        <Route path="/KuisHidrolisisGaram" element={<KuisHidrolisisGaram />} />
+        <Route path="/KuisLarutanPenyangga" element={<KuisLarutanPenyangga/>} />
+        <Route path="/KuisKelarutanHasilKelarutan" element={<KuisKelarutanHasilKelarutan/>} />
+        <Route path='KuisKoloid' element={<KuisKoloid/>}/>
         <Route path="/Aboutus" element={<AboutUs />} />
         <Route path="/Termokimia" element={<Termokimia />} />
         <Route path="/Hukumdasar" element={<HukumDasar />} />
