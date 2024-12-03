@@ -11,7 +11,6 @@ import Penyangga from './components/Penyangga';
 import Quiz from './components/Quiz';
 import Kuishidrokarbon from './kuis/Kuishidrokarbon';
 import AboutUs from './components/Aboutus';
-import Termokimia from './components/Termokimia';
 // import Hidrokarbon from './components/Hidrokarbon';
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
@@ -35,7 +34,6 @@ function App() {
         <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Kuishidrokarbon" element={<Kuishidrokarbon />} />
         <Route path="/Aboutus" element={<AboutUs />} />
-        <Route path="/Termokimia" element={<Termokimia />} />
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/reaksi" element={<reaksi />} />
         <Route path="/asambasa" element={<asambasa />} />

@@ -1,5 +1,5 @@
 /* Container utama */
-.container {
+.container_brown {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -9,7 +9,7 @@
   }
   
   /* Gaya untuk gelas */
-  .glass {
+  .glass_brown {
     position: relative;
     width: 90px;
     height: 150px;
@@ -22,7 +22,7 @@
   }
   
   /* Air di dalam gelas */
-  .water {
+  .water_brown {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -34,7 +34,7 @@
     }
 
 /* SVG styling */
-.line-svg {
+.line-svg_brown {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
   }
   
   /* Ball styling */
-  .ball {
+  .ball_brown {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -64,7 +64,7 @@
   }
   
   /* Path to follow */
-  .ball {
+  .ball_brown {
     offset-path: path("M 10 10 L 50 30 L 10 50 L 50 70 L 10 90");
     offset-rotate: auto;
   }

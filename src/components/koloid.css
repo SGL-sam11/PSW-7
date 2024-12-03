@@ -199,3 +199,194 @@
 .judul h4{
   color: #333;
 }
+
+/* css untuk tyndall */
+/* Container utama */
+.container_tyndall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30vh;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+/* Gaya untuk gelas */
+.glass_tyndall {
+  position: relative;
+  width: 90px;
+  height: 150px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  margin: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.water_tyndall {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(180deg, #00aaff, #0077cc);
+  transition: height 2s ease;
+}
+/* Penyesuaian posisi gelas */
+.target-glass_tyndall {
+  margin-left: 20px; /* Pastikan air terhubung */
+}
+/* Penyesuaian posisi gelas */
+.source-glass_tyndall {
+  margin-left: 160px; /* Pastikan air terhubung */
+}
+
+/* Gaya untuk senter */
+.flashlight_tyndall {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  width: 100px; /* Atur ukuran gambar */
+  transform: rotate(180deg); /* Rotasi gambar */
+  z-index: 10;
+}
+.sinari_tyndall {
+      position: absolute;
+      top: 10%; /* Mulai dari atas layar */
+      left: 10%; /* Posisi horizontal di tengah */
+      height: 100%; /* Tinggi sinar menjadi vertikal */
+      width: 25%; /* Lebar lebih kecil */
+      background: linear-gradient(180deg, #ffff46, #f1bd78);
+      transform:rotate(90deg) ;
+      animation: lightAnimation 10s linear infinite; /* Animasi vertikal */
+
+    }
+    @keyframes lightAnimation {
+      0% {
+        left: 10%; 
+        height: 10%; /* Awalnya tidak terlihat */
+        opacity: 0;
+        top:50%;
+      }
+      25%{
+        left: 25%; 
+        height: 10%; /* Awalnya tidak terlihat */
+        opacity: 0.3;
+        top:50%;
+      }
+      50%{
+        left: 50%; 
+        height: 50%; /* Awalnya tidak terlihat */
+        opacity: 1;
+        top:30%;
+      }
+      100% {
+        left: 80%; /* Berakhir di bawah */
+        height: 100%; /* Penuh */
+        opacity:0.5; /* Memudar sedikit */
+        top:10%;
+      }
+    }  
+/* Container for the bubbles */
+.bubble_tyndall {
+position: absolute;
+bottom: 0;
+left: 50%; /* Start in the center of the glass */
+width: 15px; /* Size of the bubble */
+height: 15px; /* Size of the bubble */
+background: rgba(255, 255, 255, 0.8);
+border-radius: 50%;
+opacity: 0; /* Start as invisible */
+transform: translate(-50%, 100%); /* Position below the bottom of the glass */
+animation: bubbleAnimation 10s ease-out infinite;
+}
+
+/* Bubble animation */
+@keyframes bubbleAnimation {
+0% {
+    transform: translate(-50%, 100%);
+    opacity: 0; /* Hidden */
+}
+25% {
+  transform: translate(-50%, 80%);
+    opacity: 0; /* Become visible */
+}
+75%{
+  opacity: 0; /* Become visible */
+}
+100% {
+    transform: translate(-50%, -100%); /* Float to the top of the glass */
+    opacity: 1; /* Fade out */
+}
+}
+
+/* CSS BROWN */
+/* Container utama */
+.container_brown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30vh;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+/* Gaya untuk gelas */
+.glass_brown {
+  position: relative;
+  width: 90px;
+  height: 150px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  margin: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Air di dalam gelas */
+.water_brown {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(180deg, #00aaff, #0077cc);
+  display: flex;
+  justify-content: center; /* Agar gambar berada di tengah horizontal */
+  align-items: flex-start; /* Agar gambar di atas air */
+  }
+
+/* SVG styling */
+.line-svg_brown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ball styling */
+.ball_brown {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  left: 0%;
+  animation: follow-line 3s linear infinite;
+}
+
+/* Animation */
+@keyframes follow-line {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* Path to follow */
+.ball_brown {
+  offset-path: path("M 10 10 L 50 30 L 10 50 L 50 70 L 10 90");
+  offset-rotate: auto;
+}

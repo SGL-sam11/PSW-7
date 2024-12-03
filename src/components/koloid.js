@@ -1,22 +1,76 @@
-import React, { useEffect } from 'react';
+// Import the Tyndall component
+import React, { useEffect,useState } from 'react';
 import './Koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
-// import PouringAnimation from "../accecories/PouringAnimation.js";
-import Tyndall from "../accecories/Tyndall.js";
-import Brown from '../accecories/brown.js';
+import senterImage from "../aset/senter.png";
+import bubble from "../aset/bubble.png"
 
 function Koloid() {
-   useEffect(() => {
-     const originalBackgroundColor = document.body.style.backgroundColor;
+  useEffect(() => {
+    const originalBackgroundColor = document.body.style.backgroundColor;
     return () => {
       document.body.style.backgroundColor = originalBackgroundColor;
     };
   }, []);
+  const Tyndall = () => {
+    // State to control animation
+    const [animate, setAnimate] = useState(false);
 
+    // Function to toggle animation
+    const handleStartAnimation = () => {
+      setAnimate(true);
+    };
+    return (
+// bagian tyndall
+      <div className="container_tyndall">
+           {/* tombol */}
+     <div className="button_tyndall">
+     <button onClick={handleStartAnimation} >
+          Start Animation
+        </button>
+        </div>
+        <div className="glass_tyndall target-glass_tyndall">
+          <div className="water_tyndall"></div>
+          </div>
+          <div className="glass_tyndall source-glass_tyndall">
+          <div className="water_tyndall"></div>
+        </div>
+        <div className="glass_tyndall source-glass_tyndall">
+          <div className="water_tyndall"></div>
+       <div className="bubble_tyndall"><img src={bubble} alt="bubble" className="bubble_tyndall" />
+       </div>
+        </div>
+         {/* senter */}
+         {animate && <div className="sinari_tyndall"></div>}
+        <img src={senterImage} alt="Flashlight" className="flashlight_tyndall" />
+         </div>
+    );
+ // akhir bagian tyndall
+};
+
+//bagian brown
+const Brown = () => {
   return (
-    <div id="koloid-wrapper"> 
-      <Navbar />     
+    <div className="container_brown">
+      <div className="glass_brown">
+        <div className="water_brown">
+          {/* Zig-zag animation */}
+          <svg className="line-svg_brown" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="zigzag-path_brown" d="M 10 10 L 50 30 L 10 50 L 50 70 L 10 90" stroke="black" fill="transparent" />
+          </svg>
+          {/* Ball following the path */}
+          <div className="ball_brown"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+//akhir brown
+
+return (
+    <div id="koloid-wrapper">
+      <Navbar />
       <header className="updated-header">
         <div className="header-content">
           <h1>Larutan Penyangga</h1>
@@ -40,15 +94,16 @@ function Koloid() {
         <div className='judul'>
           <h2>Efek Tyndall</h2>
           <h4>Penyebaran cahaya karena ukuran partikel dalam koloid.</h4>
+          <Tyndall />
         </div>
-        <Tyndall /> 
         <div className='judul'>
           <h2>Gerakan Brown</h2>
           <h4>Gerakan acak partikel koloid.</h4>
+       <Brown />
         </div>
-        <Brown />
-      </section>
 
+      </section>
+  
       {/* Types of Colloids */}
       <section id="koloid-types" className="section">
         <h3>Jenis-jenis Koloid</h3>
