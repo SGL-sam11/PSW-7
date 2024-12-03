@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Larutan.css';
+import './Kesetimbangan.css';
 
-const Larutan = () => {
+const Kesetimbangan = () => {
   const navigate = useNavigate();
 
   // Fungsi untuk menangani klik pada gelembung dan pindah ke halaman baru
@@ -66,4 +66,4 @@ const Larutan = () => {
   );
 };
 
-export default Larutan;
+export default Kesetimbangan;

@@ -13,6 +13,7 @@ import Kuishidrokarbon from './kuis/Kuishidrokarbon';
 import AboutUs from './components/Aboutus';
 import Termokimia from './components/Termokimia';
 import HukumDasar from './components/Hukumdasar';
+
 // import Hidrokarbon from './components/Hidrokarbon';
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Aboutus" element={<AboutUs />} />
         <Route path="/Termokimia" element={<Termokimia />} />
         <Route path="/Hukumdasar" element={<HukumDasar />} />
+
         {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
         <Route path="/reaksi" element={<reaksi />} />
         <Route path="/asambasa" element={<asambasa />} />
