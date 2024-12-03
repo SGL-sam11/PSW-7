@@ -14,7 +14,7 @@ function Materi() {
       title: 'Hukum Termokimia',
       description: 'Memahami hukum termokimia dan penerapannya dalam reaksi kimia.',
       image: 'termokimia 150X150 bagus unik estetik.png',
-      link: '#',
+      link: '/Termokimia',
     },
     {
       title: 'Laju Reaksi',
