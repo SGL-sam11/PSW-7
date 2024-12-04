@@ -21,7 +21,7 @@ function Materi() {
       title: 'Laju Reaksi',
       description: 'Analisis faktor-faktor yang memengaruhi laju reaksi kimia.',
       image: 'laju reaksi 150x150.png',
-      link: '#',
+      link: '/Lajureaksi',
     },
     {
       title: 'Kesetimbangan Kimia',
