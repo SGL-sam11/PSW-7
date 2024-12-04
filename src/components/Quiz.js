@@ -58,7 +58,7 @@ function Quiz() {
       title: 'KUIS Koloid',
       description: 'Mempelajari sifat dan aplikasi koloid dalam kehidupan.',
       image: 'kuispg.png',
-      link: '/koloid',
+      link: '/KuisKoloid',
     },
   ];
 
