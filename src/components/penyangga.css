@@ -203,3 +203,46 @@
   margin: 1rem auto; /* Center the div with margin */
   max-width: 400px; /* Optional: Restrict maximum width for better display */
 }
+
+.deskripsi{
+  text-align: justify;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.judul h1{
+  text-align: center;
+    color: #006bb6;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+.contoh-soal{
+  max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    overflow: hidden;
+}
+.contoh-soal::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #006bb6; /* Matches title color */
+  margin: 10px auto;
+  border-radius: 2px;
+}

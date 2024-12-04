@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-// import "./penyangga.css";
+import "./penyangga.css";
 import Navbar from "./Navbar";
+import KoloidAccordion_penyangga from "../accecories/KoloidAccordion_penyangga";
 
 function Penyangga() {
   const [selectedTab, setSelectedTab] = useState("materi");
@@ -12,7 +13,6 @@ function Penyangga() {
       <header className="updated-header">
         <div className="header-content">
           <h1>Larutan Penyangga</h1>
-          <p>Explore the wonders of chemistry and its real-world applications.</p>
         </div>
         <div className="header-image">
           <img
@@ -70,16 +70,10 @@ Asam konjugasi adalah basa yang sudah mengikat 1 ion H+ sedangkan basa konjugasi
             Rumus
           </button>
           <button
-            className={selectedTab === "penggunaan" ? "active" : ""}
-            onClick={() => setSelectedTab("penggunaan")}
+            className={selectedTab === "peran" ? "active" : ""}
+            onClick={() => setSelectedTab("peran")}
           >
             Penggunaan
-          </button>
-          <button
-            className={selectedTab === "buat" ? "active" : ""}
-            onClick={() => setSelectedTab("buat")}
-          >
-            Cara Membuat
           </button>
         </nav>
 
@@ -108,11 +102,16 @@ Asam konjugasi adalah basa yang sudah mengikat 1 ion H+ sedangkan basa konjugasi
           {selectedTab === "prinsip" && (
             <div className="tab-panel">
             <div className="title">  <h2>Prinsip Kerja</h2> </div>
-              <p>
-                Buffer bekerja dengan menetralkan asam atau basa yang ditambahkan
-                ke larutan. Hal ini dicapai melalui reaksi antara komponen asam
-                dan basa yang membentuk buffer.
-              </p>
+             <div className="deskripsi"> <p>
+              Larutan penyangga mampu mempertahankan pH saat ditambah asam, basa, dan air. Selain itu, penyangga terdiri dari campuran 2 zat yaitu asam/basa lemah dengan konjugasinya.
+Dalam melaksanakan fungsinya untuk mempertahankan pH, larutan penyangga bekerja sebagai sistem. Setiap terjadi penambahan asam ataupun basa yang berusaha mengubah pH larutan tersebut, maka salah satu penyusun larutan ini akan bekerja untuk menjaga pH-nya.
+<br></br>
+<div className="picture"><img src="https://i.pinimg.com/236x/75/f8/23/75f823025348e4ecb0fa8eef8500a92a.jpg" alt="larutan penyangga" /></div>
+Supaya bisa lebih memahami prinsip kerja ini, perhatikan contoh yang ada berikut ini, ya! <br></br>
+✮ Misalnya terdapat sebuah sistem penyangga yang terdiri atas asam lemah CH3COOH dan basa konjugasinya yaitu CH3COO-. Sistem penyangga ini akan membentuk suatu reaksi kesetimbangan seperti berikut:
+Jika larutan tersebut ditambahkan asam (ion H+), maka sesuai dengan prinsip kesetimbangan reaksi akan bergeser ke kiri sehingga jumlah H+ yang membawa sifat asam bisa ditekan, dengan begitu larutan bisa menjaga agar pH-nya tidak turun.
+Sedangkan jika basa ditambahkan ke larutan tersebut, maka ion OH- akan bereaksi dengan H+ sehingga kesetimbangan akan bergeser ke arah kanan. Dengan kata lain, jumlah ion H+ yang berkurang diseimbangkan oleh CH3COOH sehingga pH-nya tidak naik.
+              </p></div>
             </div>
           )}
           {selectedTab === "rumus" && (
@@ -124,27 +123,28 @@ Asam konjugasi adalah basa yang sudah mengikat 1 ion H+ sedangkan basa konjugasi
               <div className="rms"> <p> pOH = pKb + log([garam]/[basa]). </p> </div>
             </div>
           )}
-          {selectedTab === "penggunaan" && (
+          {selectedTab === "peran" && (
             <div className="tab-panel">
-             <div className="title"><h2>Penggunaan</h2> </div>
+             <div className="title"><h2>Peran larutan penyangga</h2> </div>
               <p>
-                Larutan penyangga digunakan di berbagai bidang seperti biologi,
-                kimia, dan industri untuk menjaga kestabilan pH.
-              </p>
-            </div>
-          )}
-          {selectedTab === "buat" && (
-            <div className="tab-panel">
-            <div className="title"> <h2>Cara Membuat Larutan Penyangga</h2> </div>
-              <p>
-                Campurkan asam atau basa lemah dengan garamnya. Hitung perbandingan
-                menggunakan rumus buffer untuk menentukan pH yang diinginkan.
+              Di dalam kehidupan sehari-hari, larutan penyangga memiliki peran yang sangat banyak mulai dari dalam tubuh hingga dalam dunia industri hingga farmasi. Berikut ini adalah beberapa peran dari larutan buffer!
+<li>Sebagai penyangga pH darah agar tidak mengalami keasaman atau kebasaan yang dapat menyebabkan penyakit atau kondisi tubuh yang tidak normal.</li>
+<li>Sebagai pengatur pH pada lambung agar enzim yang ada di dalamnya bisa bekerja dengan optimal untuk mencerna makanan.</li>
+<li>Menjaga pH limbah industri agar saat dibuang tidak membahayakan bagi lingkungan dan ekosistem.</li>
+<li>Menjaga pH dari obat agar sesuai dengan pH di bagian tubuh tertentu misalnya obat mata yang menggunakan penyangga agar pH-nya sesuai dengan kondisi mata manusia.</li>
               </p>
             </div>
           )}
         </main>
       </section>
 
+{/* section contoh soal */}
+<section>
+  <div className="contoh-soal">
+<div className="judul"><h1>✩₊˚.⋆☾⋆⁺₊✧ CONTOH SOAL! ✩₊˚.⋆☾⋆⁺₊✧</h1></div>  
+<KoloidAccordion_penyangga/>
+</div>
+</section>
       {/* Section Video */}
       <section className="video-section">
         <h2>Video Pembelajaran</h2>

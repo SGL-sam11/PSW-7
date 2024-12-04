@@ -51,14 +51,24 @@
     gap: 2rem;
     padding: 2rem;
     background: #f9f9f9;
+    flex-wrap: wrap;
+  }
+  .info-section:nth-child(odd) {
+    flex-direction: row; /* Default: Image on the left */
   }
   
+  .info-section:nth-child(even) {
+    flex-direction: row-reverse; /* For even sections: Image on the right */
+  }
+
   .info-image {
     max-width: 20%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+  .info-content{
+    flex: 1;
+  }
   .info-content h2 {
     font-size: 2rem;
     color: #13547a;
@@ -69,7 +79,6 @@
     line-height: 1.8;
   }
   
-  /* Section Penyangga */
   .content-section {
     margin: 2rem 0;
     padding: 2rem;
