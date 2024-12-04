@@ -10,7 +10,7 @@ function Navbar() {
                     <a className="navbar-brand" href="/Home">
                         <img className="Rounded-pill ms-3" src="chemistryhub.png" alt="Avatar Logo" style={{ width: '80px', borderRadius: '60%' }} />
                     </a>
-                    <a className="navbar-brand text-white" href="#"><strong>CHEMISTRY</strong>HUB</a>
+                    <a className="navbar-brand text-white" href="/Home"><strong>CHEMISTRY</strong>HUB</a>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">

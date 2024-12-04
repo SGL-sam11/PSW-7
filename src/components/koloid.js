@@ -80,7 +80,7 @@ return (
         </div>
         <div className="header-image">
           <img
-            src="https://i.pinimg.com/736x/e5/8d/8a/e58d8a2e4fffda25e953e48cf6cb0a7d.jpg"
+            src="https://i.pinimg.com/736x/73/f6/cf/73f6cf738251a56a75d6aa150aba4dd9.jpg"
             alt="Chemistry Illustration"
           />
         </div>
@@ -108,7 +108,7 @@ return (
   
       {/* Types of Colloids */}
       <section id="koloid-types" className="section">
-        <h3>Jenis-jenis Koloid</h3>
+       <div className='jdl'> <h1>Jenis-jenis Koloid</h1> </div>
         <div className="colloid-type-cards">
           <div className="colloid-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwW0QpEA3dly8dzkdzYY7L2-CaZYHhtXM6MQ&s" alt="Sols" />

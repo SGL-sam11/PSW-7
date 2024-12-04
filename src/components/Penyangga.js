@@ -32,8 +32,9 @@ function Penyangga() {
         <div className="info-content">
           <h2>Apa itu Larutan Penyangga?</h2>
           <p>
-          Larutan penyangga atau Buffer adalah larutan yang dapat mempertahankan pH tertentu terhadap usaha mengubah pH, seperti penambahan asam, basa, ataupun pengenceran.
-          </p>
+          larutan penyangga adalah larutan yang yang mampu mempertahankan pH-nya saat ditambahkan asam, basa, maupun air. Larutan buffer menjadi salah satu produk yang dihasilkan dari reaksi asam dan basa.
+Larutan buffer terbentuk dari interaksi antara asam atau basa lemah dengan garamnya (konjugasinya). Jika Sobat Pijar ingin mengingat kembali tentang asam/basa konjugasi, hal tersebut dijelaskan dalam pengertian asam dan basa oleh Bronsted-Lowry.
+Asam konjugasi adalah basa yang sudah mengikat 1 ion H+ sedangkan basa konjugasi adalah asam yang sudah melepaskan 1 ion H+.</p>
         </div>
       </section>
 
