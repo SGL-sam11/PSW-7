@@ -6,7 +6,7 @@ function Kelarutan() {
   const [selectedTab, setSelectedTab] = useState("materi");
 
   return (
-    <div className="penyangga">
+    <div className="kelarutan">
       {/* Navbar */}
       <Navbar />
 
@@ -14,7 +14,6 @@ function Kelarutan() {
       <header className="updated-header">
         <div className="header-content">
           <h1>Kelarutan dan hasil kali kelarutan</h1>
-          <p>Explore the wonders of chemistry and its real-world applications.</p>
         </div>
         <div className="header-image">
           <img
@@ -27,21 +26,33 @@ function Kelarutan() {
       {/* Section Informasi */}
       <section className="info-section">
         <img
-          src="https://i.pinimg.com/736x/24/4c/0a/244c0a1ed0bea18c8122950358457db1.jpg"
+          src="https://i.pinimg.com/736x/3b/e0/e5/3be0e56316396ba68826a81edbdf59db.jpg"
           alt="Chemistry Illustration"
           className="info-image"
         />
         <div className="info-content">
-          <h2>Apa itu Larutan Penyangga?</h2>
+          <h2>Apa itu Kelarutan?</h2>
           <p>
-          Larutan penyangga atau Buffer adalah larutan yang dapat mempertahankan pH tertentu terhadap usaha mengubah pH, seperti penambahan asam, basa, ataupun pengenceran.
+          Kelarutan adalah kemampuan suatu zat untuk melarut dalam sejumlah pelarut atau bisa dikatakan jika kelarutan menyatakan banyaknya zat terlarut dalam tiap satu liter larutan pada suhu tertentu. Jika suatu zat padat secara terus menerus ditambahkan ke dalam zat pelarut, maka pada suatu saat kita akan mendapati zat tersebut tidak akan larut lagi. 
+Itu artinya, pada saat itu sudah mencapai konsentrasi maksimum. Larutan yang sudah mengandung konsentrasi maksimum itu, disebut sebagai larutan jenuh dan harga konsentrasi maksimum itu dinamakan kelarutan. 
           </p>
         </div>
       </section>
 
-      {/* Section Penyangga */}
+      <section className="info-section">
+        <img
+          src="https://i.pinimg.com/736x/c9/be/5d/c9be5dd292b269863d0264520ffca52c.jpg"
+          alt="Chemistry Illustration"
+          className="info-image"
+        />
+      <div className="info-content">
+          <h2>Apa itu Hasil Kali Kelarutan?</h2>
+          <p>
+          Hasil kali kelarutan (Ksp) adalah suatu konstanta kesetimbangan ion yang menunjukkan tingkat kelarutan suatu senyawa ionik dalam air pada suhu tertentu. Dalam konteks kimia, ketika suatu senyawa ionik larut dalam air, itu terdisosiasi menjadi ion-ion konstituen, dan terdapat suatu kesetimbangan dinamis antara senyawa tersebut dan ion-ionnya dalam larutan. </p>
+        </div>
+</section>
+
       <section className="content-section">
-        {/* Image di tengah atas */}
         <div className="image-center">
           <img
             src="https://i.pinimg.com/736x/ac/35/3f/ac353f1d35cfa951bc5d17d35cdc99b5.jpg"
@@ -53,8 +64,8 @@ function Kelarutan() {
         {/* Tabs untuk Materi */}
         <nav className="tabs">
           <button
-            className={selectedTab === "Jenis" ? "active" : ""}
-            onClick={() => setSelectedTab("Jenis")}
+            className={selectedTab === "Pengaruh-Ion" ? "active" : ""}
+            onClick={() => setSelectedTab("Pengaruh-Ion")}
           >
             Jenis-jenis
           </button>
@@ -86,7 +97,7 @@ function Kelarutan() {
 
         {/* Konten Tab */}
         <main className="tab-content">
-          {selectedTab === "Jenis" && (
+          {selectedTab === "Pengaruh-Ion" && (
             <div className="tab-panel">
              <div className="title"><h2>Jenis Larutan Penyangga</h2></div> 
               <div className="penyangga-type-cards">
@@ -118,12 +129,10 @@ function Kelarutan() {
           )}
           {selectedTab === "rumus" && (
             <div className="tab-panel">
-             <div className="title"> <h2>Rumus Buffer</h2> </div>
+             <div className="title"> <h2>Rumus </h2> </div>
              <h3> Buffer asam menggunakan rumus pH </h3> 
-              <div className="rms"> <p> pKa + log([garam]/[asam]),</p></div>
-              <h3>  sedangkan buffer basa menggunakan rumus </h3>
-              <div className="rms"> <p> pOH = pKb + log([garam]/[basa]). </p> </div>
-            </div>
+          
+           </div>
           )}
           {selectedTab === "penggunaan" && (
             <div className="tab-panel">
