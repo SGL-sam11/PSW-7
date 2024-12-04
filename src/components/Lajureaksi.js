@@ -192,11 +192,7 @@ function Lajureaksi() {
           <li><span className="icon">💊</span> Kesehatan: Mengembangkan obat-obatan yang bekerja dengan cepat dan efektif.</li>
         </ul>
         </div>
-
-        <Link to="/HukumLajuReaksi">
-          <button className="cta-button" data-aos="fade-up">Hukum Laju Reaksi</button>
-        </Link>
-      </section>
+    </section>
     </div>
   );
 }

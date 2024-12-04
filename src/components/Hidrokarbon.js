@@ -61,30 +61,26 @@ function HidrokarbonDanMinyakBumi() {
         </div>
 
         <div className="unique-box" data-aos="zoom-in">
-        <h2 data-aos="fade-up">Pemanfaatan Hidrokarbon dan Minyak Bumi</h2>
-        <ul className="unique-list-icons" data-aos="fade-up">
-          <li><span className="unique-icon">⛽</span> Bahan bakar: Bensin, solar, gas, dan kerosene digunakan sebagai bahan bakar untuk transportasi dan pembangkit listrik.</li>
-          <li><span className="unique-icon">🏭</span> Bahan baku industri: Nafta digunakan sebagai bahan baku untuk menghasilkan berbagai produk petrokimia seperti plastik, serat sintetis, dan pupuk.</li>
-          <li><span className="unique-icon">🔧</span> Pelumas: Minyak pelumas digunakan untuk mengurangi gesekan pada mesin.</li>
-          <li><span className="unique-icon">🛣️</span> Aspal: Aspal digunakan untuk membuat jalan dan atap.</li>
-        </ul>
+          <h2 data-aos="fade-up">Pemanfaatan Hidrokarbon dan Minyak Bumi</h2>
+          <ul className="unique-list-icons" data-aos="fade-up">
+            <li><span className="unique-icon">⛽</span> Bahan bakar: Bensin, solar, gas, dan kerosene digunakan sebagai bahan bakar untuk transportasi dan pembangkit listrik.</li>
+            <li><span className="unique-icon">🏭</span> Bahan baku industri: Nafta digunakan sebagai bahan baku untuk menghasilkan berbagai produk petrokimia seperti plastik, serat sintetis, dan pupuk.</li>
+            <li><span className="unique-icon">🔧</span> Pelumas: Minyak pelumas digunakan untuk mengurangi gesekan pada mesin.</li>
+            <li><span className="unique-icon">🛣️</span> Aspal: Aspal digunakan untuk membuat jalan dan atap.</li>
+          </ul>
         </div>
 
         <div className="unique-box" data-aos="zoom-in">
-        <h2 data-aos="fade-up">Dampak Negatif Penggunaan Minyak Bumi</h2>
-        <p className="unique-fade-in" data-aos="fade-up">
-          Meskipun memiliki banyak manfaat, penggunaan minyak bumi juga menimbulkan dampak negatif bagi lingkungan, antara lain:
-        </p>
-        <ul className="unique-list-icons" data-aos="fade-up">
-          <li><span className="unique-icon">🌍</span> Pencemaran: Tumpahan minyak dapat mencemari laut dan tanah.</li>
-          <li><span className="unique-icon">🌡️</span> Pemanasan global: Pembakaran minyak bumi menghasilkan gas rumah kaca yang menyebabkan pemanasan global.</li>
-          <li><span className="unique-icon">💨</span> Hujan asam: Pembakaran minyak bumi menghasilkan senyawa belerang dan nitrogen oksida yang menyebabkan hujan asam.</li>
-        </ul>
+          <h2 data-aos="fade-up">Dampak Negatif Penggunaan Minyak Bumi</h2>
+          <p className="unique-fade-in" data-aos="fade-up">
+            Meskipun memiliki banyak manfaat, penggunaan minyak bumi juga menimbulkan dampak negatif bagi lingkungan, antara lain:
+          </p>
+          <ul className="unique-list-icons" data-aos="fade-up">
+            <li><span className="unique-icon">🌍</span> Pencemaran: Tumpahan minyak dapat mencemari laut dan tanah.</li>
+            <li><span className="unique-icon">🌡️</span> Pemanasan global: Pembakaran minyak bumi menghasilkan gas rumah kaca yang menyebabkan pemanasan global.</li>
+            <li><span className="unique-icon">💨</span> Hujan asam: Pembakaran minyak bumi menghasilkan senyawa belerang dan nitrogen oksida yang menyebabkan hujan asam.</li>
+          </ul>
         </div>
-
-        <Link to="/AlternatifEnergi">
-          <button className="unique-cta-button" data-aos="fade-up">Lihat Alternatif Energi</button>
-        </Link>
       </section>
     </div>
   );
