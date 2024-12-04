@@ -43,7 +43,6 @@ const AboutUs = () => {
         <div className="hero-content fade-in">
           <h1 className="hero-title">About Us</h1>
           <p>Your journey to innovation starts here.</p>
-          <button className="btn-primary">Learn More</button>
         </div>
       </section>
 
@@ -52,10 +51,7 @@ const AboutUs = () => {
         <div className="container">
           <h2>Our Story</h2>
           <p>
-            We started with a vision to create a world where technology and
-            innovation empower everyone to achieve more. From humble beginnings
-            to a global presence, our journey has been defined by passion,
-            creativity, and a relentless pursuit of excellence.
+          ChemistryHub was founded with the goal of making learning chemistry easier and more engaging for students. We started by recognizing the challenges that high school students face in understanding complex chemistry concepts. Our mission is to provide clear, interactive, and accessible educational content to students in class 11. From educational materials to virtual experiments and quizzes, ChemistryHub has grown into a trusted platform for students eager to learn and excel in their chemistry studies.
           </p>
         </div>
       </section>
@@ -65,13 +61,10 @@ const AboutUs = () => {
         <div className="container">
           <h2>Vision & Mission</h2>
           <p>
-            <strong>Vision:</strong> To be the leading force of innovation,
-            inspiring positive change worldwide.
+            <strong>Vision:</strong>To become the leading platform for chemistry education, empowering students to explore the wonders of chemistry and develop critical thinking skills that will prepare them for a future in science and technology.
           </p>
           <p>
-            <strong>Mission:</strong> To design, develop, and deliver
-            groundbreaking solutions that empower individuals and businesses to
-            thrive in the digital age.
+            <strong>Mission:</strong> Our mission is to deliver high-quality, comprehensive, and engaging learning materials for class 11 chemistry students. We aim to provide a variety of resources such as study notes, tutorial videos, quizzes, and interactive simulations to make chemistry accessible, fun, and effective for every learner.
           </p>
         </div>
       </section>
@@ -89,47 +82,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Comment Section */}
-      <section className="comments-section fade-in">
-        <div className="container">
-          <h2>We Value Your Feedback</h2>
-          <form onSubmit={handleCommentSubmit} className="comment-form">
-            <div className="input-wrapper">
-              <textarea
-                placeholder=" "
-                value={userComment}
-                onChange={(e) => setUserComment(e.target.value)}
-                required
-                className="comment-input"
-              ></textarea>
-              <label className="floating-label">Write your comment here...</label>
-            </div>
-            <button type="submit" className="btn-submit">
-              Submit
-            </button>
-          </form>
-
-          {/* Display Comments */}
-          <div className="comments-display">
-            <h3>User Comments</h3>
-            {comments.length > 0 ? (
-              <ul className="comments-list">
-                {comments.map((comment, index) => (
-                  <li key={index} className="comment-item fade-in">
-                    <div className="comment-avatar">
-                    </div>
-                    <div className="comment-content">
-                      <p>{comment}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p>No comments yet. Be the first to share your thoughts!</p>
-            )}
-          </div>
-        </div>
-      </section>
     </div>
 < Footer />
 </div>
