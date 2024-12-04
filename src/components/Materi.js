@@ -27,7 +27,7 @@ function Materi() {
       title: 'Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
       image: 'kesetimbangan kimia 150x150.png',
-      link: '#',
+      link: '/Kesetimbangan',
     },
     {
       title: 'Larutan Asam Basa',
