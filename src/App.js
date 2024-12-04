@@ -30,7 +30,7 @@ import KuisKoloid from './kuis/KuisKoloid'
 // import reaksi from './components/reaksi';
 // import asambasa from './components/asambasa';
 // import hidrolosis from './components/hidrolosis'; 
-
+  
 function App() {
   return (
     <Router>
