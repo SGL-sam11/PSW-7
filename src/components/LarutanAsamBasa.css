@@ -1,0 +1,99 @@
+/* Kontainer utama untuk halaman Larutan */
+.larutan-container {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    justify-content: center; /* Menempatkan semua elemen di tengah horizontal */
+    align-items: center; /* Menempatkan elemen di tengah secara vertikal */
+    height: 100vh;        /* Membuat container mengambil seluruh tinggi layar */
+    background-color: #fafcfe; /* Latar belakang halaman berwarna biru muda */
+    padding-top: 50px;    /* Memberikan ruang di bagian atas untuk judul */
+  }
+  
+  /* Gaya untuk judul utama */
+  .title {
+    font-size: 40px;         /* Ukuran font yang lebih besar untuk judul */
+    color: #2c3e50;          /* Warna gelap untuk judul */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;     /* Memberikan ruang di bawah judul */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan pada teks judul */
+  }
+  
+  /* Kontainer untuk baris gelembung */
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;            /* Memberikan jarak antar gelembung */
+    margin-bottom: 30px;  /* Memberikan jarak antar baris */
+  }
+  
+  /* Gaya untuk setiap gelembung */
+  .bubble {
+    padding: 20px;
+    background-color: #6978ff;   /* Warna latar belakang yang cerah dan menarik */
+    color: rgb(2, 2, 2);
+    border-radius: 15px;          /* Sudut melengkung pada kotak gelembung */
+    font-size: 20px;              /* Ukuran font dalam gelembung */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;                 /* Lebar kotak gelembung */
+    height: 250px;                /* Tinggi kotak gelembung */
+    display: flex;
+    flex-direction: column;       /* Menyusun konten di dalam gelembung secara vertikal */
+    justify-content: center;      /* Menyusun konten di tengah secara vertikal */
+    align-items: center;          /* Menyusun konten di tengah secara horizontal */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan halus di sekitar gelembung */
+    transition: all 0.3s ease;    /* Efek transisi saat hover */
+    margin: 10px;                 /* Memberikan jarak antar gelembung */
+  }
+  
+  /* Teks di dalam gelembung */
+  .bubble-text {
+    font-size: 18px;             /* Ukuran font untuk teks dalam gelembung */
+    margin-bottom: 15px;         /* Memberikan ruang di bawah teks */
+  }
+  
+  /* Tombol Pelajari Lebih Lanjut */
+  .learn-more {
+    padding: 10px 20px;
+    background-color: #5a2ee8;   /* Warna tombol yang mencolok */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: #ff69b4;   /* Mengubah warna tombol saat hover */
+  }
+  
+  /* Efek hover pada gelembung */
+  .bubble:hover {
+    background-color: #62c4cf;   /* Mengubah warna latar belakang saat hover */
+    transform: scale(1.1);        /* Membuat gelembung sedikit membesar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat hover */
+  }
+  
+  /* Responsivitas untuk tampilan yang lebih kecil (seperti pada mobile) */
+  @media screen and (max-width: 768px) {
+    .larutan-container {
+      flex-direction: column;  /* Menyusun elemen secara vertikal pada layar kecil */
+      padding-top: 20px;       /* Mengurangi padding pada layar kecil */
+    }
+  
+    .bubble {
+      width: 200px;            /* Mengurangi ukuran gelembung pada layar kecil */
+      height: 200px;
+      font-size: 18px;         /* Mengurangi ukuran font */
+      padding: 15px;           /* Mengurangi padding pada gelembung */
+    }
+  
+    .title {
+      font-size: 32px;         /* Menyesuaikan ukuran judul agar lebih kecil */
+      margin-bottom: 30px;     /* Mengurangi jarak antara judul dan gelembung */
+    }
+  }
+  
