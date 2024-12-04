@@ -20,7 +20,7 @@ import KuisKesetimbanganKimia from './kuis/KuisKesetimbanganKimia';
 import KuisLarutanAsambasa from './kuis/KuisLarutanAsambasa';
 import KuisHidrolisisGaram from './kuis/KuisHidrolisisGaram';
 import KuisLarutanPenyangga from './kuis/KuisLarutanPenyangga';
-import KuisKelarutanHasilKelarutan from './kuis/KuisKelarutanHasilKelarutan'
+import KuisKelarutanHasilKelarutan from './kuis/KelarutanHasilKelarutan'
 import KuisKoloid from './kuis/KuisKoloid'
 // import Kesetimbangan from './components/Kesetimbangan';
 // import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
