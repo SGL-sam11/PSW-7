@@ -67,7 +67,7 @@ const Login = () => {
                     </div>
                     <button type="submit" className="btn w-100 text-white" style={{backgroundColor:'#436B95'}}>LOG IN</button>
                     <div className="text-center mt-4">
-                        <p className='cont'>Don't have an account? <Link to="/Registration" className="text-white"><strong>REGISTER HERE</strong></Link></p>
+                        <p className='cont'>Don't have an account? <Link to="/Register" className="text-white"><strong>REGISTER HERE</strong></Link></p>
                         {message && <div className='alert alert-success mt-3 mb-0'>{message}</div>}
                     </div>
                 </form>
