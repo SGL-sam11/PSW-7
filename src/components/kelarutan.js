@@ -99,20 +99,22 @@ Itu artinya, pada saat itu sudah mencapai konsentrasi maksimum. Larutan yang sud
         <main className="tab-content">
           {selectedTab === "Pengaruh-Ion" && (
             <div className="tab-panel">
-             <div className="title"><h2>Jenis Larutan Penyangga</h2></div> 
+             <div className="title"><h2>Pengaruh Ion</h2></div> 
               <div className="penyangga-type-cards">
           <div className="penyangga-card">
             <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRrZr3yXY7QFy6BP6rrj8XQbQ_c0vzQA6aQGRMl0-IJpjgaIkMt5loIGc-wXElbIOW9xy2FS2-kcsm0NIUiPzZJ9yuNhxCR&usqp=CAE
 " alt="larutan basa" />
-            <h4>Larutan Basa</h4>
+            <h4>Pengaruh Ion Sejenis Terhadap Kelarutan</h4>
             <p>Larutan basa adalah zat yang jika dilarutkan ke dalam air akan menghasilkan ion hidroksida (OH). Basa memiliki sifat kaustik, artinya dapat merusak kulit dan terasa licin serta rasanya pahit.
             Sedangkan jika PH-nya di atas 7 , maka larutan tersebut sifatnya basa.</p>          </div>
           <div className="penyangga-card2">
             <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrxQ8g_chRZ-n8X6DyGZSp2L1BklY_P93M4p31PbJUueanf-3xAzgbXEZRP0bVWVRpQC8CYNH_ZcSaYd5Ln983IenTlf4_0OIgB9lGBU8&usqp=CAE" alt="larutan asam" />
+           <p></p>
             <h4>Larutan Asam</h4>
-            <p>Larutan asam didefinisikan sebagai cairan yang mengandung konsentrasi ion hidrogen yang tinggi , yang umumnya digunakan dalam proses industri seperti pengawetan asam, pembersihan, dan penghilangan kerak.
-            Jika nilai PH-nya dibawah 7 maka larutan tersebut sifatnya asam.
-            </p>
+            <p>Pengaruh penambahan ion sejenis terhadap kelarutan suatu senyawa dapat memiliki dampak signifikan pada kelarutan senyawa tersebut. Dampaknya dapat dijelaskan dalam beberapa poin:</p>
+<div className="sub-bab"><h5>Pengurangan Kelarutan</h5></div>
+<li>Penambahan ion sejenis dengan muatan yang sama dapat mengurangi kelarutan suatu senyawa. Ini terjadi karena adanya tolakan elektrostatis antara ion-ion sejenis.</li>
+<li>Contohnya, pertimbangkan senyawa AB yang terdisosiasi menjadi ion Aⁿ⁺ dan ion Bⁿ⁻. Jika kita menambahkan ion Aⁿ⁺ dalam larutan yang sudah mengandung senyawa AB, ion-ion Aⁿ⁺ tersebut dapat bersaing dengan ion Bⁿ⁻ untuk tempat di dalam larutan, mengurangi kelarutan senyawa AB.</li>
           </div>
         </div>
             </div>
