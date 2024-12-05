@@ -11,54 +11,54 @@ const LarutanAsamBasa = () => {
   };
 
   return (
-    <div className="larutan-container">
-      <div className="title">Larutan Asam Basa</div>
-      <div className="bubbles-container">
-        <div className="row">
+    <div className="larutan-asam-basa-container">
+      <div className="larutan-asam-basa-title">Larutan Asam Basa</div>
+      <div className="larutan-asam-basa-bubbles-container">
+        <div className="larutan-asam-basa-row">
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("pengertian-larutan-asam-basa")}
           >
-            <div className="bubble-text">Pengertian Larutan Asam dan Basa</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Pengertian Larutan Asam dan Basa</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("teori-asam-basa")}
           >
-            <div className="bubble-text">Teori Asam dan Basa: Bronsted-Lowry dan Lewis</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Teori Asam dan Basa: Bronsted-Lowry dan Lewis</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("skala-ph")}
           >
-            <div className="bubble-text">Skala pH dan Pengukuran Keasaman atau Kebasaan</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Skala pH dan Pengukuran Keasaman atau Kebasaan</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
         </div>
 
-        <div className="row">
+        <div className="larutan-asam-basa-row">
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("reaksi-netralisasi")}
           >
-            <div className="bubble-text">Reaksi Netralisasi antara Asam dan Basa</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Reaksi Netralisasi antara Asam dan Basa</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("asam-dan-basa-kuat-lemah")}
           >
-            <div className="bubble-text">Larutan Asam Kuat vs Asam Lemah, serta Basa Kuat vs Basa Lemah</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Larutan Asam Kuat vs Asam Lemah, serta Basa Kuat vs Basa Lemah</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
+            className="larutan-asam-basa-bubble"
             onClick={() => handleBubbleClick("contoh-soal")}
           >
-            <div className="bubble-text">Contoh Soal Larutan Asam dan Basa</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="larutan-asam-basa-bubble-text">Contoh Soal Larutan Asam dan Basa</div>
+            <button className="larutan-asam-basa-learn-more">Pelajari Lebih Lanjut</button>
           </div>
         </div>
       </div>

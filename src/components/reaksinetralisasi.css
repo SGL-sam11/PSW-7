@@ -1,69 +1,77 @@
-.container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  h2 {
-    margin-top: 20px;
-    color: #4a4a4a;
-  }
-  
-  p {
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  pre {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #333;
-  }
-  
-  ul {
-    list-style-type: square;
-    margin-left: 20px;
-    color: #555;
-  }
-  
-  .background-image {
-    width: 100%;
-    height: 250px;
-    background-image: url('https://www.quipper.com/id/blog/wp-content/uploads/2019/08/Hidrolisis-Kimia-Kelas-11-2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  
-  .nav-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-button:hover {
-    background-color: #0056b3;
-  }
-  
+/* Styling untuk container utama */
+.reaksi-netralisasi-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Styling untuk judul utama */
+.reaksi-netralisasi-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Styling untuk judul sub bagian */
+.reaksi-netralisasi-container h2 {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
+/* Styling untuk paragraf */
+.reaksi-netralisasi-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Styling untuk blockquote atau contoh reaksi */
+.reaksi-netralisasi-container pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+}
+
+/* Styling untuk daftar */
+.reaksi-netralisasi-container ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: #555;
+}
+
+/* Styling untuk gambar latar belakang */
+.reaksi-netralisasi-container .background-image {
+  width: 100%;
+  height: 250px;
+  background-image: url('https://www.quipper.com/id/blog/wp-content/uploads/2019/08/Hidrolisis-Kimia-Kelas-11-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk tombol navigasi */
+.reaksi-netralisasi-button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Styling untuk tombol */
+.reaksi-netralisasi-nav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reaksi-netralisasi-nav-button:hover {
+  background-color: #0056b3;
+}

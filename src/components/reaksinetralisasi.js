@@ -5,18 +5,18 @@ import './reaksinetralisasi.css';
 const Reaksinetralisasi = () => {
   const navigate = useNavigate();  // Initialize navigate function
   
-  // Function to navigate back to the homepage
+  // Fungsi untuk menavigasi kembali ke halaman utama
   const goToHome = () => {
     navigate('/');  // Navigate to the homepage
   };
 
-  // Function to navigate to other material
+  // Fungsi untuk menavigasi ke materi lain
   const goToOtherMaterial = (path) => {
     navigate(path);  // Navigate to the given path (e.g., another page)
   };
 
   return (
-    <div className="container">
+    <div className="reaksi-netralisasi-container">
       <h1>Reaksi Netralisasi</h1>
 
       {/* Background image */}
@@ -87,11 +87,11 @@ const Reaksinetralisasi = () => {
       </ul>
 
       {/* Navigation buttons */}
-      <div className="button-container">
-        <button onClick={goToHome} className="nav-button">
+      <div className="reaksi-netralisasi-button-container">
+        <button onClick={goToHome} className="reaksi-netralisasi-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/asam-dan-basa-kuat-lemah')} className="nav-button">
+        <button onClick={() => goToOtherMaterial('/asam-dan-basa-kuat-lemah')} className="reaksi-netralisasi-nav-button">
           Pelajari Asam Dan Basa Kuat Lemah
         </button>
       </div>

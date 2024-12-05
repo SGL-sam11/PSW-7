@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  // Mengimpor Link untuk navigasi
-import './teoriasambasa.css'; // Mengimpor file CSS
+import './teoriasambasa.css'; // Mengimpor file CSS yang baru
 
 // Komponen utama
 const Teoriasambasa = () => {
   return (
-    <div className="container">
+    <div className="teoriasambasa-container">
       <h1>Teori Asam dan Basa</h1>
-      <div className="kesetimbangan-background"></div>  {/* Background image handled by CSS */}
+      <div className="teoriasambasa-kesetimbangan-background"></div>  {/* Background image handled by CSS */}
 
       <p>
         Teori asam dan basa memiliki beberapa pendekatan yang berbeda. Berikut ini adalah dua teori penting: Teori Bronsted-Lowry dan Teori Lewis.
@@ -27,7 +27,7 @@ const Teoriasambasa = () => {
       <p>
         Di sini, HCl bertindak sebagai asam karena menyumbangkan proton (H⁺), sedangkan NH₃ bertindak sebagai basa karena menerima proton (H⁺).
       </p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0wFgHScRj3Dg42v58zhU9qCXgs4rwkvFPw&s" alt="Reaksi Bronsted-Lowry" className="reaction-image" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0wFgHScRj3Dg42v58zhU9qCXgs4rwkvFPw&s" alt="Reaksi Bronsted-Lowry" className="teoriasambasa-reaction-image" />
 
       <h2>Teori Lewis</h2>
       <p>
@@ -43,14 +43,14 @@ const Teoriasambasa = () => {
       <p>
         Dalam reaksi ini, BF₃ bertindak sebagai asam Lewis karena menerima pasangan elektron dari NH₃, yang bertindak sebagai basa Lewis.
       </p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT25UbnXMuJw43SAM0xvYDetMfArqWIR8Pe1g&s" alt="Reaksi Asam-Basa Lewis" className="reaction-image" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT25UbnXMuJw43SAM0xvYDetMfArqWIR8Pe1g&s" alt="Reaksi Asam-Basa Lewis" className="teoriasambasa-reaction-image" />
 
       {/* Navigasi menggunakan <Link> */}
-      <div className="button-container">
-        <Link to="/" className="nav-button">
+      <div className="teoriasambasa-button-container">
+        <Link to="/" className="teoriasambasa-nav-button">
           Kembali ke Halaman Utama
         </Link>
-        <Link to="/skala-ph" className="nav-button">
+        <Link to="/skala-ph" className="teoriasambasa-nav-button">
           Pelajari Skala Ph
         </Link>
       </div>

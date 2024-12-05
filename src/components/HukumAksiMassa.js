@@ -1,4 +1,3 @@
-// src/components/HukumAksiMassa.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
 import './HukumAksiMassa.css'; // Importing the CSS file
@@ -17,9 +16,9 @@ const HukumAksiMassa = () => {
   };
 
   return (
-    <div className="container">
+    <div className="hukumaksimassa-container">
       <h1>Hukum Aksi Massa dan Konstanta Kesetimbangan (K)</h1>
-      <div className="kesetimbangan-background"></div>  {/* Background image handled by CSS */}
+      <div className="hukumaksimassa-kesetimbangan-background"></div>  {/* Background image handled by CSS */}
       
       <p>
         Hukum Aksi Massa menyatakan bahwa pada suhu tetap, konsentrasi molar produk dan reaktan pada kesetimbangan berhubungan dengan konstanta kesetimbangan yang disebut <strong>K</strong>. 
