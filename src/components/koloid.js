@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react';
-import './Koloid.css'; // Ensure no conflicting global styles
+import './koloid.css'; // Ensure no conflicting global styles
 import Navbar from './Navbar';
 import KoloidAccordion from "../accecories/KoloidAccordion";
 import senterImage from "../aset/senter.png";
@@ -75,8 +75,7 @@ return (
       <Navbar />
       <header className="updated-header">
         <div className="header-content">
-          <h1>Larutan Penyangga</h1>
-          <p>Explore the wonders of chemistry and its real-world applications.</p>
+          <h1>Koloid</h1>
         </div>
         <div className="header-image">
           <img
@@ -85,11 +84,6 @@ return (
           />
         </div>
       </header>
-
-      {/* Accordion Section */}
-      <section id="koloid-science" className="section">
-<KoloidAccordion />
-      </section>
 
       {/* Tyndall and Brown Effects */}
       <section id="koloid-effects" className="section">
@@ -170,6 +164,11 @@ return (
           <li>Bereksperimen dengan pembuatan emulsi dan menguji stabilitasnya di bawah kondisi yang berbeda.</li>
           <li>Mengeksplorasi peran koloid dalam ilmu pangan dengan membuat mayones sendiri.</li>
         </ul>
+      </section>
+
+      {/* Accordion Section */}
+      <section id="koloid-science" className="section">
+<KoloidAccordion />
       </section>
 
       {/* Video Section */}
