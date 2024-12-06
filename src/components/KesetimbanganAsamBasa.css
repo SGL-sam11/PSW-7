@@ -1,5 +1,5 @@
 /* Container for the whole page */
-.container {
+.kesetimbanganasambasa-container {
   font-family: 'Arial', sans-serif;
   margin: 20px;
   padding: 20px;
@@ -9,27 +9,27 @@
 }
 
 /* Header Styles */
-h1 {
+.kesetimbanganasambasa-h1 {
   font-size: 2.5rem;
   color: #3c3c3c;
   text-align: center;
   margin-bottom: 30px;
 }
 
-h2 {
+.kesetimbanganasambasa-h2 {
   font-size: 2rem;
   color: #2a2a2a;
   margin-top: 20px;
 }
 
-h3 {
+.kesetimbanganasambasa-h3 {
   font-size: 1.5rem;
   color: #2a2a2a;
   margin-top: 15px;
 }
 
 /* Paragraph Styles */
-p, ul {
+.kesetimbanganasambasa-p, .kesetimbanganasambasa-ul {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
@@ -37,7 +37,7 @@ p, ul {
 }
 
 /* Code block (pre) */
-pre {
+.kesetimbanganasambasa-pre {
   background-color: #f1f1f1;
   padding: 10px;
   border-radius: 8px;
@@ -47,7 +47,7 @@ pre {
 }
 
 /* Styling for the background image */
-div[style*="backgroundImage"] {
+.kesetimbanganasambasa-background {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -55,7 +55,7 @@ div[style*="backgroundImage"] {
 }
 
 /* Button container */
-.button-container {
+.kesetimbanganasambasa-button-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -63,7 +63,7 @@ div[style*="backgroundImage"] {
 }
 
 /* Button Styles */
-.nav-button {
+.kesetimbanganasambasa-nav-button {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -74,29 +74,29 @@ div[style*="backgroundImage"] {
   transition: background-color 0.3s ease;
 }
 
-.nav-button:hover {
+.kesetimbanganasambasa-nav-button:hover {
   background-color: #45a049;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .container {
+  .kesetimbanganasambasa-container {
       padding: 10px;
   }
 
-  h1 {
+  .kesetimbanganasambasa-h1 {
       font-size: 2rem;
   }
 
-  h2 {
+  .kesetimbanganasambasa-h2 {
       font-size: 1.5rem;
   }
 
-  h3 {
+  .kesetimbanganasambasa-h3 {
       font-size: 1.25rem;
   }
 
-  .button-container {
+  .kesetimbanganasambasa-button-container {
       flex-direction: column;
   }
 }

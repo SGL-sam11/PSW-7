@@ -1,91 +1,88 @@
 /* src/components/PrinsipLeChatelier.css */
 
 /* Kontainer utama untuk halaman Prinsip Le Chatelier */
-.container {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
-    max-width: 900px;
-    color: #34495e;
-  }
-  
-  
-  /* Gaya untuk judul utama */
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  /* Gaya untuk subjudul */
-  h2, h3 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-top: 20px;
-  }
-  
-  /* Gaya untuk paragraf */
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #34495e;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-  /* Gaya untuk daftar (ul dan li) */
-  ul {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #34495e;
-    margin-bottom: 20px;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
+.prinsiplechatelier-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  color: #34495e;
+}
+
+/* Gaya untuk judul utama */
+.prinsiplechatelier-h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Gaya untuk subjudul */
+.prinsiplechatelier-h2, .prinsiplechatelier-h3 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Gaya untuk paragraf */
+.prinsiplechatelier-p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Gaya untuk daftar (ul dan li) */
+.prinsiplechatelier-ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.prinsiplechatelier-li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .prinsiplechatelier-container {
       padding: 20px;
       margin: 20px;
-    }
-    
-    h1 {
-      font-size: 28px;
-    }
-    
-    h2, h3 {
-      font-size: 24px;
-    }
-    
-    p, ul {
-      font-size: 16px;
-    }
-  
-    .kesetimbangan-background {
-      height: 250px;
-    }
   }
-  
-/* src/components/PrinsipLeChatelier.css */
+
+  .prinsiplechatelier-h1 {
+      font-size: 28px;
+  }
+
+  .prinsiplechatelier-h2, .prinsiplechatelier-h3 {
+      font-size: 24px;
+  }
+
+  .prinsiplechatelier-p, .prinsiplechatelier-ul {
+      font-size: 16px;
+  }
+
+  .prinsiplechatelier-background {
+      height: 250px;
+  }
+}
 
 /* Styling the navigation buttons */
-.navigation-buttons {
+.prinsiplechatelier-navigation-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 30px;
 }
 
-.btn {
+.prinsiplechatelier-btn {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -94,24 +91,24 @@
   transition: all 0.3s ease;
 }
 
-.btn-primary {
+.prinsiplechatelier-btn-primary {
   background-color: #008CBA;
   color: white;
 }
 
-.btn-primary:hover {
+.prinsiplechatelier-btn-primary:hover {
   background-color: #007bb5;
 }
 
-.btn-secondary {
+.prinsiplechatelier-btn-secondary {
   background-color: #008CBA;
   color: white;
 }
 
-.btn-secondary:hover {
+.prinsiplechatelier-btn-secondary:hover {
   background-color: #007bb5;
 }
 
-.btn:focus {
+.prinsiplechatelier-btn:focus {
   outline: none;
 }

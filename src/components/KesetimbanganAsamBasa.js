@@ -32,22 +32,22 @@ const KesetimbanganAsamBasa = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Kesetimbangan Asam-Basa dan Aplikasinya</h1>
+    <div className="kesetimbanganasambasa-container">
+      <h1 className="kesetimbanganasambasa-h1">Kesetimbangan Asam-Basa dan Aplikasinya</h1>
 
       {/* Background image styled with inline style */}
-      <div style={backgroundStyle}>
+      <div style={backgroundStyle} className="kesetimbanganasambasa-background">
         {/* The div will display the background image */}
       </div>
 
-      <h2>A. Pengantar Kesetimbangan Asam-Basa</h2>
-      <p>
+      <h2 className="kesetimbanganasambasa-h2">A. Pengantar Kesetimbangan Asam-Basa</h2>
+      <p className="kesetimbanganasambasa-p">
         Kesetimbangan asam-basa adalah kondisi di mana laju reaksi antara asam dan basa dalam larutan mencapai keadaan seimbang, artinya laju reaksi asam dengan basa untuk menghasilkan ion H⁺ (atau H₃O⁺) dan OH⁻ adalah sama dalam arah maju dan mundur. Pada keadaan ini, konsentrasi ion H⁺ (atau H₃O⁺) dan OH⁻ dalam larutan tetap konstan, meskipun masih terjadi reaksi antara asam dan basa.
       </p>
-      <p>
+      <p className="kesetimbanganasambasa-p">
         Reaksi asam-basa sering kali melibatkan ionisasi asam atau basa dalam air. Proses ionisasi asam dan basa dapat dinyatakan dengan dua persamaan umum berikut:
       </p>
-      <pre>
+      <pre className="kesetimbanganasambasa-pre">
         Ionisasi asam dalam air:
         HA ⇌ H⁺ + A⁻
         
@@ -58,11 +58,11 @@ const KesetimbanganAsamBasa = () => {
       {/* Content continues... */}
 
       {/* Navigation buttons */}
-      <div className="button-container">
-        <button onClick={goToHome} className="nav-button">
+      <div className="kesetimbanganasambasa-button-container">
+        <button onClick={goToHome} className="kesetimbanganasambasa-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/Contoh-Soal')} className="nav-button">
+        <button onClick={() => goToOtherMaterial('/Contoh-Soal')} className="kesetimbanganasambasa-nav-button">
           Contoh Soal
         </button>
       </div>

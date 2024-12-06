@@ -5,7 +5,7 @@
   align-items: center; /* Menempatkan elemen di tengah secara vertikal */
   height: 100vh;        /* Membuat container mengambil seluruh tinggi layar */
   background-color: #fafcfe; /* Latar belakang halaman berwarna biru muda */
-  padding-top: 50px;    /* Memberikan ruang di bagian atas untuk judul */
+  padding-top: 100px;    /* Memberikan ruang di bagian atas untuk judul */
 }
 
 /* Gaya untuk judul utama */
