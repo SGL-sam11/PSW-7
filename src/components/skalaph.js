@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link untuk navigasi
 import './skalaph.css'; // Pastikan nama file CSS sama
+import Navbar from './Navbar';
 
 const Skalaph = () => {
   const backgroundStyle = {
@@ -19,6 +20,7 @@ const Skalaph = () => {
 
   return (
     <div className="skalaph-container">
+      <Navbar />
       <h1 className="skalaph-h1">Pengertian pH dan Faktor yang Mempengaruhi pH</h1>
 
       {/* Background image */}
@@ -96,7 +98,7 @@ const Skalaph = () => {
         <Link to="/">
           <button className="skalaph-btn skalaph-btn-primary">Kembali ke Halaman Utama</button>
         </Link>
-        <Link to="/reaksi-netralisasi">
+        <Link to="/reaksinetralisasi">
           <button className="skalaph-btn skalaph-btn-secondary">Pelajari Reaksi Netralisasi</button>
         </Link>
       </div>

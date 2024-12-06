@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './ContohSoal.css'; // Pastikan file CSS berada pada lokasi yang benar
+import Navbar from './Navbar';
 
 const ContohSoal = () => {
   const navigate = useNavigate(); 
@@ -11,6 +12,7 @@ const ContohSoal = () => {
 
   return (
     <div className="contohsoal-container">
+      <Navbar />
       <h1 className="contohsoal-h1">Contoh Soal Kesetimbangan Kimia</h1>
       <p className="contohsoal-p">Berikut adalah contoh soal terkait kesetimbangan kimia yang dapat membantu memahami konsep ini...</p>
       

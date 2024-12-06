@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  
 import './PengertianPrinsipKesetimbangan.css'; 
+import Navbar from './Navbar';
 
 const PengertianPrinsipKesetimbangan = () => {
   const navigate = useNavigate();  
@@ -30,6 +31,7 @@ const PengertianPrinsipKesetimbangan = () => {
 
   return (
     <div className="pengertianprinsipkesetimbangan-container">
+       <Navbar />
       <h1 className="pengertianprinsipkesetimbangan-h1">Pengertian dan Prinsip Kesetimbangan Kimia</h1>
       
       <p className="pengertianprinsipkesetimbangan-p">
@@ -67,10 +69,10 @@ const PengertianPrinsipKesetimbangan = () => {
         <button onClick={goToHome} className="pengertianprinsipkesetimbangan-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/hukum-aksi-massa')} className="pengertianprinsipkesetimbangan-nav-button">
+        <button onClick={() => goToOtherMaterial('/hukumaksimassa')} className="pengertianprinsipkesetimbangan-nav-button">
           Pelajari Hukum Aksi Massa
         </button>
-        <button onClick={() => goToOtherMaterial('/prinsip-le-chatelier')} className="pengertianprinsipkesetimbangan-nav-button">
+        <button onClick={() => goToOtherMaterial('/prinsiplechatelier')} className="pengertianprinsipkesetimbangan-nav-button">
           Pelajari Prinsip Le Chatelier
         </button>
       </div>

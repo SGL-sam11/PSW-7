@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  // Mengimpor Link untuk navigasi
 import './teoriasambasa.css'; // Mengimpor file CSS yang baru
+import Navbar from './Navbar';
 
 // Komponen utama
 const Teoriasambasa = () => {
   return (
     <div className="teoriasambasa-container">
+      <Navbar />
       <h1>Teori Asam dan Basa</h1>
       <div className="teoriasambasa-kesetimbangan-background"></div>  {/* Background image handled by CSS */}
 
@@ -50,7 +52,7 @@ const Teoriasambasa = () => {
         <Link to="/" className="teoriasambasa-nav-button">
           Kembali ke Halaman Utama
         </Link>
-        <Link to="/skala-ph" className="teoriasambasa-nav-button">
+        <Link to="/skalaph" className="teoriasambasa-nav-button">
           Pelajari Skala Ph
         </Link>
       </div>

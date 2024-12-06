@@ -1,122 +1,143 @@
-/* src/components/PerhitunganKonstanta.css */
-body {
+/* Kontainer utama untuk halaman Asam dan Basa */
+.asam-basa-container {
   font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
-.larutan-asam-basa-container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.larutan-asam-basa-title {
-  font-size: 2em;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.larutan-asam-basa-subtitle {
-  font-size: 1.5em;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
   color: #34495e;
-  margin-top: 30px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
 }
 
-.larutan-asam-basa-paragraph {
-  font-size: 1.1em;
-  color: #7f8c8d;
+/* Gaya untuk judul utama */
+.asam-basa-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Gaya untuk subjudul */
+.asam-basa-subtitle {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Gaya untuk paragraf */
+.asam-basa-paragraph, .asam-basa-list {
+  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
-.larutan-asam-basa-pre {
-  background-color: #f5f5f5;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 1.1em;
-  color: #c0392b;
-  overflow-x: auto;
+/* Gaya untuk daftar (ul dan li) */
+.asam-basa-list {
+  padding-left: 20px;
 }
 
-.larutan-asam-basa-table {
+.asam-basa-list li {
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk background yang memiliki gambar */
+.asam-basa-background {
+  background-image: url('https://example.com/background-image.jpg'); /* Ganti dengan URL gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Gaya untuk tabel */
+.asam-basa-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.larutan-asam-basa-table th,
-.larutan-asam-basa-table td {
+.asam-basa-table th, .asam-basa-table td {
+  border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
 }
 
-.larutan-asam-basa-table th {
-  background-color: #3498db;
-  color: #ffffff;
+.asam-basa-table th {
+  background-color: #f4f4f4;
 }
 
-.larutan-asam-basa-ul {
-  font-size: 1.1em;
-  color: #7f8c8d;
-  margin-bottom: 20px;
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.larutan-asam-basa-ol {
-  font-size: 1.1em;
-  color: #7f8c8d;
-  margin-bottom: 20px;
-  list-style-type: decimal;
-  margin-left: 20px;
-}
-
-.larutan-asam-basa-strong {
-  color: #2c3e50;
-}
-
-/* Untuk elemen gambar latar belakang */
-.larutan-asam-basa-kesetimbangan-background {
-  background-image: url("https://roboguru-forum-cdn.ruangguru.com/187434b7-602e-43f1-9721-f786ce71ffaf.JPG");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #f1f1f1;
-}
-
-/* Tombol navigasi */
-.larutan-asam-basa-nav-button {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-
-.larutan-asam-basa-nav-button:hover {
-  background-color: #2c3e50;
-}
-
-.larutan-asam-basa-button-container {
+/* Styling the navigation buttons */
+.asam-basa-button-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.asam-basa-nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.asam-basa-nav-button-primary {
+  background-color: #008CBA;
+  color: white;
+}
+
+.asam-basa-nav-button-primary:hover {
+  background-color: #007bb5;
+}
+
+.asam-basa-nav-button-secondary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.asam-basa-nav-button-secondary:hover {
+  background-color: #45a049;
+}
+
+.asam-basa-nav-button:focus {
+  outline: none;
+}
+
+/* Responsif untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+  .asam-basa-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .asam-basa-title {
+    font-size: 28px;
+  }
+  
+  .asam-basa-subtitle {
+    font-size: 24px;
+  }
+
+  .asam-basa-paragraph, .asam-basa-list {
+    font-size: 16px;
+  }
+
+  .asam-basa-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .asam-basa-background {
+    height: 200px;
+  }
 }

@@ -33,7 +33,7 @@ function Materi() {
       title: 'Larutan Asam Basa',
       description: 'Eksplorasi sifat-sifat larutan asam dan basa.',
       image: 'larutan asam basa 150x150.png',
-      link: '#',
+      link: '/LarutanAsamBasa',
     },
     {
       title: 'Hidrolisis Garam',

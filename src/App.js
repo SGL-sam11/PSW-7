@@ -32,11 +32,11 @@ import HukumAksiMassa from './components/HukumAksiMassa';
 import ContohSoal from './components/ContohSoal';
 import ContohSoall from './components/ContohSoall';
 import LarutanAsamBasa from './components/LarutanAsamBasa';
-import asamdanbasakuatlemah from './components/asamdanbasakuatlemah';
-import pengertianlarutanasambasa from './components/pengertianlarutanasambasa';
-import reaksinetralisasi from './components/reaksinetralisasi';
-import skalaph from './components/skalaph';
-import teoriasambasa from './components/teoriasambasa';
+import Asamdanbasakuatlemah from './components/asamdanbasakuatlemah';
+import PengertianLarutanAsamBasa from './components/pengertianlarutanasambasa';
+import Reaksinetralisasi from './components/reaksinetralisasi';
+import Skalaph from './components/skalaph';
+import Teoriasambasa from './components/teoriasambasa';
 // import Kesetimbangan from './components/Kesetimbangan';
 // import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
 // import Hidrokarbon from './components/Hidrokarbon';
@@ -80,11 +80,12 @@ function App() {
         <Route path="/ContohSoal" element={<ContohSoal />} />
         <Route path="/ContohSoall" element={<ContohSoall />} />
         <Route path="/LarutanAsamBasa" element={<LarutanAsamBasa />} />
-        <Route path="/asamdanbasakuatlemah" element={<asamdanbasakuatlemah />} />
-        <Route path="/pengertianlarutanasambasa" element={<pengertianlarutanasambasa />} />
-        <Route path="/reaksinetralisasi" element={<reaksinetralisasi />} />
-        <Route path="/skalaph" element={<skalaph />} />
+        <Route path="/asamdanbasakuatlemah" element={<Asamdanbasakuatlemah />} />
+        <Route path="/pengertianlarutanasambasa" element={<PengertianLarutanAsamBasa />} />
+        <Route path="/reaksinetralisasi" element={<Reaksinetralisasi />} />
+        <Route path="/skalaph" element={<Skalaph />} />
         <Route path="/Lajureaksi" element={<Lajureaksi />} />
+        <Route path="/teoriasambasa" element={<Teoriasambasa />} />
 
         {/* <Route path="/Kesetimbangan" element={<Kesetimbangan />} /> */}
         {/* <Route path="/KesetimbanganAsamBasa" element={<KesetimbanganAsamBasa />} /> */}

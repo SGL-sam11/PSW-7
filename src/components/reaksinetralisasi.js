@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './reaksinetralisasi.css';
+import Navbar from './Navbar';
 
 const Reaksinetralisasi = () => {
   const navigate = useNavigate();  // Initialize navigate function
@@ -17,6 +18,7 @@ const Reaksinetralisasi = () => {
 
   return (
     <div className="reaksi-netralisasi-container">
+      <Navbar />
       <h1>Reaksi Netralisasi</h1>
 
       {/* Background image */}
@@ -91,7 +93,7 @@ const Reaksinetralisasi = () => {
         <button onClick={goToHome} className="reaksi-netralisasi-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/asam-dan-basa-kuat-lemah')} className="reaksi-netralisasi-nav-button">
+        <button onClick={() => goToOtherMaterial('/asamdanbasakuatlemah')} className="reaksi-netralisasi-nav-button">
           Pelajari Asam Dan Basa Kuat Lemah
         </button>
       </div>

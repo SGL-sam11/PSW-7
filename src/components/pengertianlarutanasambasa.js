@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Mengimpor useNavigate untuk navigasi
 import './pengertianlarutanasambasa.css'; // Mengimpor file CSS
+import Navbar from './Navbar';
 
 const PengertianLarutanAsamBasa = () => {
   const navigate = useNavigate();  
@@ -20,6 +21,7 @@ const PengertianLarutanAsamBasa = () => {
 
   return (
     <div className="pengertian-larutan-asam-basa-container">
+      <Navbar />
       <h1>Pengertian Larutan Asam dan Basa</h1>
       
       <h2>Larutan Asam</h2>
@@ -69,10 +71,10 @@ const PengertianLarutanAsamBasa = () => {
         <button onClick={goToHome} className="pengertian-larutan-asam-basa-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/teori-asam-basa')} className="pengertian-larutan-asam-basa-nav-button">
+        <button onClick={() => goToOtherMaterial('/teoriasambasa')} className="pengertian-larutan-asam-basa-nav-button">
           Pelajari Teori Asam Basa
         </button>
-        <button onClick={() => goToOtherMaterial('/contoh-soal')} className="pengertian-larutan-asam-basa-nav-button">
+        <button onClick={() => goToOtherMaterial('/ContohSoall')} className="pengertian-larutan-asam-basa-nav-button">
           Pelajari Contoh Soal
         </button>
       </div>

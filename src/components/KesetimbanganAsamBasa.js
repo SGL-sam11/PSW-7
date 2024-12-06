@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './KesetimbanganAsamBasa.css'; // Importing the CSS file
+import Navbar from './Navbar';
 
 const KesetimbanganAsamBasa = () => {
   const navigate = useNavigate();  // Initialize navigate function
@@ -33,6 +34,7 @@ const KesetimbanganAsamBasa = () => {
 
   return (
     <div className="kesetimbanganasambasa-container">
+      <Navbar />
       <h1 className="kesetimbanganasambasa-h1">Kesetimbangan Asam-Basa dan Aplikasinya</h1>
 
       {/* Background image styled with inline style */}
@@ -62,7 +64,7 @@ const KesetimbanganAsamBasa = () => {
         <button onClick={goToHome} className="kesetimbanganasambasa-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/Contoh-Soal')} className="kesetimbanganasambasa-nav-button">
+        <button onClick={() => goToOtherMaterial('/ContohSoal')} className="kesetimbanganasambasa-nav-button">
           Contoh Soal
         </button>
       </div>

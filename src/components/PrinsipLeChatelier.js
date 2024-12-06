@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link untuk navigasi
 import './PrinsipLeChatelier.css';
+import Navbar from './Navbar';
 
 const PrinsipLeChatelier = () => {
   const backgroundStyle = {
@@ -19,6 +20,7 @@ const PrinsipLeChatelier = () => {
 
   return (
     <div className="prinsiplechatelier-container">
+      <Navbar />
       <h1 className="prinsiplechatelier-h1">Prinsip Le Chatelier dan Faktor yang Mempengaruhi Kesetimbangan</h1>
 
       <div className="prinsiplechatelier-background" style={backgroundStyle}></div>
@@ -113,7 +115,7 @@ const PrinsipLeChatelier = () => {
         <Link to="/">
           <button className="prinsiplechatelier-btn prinsiplechatelier-btn-primary">Kembali ke Halaman Utama</button>
         </Link>
-        <Link to="/Perhitungan-Konstanta">
+        <Link to="/PerhitunganKonstanta">
           <button className="prinsiplechatelier-btn prinsiplechatelier-btn-secondary">Pelajari Perhitungan Konstanta</button>
         </Link>
       </div>

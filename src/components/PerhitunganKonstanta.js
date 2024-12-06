@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './PerhitunganKonstanta.css'; // Import CSS file for styling
+import Navbar from './Navbar';
 
 const PerhitunganKonstanta = () => {
   const navigate = useNavigate(); // Initialize navigation function
@@ -31,6 +32,7 @@ const PerhitunganKonstanta = () => {
 
   return (
     <div className="perhitungankonstanta-container">
+      <Navbar />
       <h1 className="perhitungankonstanta-h1">Perhitungan Konstanta Kesetimbangan dalam Reaksi Kimia</h1>
       
       <div className="perhitungankonstanta-background" style={backgroundStyle}></div>
@@ -103,7 +105,7 @@ const PerhitunganKonstanta = () => {
         <button onClick={goToHome} className="perhitungankonstanta-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/Kesetimbangan-Asam-Basa')} className="perhitungankonstanta-nav-button">
+        <button onClick={() => goToOtherMaterial('/KesetimbanganAsamBasa')} className="perhitungankonstanta-nav-button">
           Pelajari Kesetimbangan Asam Basa
         </button>
       </div>

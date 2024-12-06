@@ -1,43 +1,16 @@
-/* src/components/PengertianPrinsipKesetimbangan.css */
-
 /* Kontainer utama untuk halaman Pengertian dan Prinsip Kesetimbangan */
 .pengertianprinsipkesetimbangan-container {
-  font-family: 'Arial', sans-serif;  
-  background-color: #f9f9f9;        
-  padding: 30px;                     
-  border-radius: 15px;               
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  margin: 40px auto;                 
-  max-width: 900px;                  
-  opacity: 0;
-  animation: fadeIn 1s forwards;  /* Animasi muncul perlahan */
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  color: #34495e;
 }
 
-/* Animasi fadeIn untuk kontainer */
-@keyframes fadeIn {
-0% {
-  opacity: 0;
-  transform: translateY(20px);
-}
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
-
-/* Animasi slideUp untuk gambar */
-@keyframes slideUp {
-0% {
-  opacity: 0;
-  transform: translateY(30px);
-}
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
-
-/* Judul utama */
+/* Gaya untuk judul utama */
 .pengertianprinsipkesetimbangan-h1 {
   font-size: 36px;
   font-weight: bold;
@@ -45,44 +18,38 @@
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
-  opacity: 0;
-  animation: slideInFromLeft 1s 0.5s forwards;  /* Animasi judul masuk dari kiri */
 }
 
-/* Animasi slideInFromLeft untuk judul */
-@keyframes slideInFromLeft {
-0% {
-  opacity: 0;
-  transform: translateX(-50px);
-}
-100% {
-  opacity: 1;
-  transform: translateX(0);
-}
-}
-
-/* Subjudul (h2, h3) */
-.pengertianprinsipkesetimbangan-h2, 
-.pengertianprinsipkesetimbangan-h3 {
+/* Gaya untuk subjudul */
+.pengertianprinsipkesetimbangan-h2, .pengertianprinsipkesetimbangan-h3 {
   font-size: 28px;
   color: #2c3e50;
   margin-top: 20px;
-  opacity: 0;
-  animation: slideInFromLeft 1s 1s forwards;  /* Animasi subjudul masuk dari kiri */
 }
 
-/* Paragraf */
+/* Gaya untuk paragraf */
 .pengertianprinsipkesetimbangan-p {
   font-size: 18px;
   line-height: 1.6;
   color: #34495e;
   margin-bottom: 20px;
   text-align: justify;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s forwards;  /* Animasi paragraf muncul perlahan */
 }
 
-/* Gambar ilustrasi */
+/* Gaya untuk daftar (ul dan li) */
+.pengertianprinsipkesetimbangan-ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.pengertianprinsipkesetimbangan-li {
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk gambar */
 .pengertianprinsipkesetimbangan-img {
   width: 100%;
   max-width: 800px;
@@ -90,64 +57,68 @@
   display: block;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  opacity: 0;
-  animation: fadeIn 1s 2s forwards;  /* Animasi gambar muncul perlahan */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsivitas untuk tampilan kecil (mobile) */
+/* Responsif untuk tampilan mobile */
 @media screen and (max-width: 768px) {
   .pengertianprinsipkesetimbangan-container {
     padding: 20px;
     margin: 20px;
   }
+
   .pengertianprinsipkesetimbangan-h1 {
     font-size: 28px;
   }
-  .pengertianprinsipkesetimbangan-h2, 
-  .pengertianprinsipkesetimbangan-h3 {
+
+  .pengertianprinsipkesetimbangan-h2, .pengertianprinsipkesetimbangan-h3 {
     font-size: 24px;
   }
-  .pengertianprinsipkesetimbangan-p {
+
+  .pengertianprinsipkesetimbangan-p, .pengertianprinsipkesetimbangan-ul {
     font-size: 16px;
   }
+
   .pengertianprinsipkesetimbangan-img {
     max-width: 100%;
   }
 }
 
-/* Gaya untuk tombol navigasi */
-.pengertianprinsipkesetimbangan-button-container {
+/* Styling the navigation buttons */
+.pengertianprinsipkesetimbangan-navigation-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   margin-top: 30px;
-  opacity: 0;
-  animation: fadeIn 1s 2.5s forwards; /* Animasi tombol muncul perlahan */
 }
 
-.pengertianprinsipkesetimbangan-nav-button {
-  padding: 12px 20px;
+.pengertianprinsipkesetimbangan-btn {
+  padding: 10px 20px;
   font-size: 16px;
-  background-color: #3498db;
-  color: white;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  transform: scale(1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-.pengertianprinsipkesetimbangan-nav-button:hover {
-  background-color: #2980b9;
-  transform: scale(1.1);  /* Efek zoom in saat hover */
+.pengertianprinsipkesetimbangan-btn-primary {
+  background-color: #008CBA;
+  color: white;
 }
 
-.pengertianprinsipkesetimbangan-nav-button:active {
-  transform: scale(1.05); /* Efek klik saat tombol ditekan */
+.pengertianprinsipkesetimbangan-btn-primary:hover {
+  background-color: #007bb5;
 }
 
-.pengertianprinsipkesetimbangan-nav-button:focus {
-  outline: none;  /* Menghapus outline saat tombol difokuskan */
-  box-shadow: 0 0 5px #3498db;  /* Memberikan efek glow saat tombol difokuskan */
+.pengertianprinsipkesetimbangan-btn-secondary {
+  background-color: #008CBA;
+  color: white;
+}
+
+.pengertianprinsipkesetimbangan-btn-secondary:hover {
+  background-color: #007bb5;
+}
+
+.pengertianprinsipkesetimbangan-btn:focus {
+  outline: none;
 }
