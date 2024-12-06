@@ -174,7 +174,7 @@ const KuisHidrolisisGaram = () => {
 
                         {userAnswers[currentQuestion] && (
                             <div className="discussion-card">
-                                <h3>Pembahasan</h3>
+                                 <h3 className="pembahasan mt-5">Pembahasan</h3>
                                 <p>{questions[currentQuestion].explanation}</p>
                                 <p>
                                     Jawaban Anda:{" "}
@@ -226,6 +226,21 @@ const KuisHidrolisisGaram = () => {
                     )}
                 </main>
             </div>
+
+            {/* Modal */}
+            {quizCompleted && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <h2>Hasil Akhir</h2>
+                        <p>Skor Anda: {score} / {questions.length}</p>
+                        <p>{score >= 3 ? "Kerja bagus, pertahankan!" : "Jangan bersedih, belajarlah lagi."}</p>
+                        <div className="result-actions">
+                            <button onClick={handleRestartQuiz} className="btn-restart">Kerjakan Ulang</button>
+                            <button onClick={handleExitQuiz} className="btn-exit">Keluar</button>
+                        </div>
+                    </div>
+                </div>
+            )}
             <Footer />
         </div>
     );

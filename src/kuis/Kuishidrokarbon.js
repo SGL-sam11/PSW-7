@@ -82,7 +82,7 @@ const Kuishidrokarbon = () => {
     };
 
     const handleExitQuiz = () => {
-        navigate("/Quiz");  // Arahkan ke halaman kuis atau halaman utama
+        navigate("/Quiz");
     };
 
     const handleQuestionSelect = (index) => {
@@ -90,106 +90,110 @@ const Kuishidrokarbon = () => {
     };
 
     return (
-    <div>
-        <Navbar />
-        <div className="quiz-container">
+        <div>
+            <Navbar />
+            <div className="quiz-container">
             <aside className="quiz-sidebar">
-                <h3>Daftar Soal</h3>
-                <div className="question-list">
-                    {questions.map((_, index) => (
+                    <h3>Daftar Soal</h3>
+                    <div className="question-list">
+                        {questions.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`question-card ${
+                                    currentQuestion === index ? "active" : ""
+                                } ${
+                                    userAnswers[index]
+                                        ? userAnswers[index].isCorrect
+                                            ? "correct"
+                                            : "incorrect"
+                                        : ""
+                                }`}
+                                onClick={() => handleQuestionSelect(index)}
+                            >
+                                Soal {index + 1}
+                            </button>
+                        ))}
+                    </div>
+                </aside>
+
+                <main className="quiz-main">
+                    <header className="quiz-header">
+                        <h1>Ujian: Hidrokarbon</h1>
+                        <div className="quiz-progress">
+                            Soal {currentQuestion + 1} dari {questions.length}
+                        </div>
+                    </header>
+
+                    <div className="quiz-body">
+                        <div className="question-box">
+                            <h2>{questions[currentQuestion].question}</h2>
+                            <div className="options">
+                                {questions[currentQuestion].options.map((option, index) => (
+                                    <button
+                                        key={index}
+                                        className={`option ${
+                                            userAnswers[currentQuestion]?.selectedOption === index
+                                                ? userAnswers[currentQuestion]?.isCorrect
+                                                    ? "correct"
+                                                    : "incorrect"
+                                                : ""
+                                        }`}
+                                        onClick={() => handleAnswer(index)}
+                                        disabled={!!userAnswers[currentQuestion]}
+                                    >
+                                        {option}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        {userAnswers[currentQuestion] && (
+                            <div className="discussion-card">
+                                <h3 className="pembahasan mt-5">Pembahasan</h3>
+                                <p>{questions[currentQuestion].explanation}</p>
+                                <p>
+                                    Jawaban Anda:{" "}
+                                    <span
+                                        className={
+                                            userAnswers[currentQuestion].isCorrect
+                                                ? "answer-correct"
+                                                : "answer-incorrect"
+                                        }
+                                    >
+                                        {
+                                            questions[currentQuestion].options[
+                                                userAnswers[currentQuestion].selectedOption
+                                            ]
+                                        }
+                                    </span>
+                                </p>
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="quiz-navigation">
                         <button
-                            key={index}
-                            className={`question-card ${
-                                currentQuestion === index ? "active" : ""
-                            } ${
-                                userAnswers[index]
-                                    ? userAnswers[index].isCorrect
-                                        ? "correct"
-                                        : "incorrect"
-                                    : ""
-                            }`}
-                            onClick={() => handleQuestionSelect(index)}
+                            onClick={handlePrevious}
+                            className="btn-nav"
+                            disabled={currentQuestion === 0}
                         >
-                            Soal {index + 1}
+                            Previous
                         </button>
-                    ))}
-                </div>
-            </aside>
-
-            <main className="quiz-main">
-                <header className="quiz-header">
-                    <h1>Ujian: Hidrokarbon</h1>
-                    <div className="quiz-progress">
-                        Soal {currentQuestion + 1} dari {questions.length}
+                        <button
+                            onClick={handleNext}
+                            className="btn-nav"
+                            disabled={currentQuestion === questions.length - 1}
+                        >
+                            Next
+                        </button>
                     </div>
-                </header>
+                </main>
+            </div>
 
-                <div className="quiz-body">
-                    <div className="question-box">
-                        <h2>{questions[currentQuestion].question}</h2>
-                        <div className="options">
-                            {questions[currentQuestion].options.map((option, index) => (
-                                <button
-                                    key={index}
-                                    className={`option ${
-                                        userAnswers[currentQuestion]?.selectedOption === index
-                                            ? userAnswers[currentQuestion]?.isCorrect
-                                                ? "correct"
-                                                : "incorrect"
-                                            : ""
-                                    }`}
-                                    onClick={() => handleAnswer(index)}
-                                    disabled={!!userAnswers[currentQuestion]}
-                                >
-                                    {option}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    {userAnswers[currentQuestion] && (
-                        <div className="discussion-card">
-                            <h3>Pembahasan</h3>
-                            <p>{questions[currentQuestion].explanation}</p>
-                            <p>
-                                Jawaban Anda:{" "}
-                                <span
-                                    className={
-                                        userAnswers[currentQuestion].isCorrect
-                                            ? "answer-correct"
-                                            : "answer-incorrect"
-                                    }
-                                >
-                                    {
-                                        questions[currentQuestion].options[
-                                            userAnswers[currentQuestion].selectedOption
-                                        ]
-                                    }
-                                </span>
-                            </p>
-                        </div>
-                    )}
-                </div>
-
-                <div className="quiz-navigation">
-                    <button
-                        onClick={handlePrevious}
-                        className="btn-nav"
-                        disabled={currentQuestion === 0}
-                    >
-                        Previous
-                    </button>
-                    <button
-                        onClick={handleNext}
-                        className="btn-nav"
-                        disabled={currentQuestion === questions.length - 1}
-                    >
-                        Next
-                    </button>
-                </div>
-
-                {quizCompleted && (
-                    <div className="quiz-result">
+            {/* Modal */}
+            {quizCompleted && (
+                <div className="modal">
+                    <div className="modal-content">
                         <h2>Hasil Akhir</h2>
                         <p>Skor Anda: {score} / {questions.length}</p>
                         <p>{score >= 3 ? "Kerja bagus, pertahankan!" : "Jangan bersedih, belajarlah lagi."}</p>
@@ -198,11 +202,10 @@ const Kuishidrokarbon = () => {
                             <button onClick={handleExitQuiz} className="btn-exit">Keluar</button>
                         </div>
                     </div>
-                )}
-            </main>
+                </div>
+            )}
+            <Footer />
         </div>
-        <Footer />
-    </div>
     );
 };
 
