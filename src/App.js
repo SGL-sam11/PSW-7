@@ -37,12 +37,13 @@ import PengertianLarutanAsamBasa from './components/pengertianlarutanasambasa';
 import Reaksinetralisasi from './components/reaksinetralisasi';
 import Skalaph from './components/skalaph';
 import Teoriasambasa from './components/teoriasambasa';
-// import Kesetimbangan from './components/Kesetimbangan';
-// import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
-// import Hidrokarbon from './components/Hidrokarbon';
-// import reaksi from './components/reaksi';
-// import asambasa from './components/asambasa';
-// import hidrolosis from './components/hidrolosis'; 
+import Aplikasihidrolisis from './components/Aplikasihidrolisis';
+import Cthsoal from './components/Cthsoal';
+import FaktoryangMempengaruhi from './components/FaktoryangMempengaruhi';
+import Hidrolisasis from './components/Hidrolisasis';
+import HidrolisisGaram from './components/HidrolisisGaram';
+import Reaksikimi from './components/Reaksikimi';
+import Pengertianhidrolisisgaram from './components/Pengertianhidrolisisgaram';
 
 function App() {
   return (
@@ -86,15 +87,15 @@ function App() {
         <Route path="/skalaph" element={<Skalaph />} />
         <Route path="/Lajureaksi" element={<Lajureaksi />} />
         <Route path="/teoriasambasa" element={<Teoriasambasa />} />
+        <Route path="/Aplikasihidrolisis" element={<Aplikasihidrolisis />} />
+        <Route path="/Cthsoal" element={<Cthsoal />} />
+        <Route path="/FaktoryangMempengaruhi" element={<FaktoryangMempengaruhi />} />
+        <Route path="/Hidrolisasis" element={<Hidrolisasis />} />
+        <Route path="/HidrolisisGaram" element={<HidrolisisGaram />} />
+        <Route path="/Reaksikimi" element={<Reaksikimi />} />
+        <Route path="/Pengertianhidrolisisgaram" element={<Pengertianhidrolisisgaram />} />
 
-        {/* <Route path="/Kesetimbangan" element={<Kesetimbangan />} /> */}
-        {/* <Route path="/KesetimbanganAsamBasa" element={<KesetimbanganAsamBasa />} /> */}
 
-        {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
-        <Route path="/reaksi" element={<reaksi />} />
-        <Route path="/asambasa" element={<asambasa />} />
-        <Route path="/hidrolosis" element={<hidrolosis />} />
-        <Route path="/kelarutan" element={<kelarutan />} />*/}
       </Routes>
     </Router>
   );

@@ -1,0 +1,113 @@
+/* Container utama aplikasi */
+.aplikasihidrolisis-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Background untuk bagian utama */
+  .aplikasihidrolisis-background {
+    background-image: url('https://mazpur.com/wp-content/uploads/2023/03/guna-hidrolisis.jpg'); /* Ganti dengan gambar yang sesuai */
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Gaya untuk judul utama */
+  .aplikasihidrolisis-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk subjudul */
+  .aplikasihidrolisis-subtitle {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #4CAF50;
+  }
+  
+  /* Gaya untuk judul bagian kecil */
+  .aplikasihidrolisis-section-title {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  /* Gaya untuk paragraf */
+  .aplikasihidrolisis-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Gaya untuk gambar reaksi */
+  .aplikasihidrolisis-reaction-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Kontainer untuk tombol navigasi */
+  .aplikasihidrolisis-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Gaya untuk tombol navigasi */
+  .aplikasihidrolisis-nav-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efek hover pada tombol */
+  .aplikasihidrolisis-nav-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Gaya untuk elemen daftar atau list */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Gaya untuk elemen daftar dalam paragraf */
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Gaya untuk bagian paragraf yang menggunakan contoh atau highlight */
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Gaya untuk setiap bagian dengan padding yang lebih besar */
+  .aplikasihidrolisis-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* Gaya untuk kontainer bagian besar teks dengan background */
+  .aplikasihidrolisis-highlight {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -39,7 +39,7 @@ function Materi() {
       title: 'Hidrolisis Garam',
       description: 'Memahami konsep hidrolisis garam dalam kimia.',
       image: 'hidrolisis garam.png',
-      link: '#',
+      link: 'Hidrolisasis',
     },
     {
       title: 'Larutan Penyangga',
