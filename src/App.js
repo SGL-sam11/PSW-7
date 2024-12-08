@@ -21,15 +21,29 @@ import KuisKesetimbanganKimia from './kuis/KuisKesetimbanganKimia';
 import KuisLarutanAsambasa from './kuis/KuisLarutanAsambasa';
 import KuisHidrolisisGaram from './kuis/KuisHidrolisisGaram';
 import KuisLarutanPenyangga from './kuis/KuisLarutanPenyangga';
-import KuisKelarutanHasilKelarutan from './kuis/KelarutanHasilKelarutan'
-import KuisKoloid from './kuis/KuisKoloid'
-
-// import Kesetimbangan from './components/Kesetimbangan';
-// import  KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
-// import Hidrokarbon from './components/Hidrokarbon';
-// import reaksi from './components/reaksi';
-// import asambasa from './components/asambasa';
-// import hidrolosis from './components/hidrolosis'; 
+import KuisKelarutanHasilKelarutan from './kuis/KelarutanHasilKelarutan';
+import KuisKoloid from './kuis/KuisKoloid';
+import Kesetimbangan from './components/Kesetimbangan';
+import KesetimbanganAsamBasa from './components/KesetimbanganAsamBasa';
+import PrinsipLeChatelier from './components/PrinsipLeChatelier';
+import PerhitunganKonstanta from './components/PerhitunganKonstanta';
+import PengertianPrinsipKesetimbangan from './components/PengertianPrinsipKesetimbangan';
+import HukumAksiMassa from './components/HukumAksiMassa';
+import ContohSoal from './components/ContohSoal';
+import ContohSoall from './components/ContohSoall';
+import LarutanAsamBasa from './components/LarutanAsamBasa';
+import Asamdanbasakuatlemah from './components/asamdanbasakuatlemah';
+import PengertianLarutanAsamBasa from './components/pengertianlarutanasambasa';
+import Reaksinetralisasi from './components/reaksinetralisasi';
+import Skalaph from './components/skalaph';
+import Teoriasambasa from './components/teoriasambasa';
+import Aplikasihidrolisis from './components/Aplikasihidrolisis';
+import Cthsoal from './components/Cthsoal';
+import FaktoryangMempengaruhi from './components/FaktoryangMempengaruhi';
+import Hidrolisasis from './components/Hidrolisasis';
+import HidrolisisGaram from './components/HidrolisisGaram';
+import Reaksikimi from './components/Reaksikimi';
+import Pengertianhidrolisisgaram from './components/Pengertianhidrolisisgaram';
 
 function App() {
   return (
@@ -58,14 +72,30 @@ function App() {
         <Route path="/Aboutus" element={<AboutUs />} />
         <Route path="/Termokimia" element={<Termokimia />} />
         <Route path="/Hukumdasar" element={<HukumDasar />} />
+        <Route path="/Kesetimbangan" element={<Kesetimbangan />} />
+        <Route path="/KesetimbanganAsamBasa" element={<KesetimbanganAsamBasa />} />
+        <Route path="/PrinsipLeChatelier" element={<PrinsipLeChatelier />} />
+        <Route path="/PerhitunganKonstanta" element={<PerhitunganKonstanta />} />
+        <Route path="/PengertianPrinsipKesetimbangan" element={<PengertianPrinsipKesetimbangan />} />
+        <Route path="/HukumAksiMassa" element={<HukumAksiMassa />} />
+        <Route path="/ContohSoal" element={<ContohSoal />} />
+        <Route path="/ContohSoall" element={<ContohSoall />} />
+        <Route path="/LarutanAsamBasa" element={<LarutanAsamBasa />} />
+        <Route path="/asamdanbasakuatlemah" element={<Asamdanbasakuatlemah />} />
+        <Route path="/pengertianlarutanasambasa" element={<PengertianLarutanAsamBasa />} />
+        <Route path="/reaksinetralisasi" element={<Reaksinetralisasi />} />
+        <Route path="/skalaph" element={<Skalaph />} />
         <Route path="/Lajureaksi" element={<Lajureaksi />} />
-        {/* <Route path="/Kesetimbangan" element={<Kesetimbangan />} /> */}
-        {/* <Route path="/KesetimbanganAsamBasa" element={<KesetimbanganAsamBasa />} /> */}
+        <Route path="/teoriasambasa" element={<Teoriasambasa />} />
+        <Route path="/Aplikasihidrolisis" element={<Aplikasihidrolisis />} />
+        <Route path="/Cthsoal" element={<Cthsoal />} />
+        <Route path="/FaktoryangMempengaruhi" element={<FaktoryangMempengaruhi />} />
+        <Route path="/Hidrolisasis" element={<Hidrolisasis />} />
+        <Route path="/HidrolisisGaram" element={<HidrolisisGaram />} />
+        <Route path="/Reaksikimi" element={<Reaksikimi />} />
+        <Route path="/Pengertianhidrolisisgaram" element={<Pengertianhidrolisisgaram />} />
 
-        {/* <Route path="/hidrokarbon" element={<Hidrokarbon />} />
-        <Route path="/asambasa" element={<asambasa />} />
-        <Route path="/hidrolosis" element={<hidrolosis />} />
-        <Route path="/kelarutan" element={<kelarutan />} />*/}
+
       </Routes>
     </Router>
   );

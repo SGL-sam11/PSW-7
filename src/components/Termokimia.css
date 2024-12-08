@@ -16,10 +16,11 @@ body {
 .app-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  color: #34495e;
 }
 
 /* Header */
@@ -31,8 +32,9 @@ body {
 
 .main-title {
   font-size: 36px;
-  color: #007acc;
   font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
 }
 
 .sub-title {
@@ -55,6 +57,8 @@ h3 {
 .content p {
   font-size: 18px;
   margin-bottom: 20px;
+  color: #34495e;
+  text-align: justify;
 }
 
 /* Box styles */
@@ -88,6 +92,7 @@ h3 {
 .list-icons li {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #34495e;
 }
 
 .icon {
@@ -141,31 +146,32 @@ h3 {
 
 .image-container {
   display: flex;
-  flex-wrap: wrap; /* Membuat elemen dapat pindah ke baris baru jika ruang tidak cukup */
-  gap: 20px; /* Memberikan jarak antar gambar */
-  justify-content: center; /* Menjaga gambar tetap di tengah */
-  align-items: center; /* Memusatkan gambar secara vertikal */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
-  width: 48%; /* Memastikan dua gambar muat dalam satu baris */
-  max-width: 400px; /* Batasan lebar maksimum */
-  height: 300px; /* Tinggi yang seragam */
-  object-fit: cover; /* Menjaga proporsi gambar */
+  width: 48%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-  .image-container img {
-    width: 100%; /* Gambar memenuhi lebar container */
+  .app-container {
+    padding: 20px;
+    margin: 20px;
   }
-
-  .image-container {
-    flex-direction: column; /* Mengatur gambar bertumpuk di layar kecil */
+  
+  .main-title {
+    font-size: 28px;
   }
-
+  
   .sub-title {
     font-size: 16px;
   }

@@ -1,5 +1,25 @@
-
-.backgroundStyle {
+/* Navbar */
+.custom-navbar {
+    background-color: #122D4F;
+  }
+  
+  .navbar-brand {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    color: #B18021;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  /* Background and Overlay */
+  .backgroundStyle {
     background-image: url('https://wallpaperaccess.com/full/3481768.jpg');
     background-size: cover;
     background-position: center;
@@ -7,24 +27,71 @@
     height: 100vh;
     display: flex;
     align-items: center;
-}
-
-.overlay{ 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  }
+  
+  .overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
     height: 100vh;
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.display-5{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-}
-.lead{
-    font-family :'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  }
+  
+  .hero-content {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Button */
+  .custom-btn {
+    background-color: #6CA9AF;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #538E9C;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Text Styling */
+  .display-5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .lead {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+    line-height: 1.6;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .display-5 {
+      font-size: 28px;
+    }
+  
+    .lead {
+      font-size: 16px;
+    }
+  
+    .custom-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  

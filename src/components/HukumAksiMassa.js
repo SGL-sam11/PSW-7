@@ -1,7 +1,7 @@
-// src/components/HukumAksiMassa.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
 import './HukumAksiMassa.css'; // Importing the CSS file
+import Navbar from './Navbar';
 
 const HukumAksiMassa = () => {
   const navigate = useNavigate();  // Initialize navigate function
@@ -17,9 +17,10 @@ const HukumAksiMassa = () => {
   };
 
   return (
-    <div className="container">
+    <div className="hukumaksimassa-container">
+      <Navbar />
       <h1>Hukum Aksi Massa dan Konstanta Kesetimbangan (K)</h1>
-      <div className="kesetimbangan-background"></div>  {/* Background image handled by CSS */}
+      <div className="hukumaksimassa-kesetimbangan-background"></div>  {/* Background image handled by CSS */}
       
       <p>
         Hukum Aksi Massa menyatakan bahwa pada suhu tetap, konsentrasi molar produk dan reaktan pada kesetimbangan berhubungan dengan konstanta kesetimbangan yang disebut <strong>K</strong>. 
@@ -89,7 +90,7 @@ const HukumAksiMassa = () => {
         <button onClick={goToHome} className="nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/Prinsip-Le-Chatelier')} className="nav-button">
+        <button onClick={() => goToOtherMaterial('/PrinsipLeChatelier')} className="nav-button">
           Pelajari Prinsip Le Chatelier
         </button>
       </div>

@@ -1,7 +1,5 @@
-/* src/components/HukumAksiMassa.css */
-
 /* Kontainer utama untuk halaman Hukum Aksi Massa */
-.container {
+.hukumaksimassa-container {
     font-family: 'Arial', sans-serif;  
     background-color: #f4f4f4;
     padding: 30px;
@@ -10,10 +8,10 @@
     margin: 40px auto;
     max-width: 900px;
     background-color: #ffffff;
-}
-
-/* Gaya untuk gambar ilustrasi kesetimbangan kimia (menggunakan background-image) */
-.kesetimbangan-background {
+  }
+  
+  /* Gaya untuk gambar ilustrasi kesetimbangan kimia (menggunakan background-image) */
+  .hukumaksimassa-kesetimbangan-background {
     background-image: url('https://i2.wp.com/image.slidesharecdn.com/hukum-dasar-kimia-ppt-160518050017/95/hukum-hukum-dasar-kimia-ppt-12-638.jpg?cb=1463547685');
     background-size: contain;
     background-position: center;
@@ -26,78 +24,79 @@
     margin-bottom: 20px;
     opacity: 0;
     animation: slideUp 1.5s forwards;  /* Animasi gambar muncul dan geser dari bawah */
-}
-
-/* Animasi gambar muncul dari bawah */
-@keyframes slideUp {
+  }
+  
+  /* Animasi gambar muncul dari bawah */
+  @keyframes slideUp {
     0% {
-        opacity: 0;
-        transform: translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-/* Gaya untuk judul utama */
-h1 {
+  }
+  
+  /* Gaya untuk judul utama */
+  .hukumaksimassa-container h1 {
     font-size: 36px;
     font-weight: bold;
     color: #2c3e50;
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-/* Gaya untuk subjudul (h2 dan h3) */
-h2, h3 {
+  }
+  
+  /* Gaya untuk subjudul (h2 dan h3) */
+  .hukumaksimassa-container h2, .hukumaksimassa-container h3 {
     font-size: 28px;
     color: #2c3e50;
     margin-top: 20px;
-}
-
-/* Gaya untuk paragraf */
-p {
+  }
+  
+  /* Gaya untuk paragraf */
+  .hukumaksimassa-container p {
     font-size: 18px;
     line-height: 1.6;
     color: #34495e;
     margin-bottom: 20px;
     text-align: justify;
-}
-
-/* Gaya untuk daftar (ul dan li) */
-ul {
+  }
+  
+  /* Gaya untuk daftar (ul dan li) */
+  .hukumaksimassa-container ul {
     font-size: 18px;
     line-height: 1.6;
     color: #34495e;
     margin-bottom: 20px;
     padding-left: 20px;
-}
-
-li {
+  }
+  
+  .hukumaksimassa-container li {
     margin-bottom: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hukumaksimassa-container {
+      padding: 20px;
+      margin: 20px;
     }
-    
-    h1 {
-        font-size: 28px;
+  
+    .hukumaksimassa-container h1 {
+      font-size: 28px;
     }
-    
-    h2, h3 {
-        font-size: 24px;
+  
+    .hukumaksimassa-container h2, .hukumaksimassa-container h3 {
+      font-size: 24px;
     }
-    
-    p, ul {
-        font-size: 16px;
+  
+    .hukumaksimassa-container p, .hukumaksimassa-container ul {
+      font-size: 16px;
     }
-
-    .kesetimbangan-background {
-        height: 300px;  /* Adjust image size on smaller screens */
+  
+    .hukumaksimassa-kesetimbangan-background {
+      height: 300px;  /* Adjust image size on smaller screens */
     }
-}
+  }
+  

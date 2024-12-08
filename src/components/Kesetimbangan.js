@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Kesetimbangan.css';
+import Navbar from './Navbar';  // Mengimpor Navbar
 
 const Kesetimbangan = () => {
   const navigate = useNavigate();
@@ -11,54 +12,57 @@ const Kesetimbangan = () => {
   };
 
   return (
-    <div className="larutan-container">
-      <div className="title">Kesetimbangan Kimia</div>
-      <div className="bubbles-container">
-        <div className="row">
+    <div className="kesetimbangan-container">
+      {/* Menambahkan Navbar di sini */}
+      <Navbar />
+
+      <div className="kesetimbangan-title">Kesetimbangan Kimia</div>
+      <div className="kesetimbangan-bubbles-container">
+        <div className="kesetimbangan-row">
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("pengertian-prinsip-kesetimbangan")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("PengertianPrinsipKesetimbangan")}
           >
-            <div className="bubble-text">Pengertian dan Prinsip Kesetimbangan Kimia</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Pengertian dan Prinsip Kesetimbangan Kimia</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("hukum-aksi-massa")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("hukumaksimassa")}
           >
-            <div className="bubble-text">Hukum Aksi Massa dan Konstanta Kesetimbangan (K)</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Hukum Aksi Massa dan Konstanta Kesetimbangan (K)</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("contoh-soal")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("contohsoal")}
           >
-            <div className="bubble-text">Contoh Soal Kesetimbangan Kimia</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Contoh Soal Kesetimbangan Kimia</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
         </div>
 
-        <div className="row">
+        <div className="kesetimbangan-row">
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("prinsip-le-chatelier")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("prinsiplechatelier")}
           >
-            <div className="bubble-text">Prinsip Le Chatelier dan Faktor yang Mempengaruhi Kesetimbangan</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Prinsip Le Chatelier dan Faktor yang Mempengaruhi Kesetimbangan</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("perhitungan-konstanta")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("perhitungankonstanta")}
           >
-            <div className="bubble-text">Perhitungan Konstanta Kesetimbangan dalam Reaksi Kimia</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Perhitungan Konstanta Kesetimbangan dalam Reaksi Kimia</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
           <div
-            className="bubble"
-            onClick={() => handleBubbleClick("kesetimbangan-asam-basa")}
+            className="kesetimbangan-bubble"
+            onClick={() => handleBubbleClick("kesetimbanganasambasa")}
           >
-            <div className="bubble-text">Kesetimbangan Asam-Basa dan Aplikasinya</div>
-            <button className="learn-more">Pelajari Lebih Lanjut</button>
+            <div className="kesetimbangan-bubble-text">Kesetimbangan Asam-Basa dan Aplikasinya</div>
+            <button className="kesetimbangan-learn-more">Pelajari Lebih Lanjut</button>
           </div>
         </div>
       </div>

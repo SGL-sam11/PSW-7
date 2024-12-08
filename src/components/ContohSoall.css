@@ -1,0 +1,107 @@
+/* Kontainer utama untuk halaman Contoh Soal Larutan Asam dan Basa */
+.contohsoal-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px;
+    color: #34495e;
+  }
+  
+  /* Gaya untuk judul utama */
+  .contohsoal-h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Gaya untuk subjudul */
+  .contohsoal-h2, .contohsoal-h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-top: 20px;
+  }
+  
+  /* Gaya untuk paragraf */
+  .contohsoal-p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Gaya untuk pre-formatted text */
+  .contohsoal-pre {
+    font-size: 18px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Gaya untuk button */
+  .contohsoal-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .contohsoal-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .contohsoal-btn-primary {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .contohsoal-btn-primary:hover {
+    background-color: #007bb5;
+  }
+  
+  .contohsoal-btn-secondary {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .contohsoal-btn-secondary:hover {
+    background-color: #e67e22;
+  }
+  
+  .contohsoal-btn:focus {
+    outline: none;
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media screen and (max-width: 768px) {
+    .contohsoal-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .contohsoal-h1 {
+      font-size: 28px;
+    }
+  
+    .contohsoal-h2, .contohsoal-h3 {
+      font-size: 24px;
+    }
+  
+    .contohsoal-p, .contohsoal-pre {
+      font-size: 16px;
+    }
+  }
+  

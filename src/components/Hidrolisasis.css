@@ -1,0 +1,99 @@
+/* Hidrolisasis.css */
+
+/* Container utama */
+.hidrolisasis-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #006af5;
+    background-image: url("https://your-image-link.com/background-image.jpg"); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Menutupi seluruh elemen dengan gambar */
+    background-position: center; /* Menjaga posisi gambar agar tetap berada di tengah */
+    min-height: 100vh; /* Menjamin elemen memiliki tinggi penuh layar */
+    position: relative; /* Agar background tidak tertutup oleh elemen lainnya */
+  }
+  
+  /* Judul utama */
+  .hidrolisasis-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  
+  /* Kontainer gelembung */
+  .hidrolisasis-bubbles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Baris gelembung */
+  .hidrolisasis-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    width: 100%; /* Pastikan baris ini mengambil 100% lebar kontainer */
+  }
+  
+  /* Gaya untuk setiap gelembung */
+  .hidrolisasis-bubble {
+    background-color: #3498db;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hidrolisasis-bubble:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hidrolisasis-bubble-text {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  
+  .hidrolisasis-learn-more {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hidrolisasis-learn-more:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .hidrolisasis-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hidrolisasis-bubble {
+      width: 80%;
+    }
+  }
+  
+  /* Gaya untuk tombol navigasi */
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  

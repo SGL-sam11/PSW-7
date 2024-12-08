@@ -1,7 +1,7 @@
-// src/components/pengertianlarutanasambasa.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Mengimpor useNavigate untuk navigasi
 import './pengertianlarutanasambasa.css'; // Mengimpor file CSS
+import Navbar from './Navbar';
 
 const PengertianLarutanAsamBasa = () => {
   const navigate = useNavigate();  
@@ -20,7 +20,8 @@ const PengertianLarutanAsamBasa = () => {
   const acidBaseImage = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD3MSkDC1RRGhkdvEmiQTHkVbrMwNNEqWkN1312D3Q2H3JlKlR13a7QXWA8ww91o238_EMiQZc2SNeWZdN8TH9Nf428sebr-FOl3JvWHB5oIRZwgtLY36veQa2ZIbMRt4IrUNrZcR35mJS/s1600/Asam+Basa+Garam.PNG';  // Gambar ilustrasi
 
   return (
-    <div className="container">
+    <div className="pengertian-larutan-asam-basa-container">
+      <Navbar />
       <h1>Pengertian Larutan Asam dan Basa</h1>
       
       <h2>Larutan Asam</h2>
@@ -66,14 +67,14 @@ const PengertianLarutanAsamBasa = () => {
       </p>
 
       {/* Tombol untuk navigasi */}
-      <div className="button-container">
-        <button onClick={goToHome} className="nav-button">
+      <div className="pengertian-larutan-asam-basa-button-container">
+        <button onClick={goToHome} className="pengertian-larutan-asam-basa-nav-button">
           Kembali ke Halaman Utama
         </button>
-        <button onClick={() => goToOtherMaterial('/teori-asam-basa')} className="nav-button">
+        <button onClick={() => goToOtherMaterial('/teoriasambasa')} className="pengertian-larutan-asam-basa-nav-button">
           Pelajari Teori Asam Basa
         </button>
-        <button onClick={() => goToOtherMaterial('/contoh-soal')} className="nav-button">
+        <button onClick={() => goToOtherMaterial('/ContohSoall')} className="pengertian-larutan-asam-basa-nav-button">
           Pelajari Contoh Soal
         </button>
       </div>

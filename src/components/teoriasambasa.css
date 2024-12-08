@@ -1,59 +1,60 @@
-/* Basic container style */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  h1, h2, h3 {
-    color: #2c3e50;
-  }
-  
-  p {
-    margin-bottom: 1.5em;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  .reaction-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Button styles */
-  .button-container {
-    margin-top: 30px;
-  }
-  
-  .nav-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 5px;
-  }
-  
-  .nav-button:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Background style */
-  .kesetimbangan-background {
-    background-image: url('https://www.quipper.com/id/blog/wp-content/uploads/2023/02/Asam-dan-Basa-Pengertian-Fungsi-Ciri-ciri-hingga-Contohnya.webp'); /* Replace with your desired background image */
-    background-size: cover;
-    height: 500px;
-    margin-bottom: 20px;
-  }
-  
+/* Basic container style for Teoriasambasa component */
+.teoriasambasa-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.teoriasambasa-container h1, .teoriasambasa-container h2, .teoriasambasa-container h3 {
+  color: #2c3e50;
+}
+
+.teoriasambasa-container p {
+  margin-bottom: 1.5em;
+}
+
+.teoriasambasa-container strong {
+  font-weight: bold;
+}
+
+/* Image styling */
+.teoriasambasa-reaction-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container style */
+.teoriasambasa-button-container {
+  margin-top: 30px;
+}
+
+/* Button styling */
+.teoriasambasa-nav-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.teoriasambasa-nav-button:hover {
+  background-color: #2980b9;
+}
+
+/* Background image styling */
+.teoriasambasa-kesetimbangan-background {
+  background-image: url('https://www.quipper.com/id/blog/wp-content/uploads/2023/02/Asam-dan-Basa-Pengertian-Fungsi-Ciri-ciri-hingga-Contohnya.webp'); /* Replace with your desired background image */
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 20px;
+}

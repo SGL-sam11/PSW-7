@@ -27,19 +27,19 @@ function Materi() {
       title: 'Kesetimbangan Kimia',
       description: 'Mempelajari konsep kesetimbangan dalam reaksi kimia.',
       image: 'kesetimbangan kimia 150x150.png',
-      link: '#',
+      link: '/Kesetimbangan',
     },
     {
       title: 'Larutan Asam Basa',
       description: 'Eksplorasi sifat-sifat larutan asam dan basa.',
       image: 'larutan asam basa 150x150.png',
-      link: '#',
+      link: '/LarutanAsamBasa',
     },
     {
       title: 'Hidrolisis Garam',
       description: 'Memahami konsep hidrolisis garam dalam kimia.',
       image: 'hidrolisis garam.png',
-      link: '#',
+      link: 'Hidrolisasis',
     },
     {
       title: 'Larutan Penyangga',
